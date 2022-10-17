@@ -13,10 +13,11 @@ module.exports = {
         background: "#232325",
         body: "#222D33",
         blak: "#000000",
+        "blak-100": "#21312a",
       },
       backgroundImage: (theme) => ({
-        "hero-pattern": "url('/img/mapbase.png')",
-        hero: "url('/img/hero.png')",
+        "goal-pattern": "url('/svg/pattern.svg')",
+        "value-pattern": "url('/svg/valueBg.svg')",
         footer: "url('/svg/bankeasybg.svg')",
       }),
       animation: {

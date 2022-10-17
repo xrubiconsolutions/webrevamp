@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="theme-color" content="#171A25" />
+          <meta name="theme-color" content="#F8FFF4" />
           <link rel="apple-touch-icon" href="/img/pakam-logo.png" />
 
           <meta name="author" content="Pakam" />
@@ -27,10 +27,14 @@ class MyDocument extends Document {
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
-            crossOrigin=""
+            crossOrigin="true"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+            rel="stylesheet"
+          ></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
           ></link>
         </Head>

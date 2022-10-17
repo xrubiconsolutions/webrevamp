@@ -10,6 +10,7 @@ import { Button, Container } from "..";
 import { useRef } from "react";
 import { classes } from "../../utils";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const AppNav = styled.nav<{ scrollNavbar: boolean }>`
   background: ${({ scrollNavbar }) =>
@@ -38,7 +39,7 @@ const AppNavContainer = styled(Container)`
   ${tw`flex justify-between z-[1]`}
   ${Container}
 `;
-const AppNavLogo = styled(Link as any)`
+const AppNavLogo = styled.div`
   ${tw`flex items-center justify-self-start cursor-pointer`}
 `;
 const MobileIcon = styled.div`
@@ -74,16 +75,19 @@ const NavItem = styled.li`
   @media screen and (max-width: 960px) {
     ${tw` w-full`}
     &:hover {
+      font-weight: 700;
       border: none;
     }
   }
 `;
-const NavLinks = styled(LinkS as any)`
+const NavLinks = styled.a`
   ${tw`text-body flex justify-center items-center `}
   padding: 0.5rem 1rem;
   height: 100%;
   &.active {
-    border-bottom: 2px solid green;
+    /* border-bottom: 2px solid green; */
+    border-bottom: none;
+    font-weight: 900;
     @media screen and (max-width: 960px) {
       border-bottom: none;
       font-weight: 900;
@@ -134,6 +138,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const appNav = useRef<any>(null);
+  const router = useRouter();
 
   const ChangeBackground = () => {
     if (window.pageYOffset >= 80) {
@@ -184,16 +189,17 @@ function Navbar() {
         >
           <AppNavContainer>
             <AppNavLogo
-              href="/"
-              className={classes("navbar-logo ")}
+              // className={classes("navbar-logo ")}
               onClick={toggleHome}
             >
-              <Image
-                src="/svg/pkam-logo.svg"
-                alt="Pakam Logo"
-                width={120.68}
-                height={40}
-              />
+              <Link href="/">
+                <Image
+                  src="/svg/pkam-logo.svg"
+                  alt="Pakam Logo"
+                  width={120.68}
+                  height={40}
+                />
+              </Link>
               {/* <img src="./assets/images/POS.svg" alt="logo" /> */}
             </AppNavLogo>
             <MobileIcon onClick={handleClick}>
@@ -201,82 +207,64 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks
-                  to="about"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                  onClick={closeMobileMenu}
-                >
-                  About us
-                </NavLinks>
+                <Link href="/about">
+                  <NavLinks
+                    className={router.asPath == "/about" ? "active" : ""}
+                    onClick={closeMobileMenu}
+                  >
+                    About us
+                  </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="products"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                  onClick={closeMobileMenu}
-                >
-                  Products
-                </NavLinks>
+                <Link href="/products">
+                  <NavLinks
+                    className={router.asPath == "/products" ? "active" : ""}
+                    onClick={closeMobileMenu}
+                  >
+                    Products
+                  </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="careers"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                  onClick={closeMobileMenu}
-                >
-                  Careers
-                </NavLinks>
+                <Link href="/careers">
+                  <NavLinks
+                    className={router.asPath == "/careers" ? "active" : ""}
+                    onClick={closeMobileMenu}
+                  >
+                    Careers
+                  </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="news"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                  onClick={closeMobileMenu}
-                >
-                  News
-                </NavLinks>
+                <Link href="/news">
+                  <NavLinks
+                    className={router.asPath == "/news" ? "active" : ""}
+                    onClick={closeMobileMenu}
+                  >
+                    News
+                  </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="faqs"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                  onClick={closeMobileMenu}
-                >
-                  FAQs
-                </NavLinks>
+                <Link href="/faqs">
+                  <NavLinks
+                    className={router.asPath == "/faqs" ? "active" : ""}
+                    onClick={closeMobileMenu}
+                  >
+                    FAQs
+                  </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="reviews"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                  onClick={closeMobileMenu}
-                >
-                  Reviews
-                </NavLinks>
+                <Link href="/reviews">
+                  <NavLinks
+                    className={router.asPath == "/reviews" ? "active" : ""}
+                    onClick={closeMobileMenu}
+                  >
+                    Reviews
+                  </NavLinks>
+                </Link>
               </NavItem>
               {button ? null : (
                 <NavItemBtn>
