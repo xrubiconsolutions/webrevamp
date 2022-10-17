@@ -88,6 +88,7 @@ const Hero = () => {
               </HeroBtnsLinkImg>
             </HeroBtns>
           </HeroCol>
+
           <HeroCol>
             <HeroImg>
               <Image

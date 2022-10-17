@@ -46,3 +46,12 @@ export const Button = styled.button<{
     width: ${({ width }) => (width ? "" : "100%")};
   }
 `;
+
+export const FlexContainer = styled.div`
+  ${tw`flex items-center`}
+  ${tw`cursor-pointer`};
+`;
+
+export const Title = styled.h2`
+  ${tw`text-secondary text-lg font-extrabold text-center`}
+`;

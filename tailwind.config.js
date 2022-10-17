@@ -42,6 +42,7 @@ module.exports = {
       },
       fontFamily: {
         playball: ["Playball", "cursive"],
+        Raleway: ["Raleway", "sans-serif"],
       },
     },
   },

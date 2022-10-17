@@ -61,6 +61,7 @@ export const support: Array<string> = [
   "/img/Lasepa.png",
   "/img/Rethinking.png",
 ];
+
 export const members: Array<string> = [
   "/img/Circular network.png",
   "/img/9.png",

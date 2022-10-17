@@ -15,6 +15,16 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/product/index.jsx",
+    "src/components/Products/KPI/Benefit.jsx",
+    "src/components/Products/index.jsx",
+    "src/components/Products/Flex.jsx",
+    "src/components/Products/Earn/Earnaswaste.tsx",
+    "src/components/Products/Pay/Payaswaste.jsx"
+  ],
   "exclude": ["node_modules"]
 }
