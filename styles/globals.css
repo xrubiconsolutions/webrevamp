@@ -3,18 +3,25 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&family=Dosis:wght@300;400;500;600&family=Joan&family=Montserrat:wght@300;400&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Open+Sans&family=Quicksand:wght@300;400;500&family=Raleway:wght@100;300;400;500;600&family=Roboto:wght@300;700&display=swap"); */
+=======
+>>>>>>> e3c661c185a441ac1e29a9d3d8fe35099c7e7a8d
 
 @layer base {
   * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
   html,
   body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    box-sizing: border-box;
     font-family: "Raleway", sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;

@@ -1,6 +1,7 @@
 import analytics from "./33810-payments.json";
 import payment from "./86866-payment.json";
 import thumbs from "./121028-one-line-drawing-like-icon.json";
+<<<<<<< HEAD
 import PSR from "/public/img/PSR.png";
 import GuyPickUpTrash from "/public/img/GupPickupTrash.png";
 import Paper from "/public/img/Paper.png";
@@ -12,7 +13,22 @@ interface TechnologyModel {
   title: string;
   text: string;
   link: string;
+=======
+import MorphingGreen from "./71506-shape-morphing-green.json";
+import Technology from "./82661-technology.json";
+import OpenUp from "./97262-open-up-dffs.json";
+import SocialNetwork from "./91955-social-media-network.json";
+import ProblemSolvingTeam from "./73386-problem-solving-team.json";
+export interface TechnologyModel {
+  imgUrl?: any;
+  title?: string;
+  text?: string;
+  link?: string;
+  description?: string;
+  isTitle?: boolean;
+>>>>>>> e3c661c185a441ac1e29a9d3d8fe35099c7e7a8d
 }
+
 export const serve: Array<TechnologyModel> = [
   {
     imgUrl: "/svg/Group 625999.svg",
@@ -51,6 +67,24 @@ export const subscription: Array<TechnologyModel> = [
     title: "Smart Enforcement",
     text: " ",
     link: "Read more",
+  },
+];
+export const whatwedo: Array<TechnologyModel> = [
+  {
+    imgUrl: "/img/Reduced operational cost.png",
+    title: "Ecosystem technology platform for waste ",
+  },
+  {
+    imgUrl: "/img/coins.png",
+    title: "Waste managemenet consultancy",
+  },
+  {
+    imgUrl: "/img/entypo_news.png",
+    title: "Data Provision",
+  },
+  {
+    imgUrl: "/img/Better Revenue Assurance.png",
+    title: "Building and deploying waste management infrastructure",
   },
 ];
 
@@ -149,6 +183,7 @@ export const members: Array<string> = [
   "/img/Smart-cities-world-logo-2 1.png",
 ];
 
+<<<<<<< HEAD
 export const KPIarticles: Array<KPIData> = [
   {
     heading: "Key Perfomance Improvement",
@@ -321,4 +356,323 @@ export const payContentArticles: Array<KPIData> = [
     heading: "Key Perfomance Improvement",
     text: "Provides a focus for strategic and operational improvement, by helping us create an analytical basis for decision making and help focus attention on what matters most.",
   },
+=======
+export const faqs: Array<TechnologyModel> = [
+  {
+    text: "How much are pet bottles sold per KG?",
+    description:
+      "Price is not fixed, it varies based on location and Recyclers.",
+  },
+  {
+    text: "Do we operate outside Lagos?",
+    description:
+      "No. Now we are fully functioning in Lagos but looking at expanding to other states and countries soonest.",
+  },
+  {
+    text: "How do I register on the app and setup a new schedule?",
+    description:
+      "Download the App from Playstore or Apple store, create an account using your Name, Phone Number and Password, verify your phone number inputting the OTP sent to the phone number used when creating the account, once you are verified login into App click on Schedule pickup button to request for a pickup when you have recyclable waste.",
+  },
+  {
+    text: "What’s the least number of bags one can have before  requesting a pickup?",
+    description: "One bag",
+  },
+  {
+    text: "Minimum KG that can be picked?",
+    description: "I KG",
+  },
+  {
+    text: "How much do I need to have in my wallet to request a payout?",
+    description: "#5000",
+  },
+  {
+    text: "Prices of all recyclables per KG?",
+    description:
+      "Prices Varies based on Location and Recycler allocated for Pickup.",
+  },
+  {
+    text: "What type of recyclable products do we pick up?",
+    description:
+      "Can, bottles, Tyres, Paper, Plastic, Pet Bottles, Nylon, rubber, Metals, Wood.        ",
+  },
+  {
+    text: "Do we charge for pick-ups?",
+    description: "No, pickup is free.",
+  },
+  {
+    text: "Is it only Drink cans we pick up or all other types of cans?",
+    description: "All cans that can be recycled.",
+  },
+  {
+    text: "Do you accept waste like microwaves, washing machines and pumping machines?",
+    description:
+      "Those are E-waste, and we are working on collecting further information and this will be communicated.",
+  },
+  {
+    text: "How do I register on the app and setup a new schedule?",
+    description:
+      "Download the App from Playstore or Apple store, create an account using your Name, Phone Number and Password, verify your phone number inputting the OTP sent to the phone number used when creating the account, once you are verified login into App click on Schedule pickup button to request for a pickup when you have recyclable waste.",
+  },
+  {
+    text: "Can I bring my recyclable waste myself instead of waiting for pickup?",
+    description:
+      "Yes. We have a drop-off feature that allows you to choose the closest drop-off centre where you can weigh and drop your recycled waste..",
+  },
+];
+
+export const solutions: Array<TechnologyModel> = [
+  {
+    isTitle: true,
+    title: "Problems we are solving",
+  },
+  {
+    isTitle: false,
+    imgUrl: "/img/Waste sorting.png",
+    title: "Disposal of Waste",
+    text: "Reckless disposal of waste that clogs drainages causes flooding, transmit diseases, harm life on land, and below the sea. ",
+  },
+  {
+    isTitle: false,
+    imgUrl: "/img/SheetpaperTrash.png",
+    title: "Delay in waste collection",
+    text: "Delay in waste collection which leads to the overflow of their waste bin and comes with attendant health issues. ",
+  },
+  {
+    isTitle: false,
+    imgUrl: "/img/Payment failed.png",
+    title: "Payment",
+    text: "Payment & cost recovery challenge in waste management ecosystem ",
+  },
+  {
+    isTitle: false,
+    imgUrl: "/img/Inclusive Education.png",
+    title: "Poor Inclusion",
+    text: "Poor inclusion (gender, financial, technology, status)",
+  },
+  {
+    isTitle: false,
+    imgUrl: "/img/looking through resumes.png",
+    title: "Unemployment",
+    text: "Unemployement for youth and undergraduates",
+  },
+];
+
+export const impact: Array<TechnologyModel> = [
+  {
+    imgUrl: "/img/footprint.png",
+    text: "Reduce carbon footprint with use of tricycles and smart cart",
+  },
+  {
+    imgUrl: "/img/Wind power.png",
+    text: "Empowering communities by creating decent job above national minimum wage.",
+  },
+  {
+    imgUrl: "/img/Proper disposal of garbage.png",
+    text: "Diverting clean sorted materials from landfill & water bodies thus increasing post-consumer material value",
+  },
+  {
+    imgUrl: "/img/Save our planet.png",
+    text: "Empowering ecosystem business operators to strive even in the unavailability of resources.",
+  },
+  {
+    imgUrl: "/img/SheetpaperTrash.png",
+    text: "Securing constant post-consumer materials for aggregators. ",
+  },
+  {
+    imgUrl: "/img/Savings.png",
+    text: "Creating wealth for generating households and informal waste pickers.",
+  },
+];
+export const SDGImageArray = [
+  [
+    {
+      image: "/svg/no_poverty.svg",
+      alt: "no_poverty",
+    },
+    {
+      image: "/svg/reduced_inequalities.svg",
+      alt: "reduced_inequalities",
+    },
+  ],
+  [
+    {
+      image: "/svg/zero_hunger.svg",
+      alt: "zero_hunger",
+    },
+    {
+      image: "/svg/sustainable_cities.svg",
+      alt: "sustainable_cities",
+    },
+  ],
+  [
+    {
+      image: "/svg/good_health.svg",
+      alt: "good_health",
+    },
+    {
+      image: "/svg/climate_action.svg",
+      alt: "climate_action",
+    },
+  ],
+  [
+    {
+      image: "/svg/clean_water.svg",
+      alt: "clean_water",
+    },
+    {
+      image: "/svg/life_below.svg",
+      alt: "life_below",
+    },
+  ],
+  [
+    {
+      image: "/svg/decent_work.svg",
+      alt: "decent_work",
+    },
+    {
+      image: "/svg/life_on.svg",
+      alt: "life_on",
+    },
+  ],
+  [
+    {
+      image: "/svg/industry_innovation.svg",
+      alt: "industry_innovation",
+    },
+    {
+      image: "/svg/partnership.svg",
+      alt: "partnership",
+    },
+  ],
+];
+
+export const SDGImageModalValue = {
+  no_poverty: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641553158/E_GIF_01_dn4czh.gif",
+    title: "No Poverty",
+    subtitle:
+      "Pakam technology solution ensures low-income communities can earn a living and uplift their economic benefit by recycling.",
+  },
+  reduced_inequalities: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641552717/E_GIF_10_ed6s5s.gif",
+    title: "Reduced Inequalities",
+    subtitle:
+      "Pakam is reducing gender inequalities through partnership with aggregators by ensuring that more women are in the process of sort and earning a living from waste processing and sorting. ",
+  },
+  zero_hunger: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641553219/E_GIF_02_mudavg.gif",
+    title: "Zero Hunger",
+    subtitle:
+      "Pakam technology is ensuring that anybody can feed by providing a cleaner environment.  ",
+  },
+  sustainable_cities: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641552780/E_GIF_11_fdrjva.gif",
+    title: "Sustainable Cities & Communities",
+    subtitle:
+      "Pakam technology innovation and other collaborative solutions of recycling, composting, incineration, and bio-digester will change waste management forever and create a sustainable environment for all. ",
+  },
+  good_health: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641553269/E_GIF_03_rcg1zj.gif    ",
+    title: "Good Health & Well Being",
+    subtitle:
+      "Pakam technology solution contributes to good health by ensuring cleaner & healthier environment through proper disposal of waste from the comfort of homes & offices.",
+  },
+  climate_action: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641552872/E_GIF_13_ksrzyy.gif",
+    title: "Climate Action",
+    subtitle:
+      "Pakam Smart city innovation is helping city officials and climate NGOs to create real-time action that protects the environment and reduces climate impact.",
+  },
+  clean_water: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641553304/E_GIF_06_rdov8w.gif",
+    title: "Clean Water & Sanitation",
+    subtitle:
+      "Pakam technology ensures environmental protection by reporting in real-time - indiscriminate dumping of waste in waters and drainages.",
+  },
+  life_below: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641552972/E_GIF_14_dxjgik.gif",
+    title: "Life Below Water",
+    subtitle:
+      "Pakam aims to ensure waste collection from the source increases exponentially from 20% to 100% by eliminating material escape in water and oceans.",
+  },
+  decent_work: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641552972/E_GIF_14_dxjgik.gif",
+    title: "Decent Work & Economic Growth",
+    subtitle:
+      "Pakam model is aimed to create jobs for the informal sector through technology innovation and collaborative incentives. The aim is to change public perception of waste pickers and waste collectors.",
+  },
+  life_on: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641553071/E_GIF_15_imvwea.gif",
+    title: "Life On Land",
+    subtitle:
+      "Pakam aims at reducing and eliminating illegal dumping of waste on roadsides and dump-site, thus reducing plant, animal, and human exposure to hazardous substances.",
+  },
+  industry_innovation: {
+    modalalt: "",
+    url: " https://res.cloudinary.com/codeinstd/image/upload/v1641552593/E_GIF_09_xz2dow.gif",
+    title: "Industry, Innovation & Infrastructure",
+    subtitle:
+      "Adopting Zero waste solution with technology innovation and collaboration, Pakam is building a sustainable industry & infrastructure that will transform people’s live, sustain our planet and generate profit for stakeholders.",
+  },
+  partnership: {
+    modalalt: "",
+    url: "https://res.cloudinary.com/codeinstd/image/upload/v1641553139/E_GIF_17_ejuc36.gif",
+    title: "Partnership For The Goals",
+    subtitle:
+      "Pakam's core value hinges on partnership and collaboration with local & international businesses.",
+  },
+};
+
+export const values = [
+  {
+    imgUrl: ProblemSolvingTeam,
+    text: "Collaboration.",
+  },
+  {
+    imgUrl: OpenUp,
+    text: "Openness.",
+  },
+  {
+    imgUrl: MorphingGreen,
+    text: "Ownership.",
+  },
+  {
+    imgUrl: SocialNetwork,
+    text: "Social Impact",
+  },
+  {
+    imgUrl: Technology,
+    text: "Innovation.",
+  },
+];
+
+export const awards = [
+  "/img/ITU.png",
+  "/img/oxford.png",
+  "/img/wamson.png",
+  "/img/Waste_forum.png",
+  "/img/fabe.png",
+  "/img/nia.png",
+  "/img/fmdo.png",
+  "/img/Uplink.png",
+];
+export const featured = [
+  "/img/Thecable.png",
+  "/img/Eko_Hot.png",
+  "/img/The_Guardian.png",
+  "/img/Waste_forum.png",
+  "/img/bhm.png",
+  "/img/Western_Post.png",
+  "/img/Vanguard.png",
+>>>>>>> e3c661c185a441ac1e29a9d3d8fe35099c7e7a8d
 ];

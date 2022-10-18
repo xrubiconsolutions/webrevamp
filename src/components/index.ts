@@ -16,6 +16,29 @@ export const Container = styled.div`
   }
 `;
 
+export const Row = styled.div`
+  display: flex;
+  margin-right: -15px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+  flex-direction: row;
+`;
+export const Column = styled.div`
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+  @media screen and (max-width: 960px) {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+`;
+
 export const Button = styled.button<{
   icons?: boolean;
   weight?: boolean;

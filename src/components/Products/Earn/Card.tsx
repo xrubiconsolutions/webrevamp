@@ -154,7 +154,7 @@ const Card = ({
           children="Download Now!"
           width={"20px"}
           primary="primary"
-          white={"white"}
+          white="white"
         />
       </ContentContainer>
     </CardWrapper>

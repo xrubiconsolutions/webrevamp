@@ -1,11 +1,10 @@
 import Image from "next/image";
-import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Container } from "..";
 
 const FooterSection = styled.footer`
-  ${tw`flex items-center justify-center gap-8 mt-8 bg-primary`}// background: #F5F6FD;
+  ${tw`flex items-center justify-center gap-8  bg-primary`}// background: #F5F6FD;
 `;
 const FooterContainer = styled.div`
   ${tw`grid lg:grid-cols-3 items-start lg:justify-center gap-5 lg:gap-28 py-10`}
