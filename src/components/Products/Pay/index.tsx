@@ -1,14 +1,14 @@
 import Payaswaste from "./Payaswaste";
 import PayContent from "./PayContent";
-import Kpi from "./Kpi";
 import Footer from "../../Footer/footer";
+import KpiContainer from "./KpiContainer";
 
 const Earn = () => {
   return (
     <>
       <Payaswaste />
       <PayContent />
-      <Kpi />
+      <KpiContainer />
       <Footer />
     </>
   );

@@ -1,22 +1,18 @@
 import KpiBenefits from "./KpiBenefits";
-import {
-  BodyContent,
-  ContainerContent,
-  DescSection,
-  Heading,
-  Paragraph,
-} from "../KPI/styles";
+import { BodyContent, ContainerContent } from "../KPI/styles";
 import { Container } from "../..";
+import KPIHeader from "../KPI/KPIHeader";
+import { payContentArticles } from "../../../utils/data";
 
 const KpiContainer = ({ heading = "", text = "" }) => {
+  const articles = payContentArticles;
   return (
     <BodyContent>
       <Container>
-        <ContainerContent className="pt-20 -mt-20">
-          <DescSection>
-            <Heading>{heading}</Heading>
-            <Paragraph>{text}</Paragraph>
-          </DescSection>
+        <ContainerContent className=" -mt-20">
+          {articles?.map((article) => (
+            <KPIHeader {...article} />
+          ))}
           <KpiBenefits />
         </ContainerContent>
       </Container>

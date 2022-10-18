@@ -1,15 +1,15 @@
 import React from "react";
 import SR from "./SR";
 import SmartContent from "./SmartContent";
-import Kpi from "./Kpi";
 import Footer from "../../Footer/footer";
+import KpiContainer from "./KpiContainer";
 
 const SmartReinforcement = () => {
   return (
     <>
       <SR />
       <SmartContent />
-      <Kpi />
+      <KpiContainer />
       <Footer />
     </>
   );

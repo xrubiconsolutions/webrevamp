@@ -22,6 +22,7 @@ const FeaturesSection = styled.div`
   }
 `;
 
+// smart KPI Features
 const KpiBenefits = () => {
   const articles = kpiFeatures;
   return (

@@ -123,7 +123,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
       "Choose waste category/categories and input the waste quantity in bags.",
       "Your E-wallet is credited as soon as the request is completed by the recycler. EARN-AS-YOU WASTE!!! Recycling made easy.",
     ],
-    reverse: false,
+    reverse: true,
   },
 ];
 
@@ -313,5 +313,12 @@ export const payKpifeatures: Array<FeaturesModel> = [
     imgSrc: GuyPickUpTrash,
     imgAlt: "trash",
     text: "Eliminate overfilling by collecting waste real time",
+  },
+];
+
+export const payContentArticles: Array<KPIData> = [
+  {
+    heading: "Key Perfomance Improvement",
+    text: "Provides a focus for strategic and operational improvement, by helping us create an analytical basis for decision making and help focus attention on what matters most.",
   },
 ];

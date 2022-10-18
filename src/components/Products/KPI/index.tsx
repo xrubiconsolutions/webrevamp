@@ -1,23 +1,22 @@
 import { Container } from "../../index";
-import {
-  BodyContent,
-  ContainerContent,
-  DescSection,
-  Heading,
-  Paragraph,
-} from "./styles";
+import { BodyContent, ContainerContent } from "./styles";
 import Benefit from "./Benefit";
+import KPIHeader from "./KPIHeader";
+import { KPIarticles } from "../../../utils/data";
+import KpiBenefits from "../SmartReinforcement/KpiBenefits";
 
-const KPIContainer = ({ heading = "", text = "" }) => {
+// Testing....
+
+const KPIContainer = () => {
+  const articles = KPIarticles;
   return (
     <BodyContent>
       <Container>
         <ContainerContent className="-mt-20">
-          <DescSection>
-            <Heading>{heading}</Heading>
-            <Paragraph>{text}</Paragraph>
-          </DescSection>
-          <Benefit />
+          {articles?.map((article) => (
+            <KPIHeader {...article} />
+          ))}
+          <KpiBenefits />
         </ContainerContent>
       </Container>
     </BodyContent>

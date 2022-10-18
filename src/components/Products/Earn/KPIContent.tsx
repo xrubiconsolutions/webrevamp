@@ -1,16 +1,16 @@
-import KpiBenefits from "./KpiBenefits";
+import React from "react";
 import { BodyContent, ContainerContent } from "../KPI/styles";
-import { Container } from "../..";
 import KPIHeader from "../KPI/KPIHeader";
-import { payContentArticles } from "../../../utils/data";
 import Benefit from "../KPI/Benefit";
+import { Container } from "../..";
+import { KPIarticles } from "../../../utils/data";
 
-const KpiContainer = () => {
-  const articles = payContentArticles;
+const KPIContent = () => {
+  const articles = KPIarticles;
   return (
     <BodyContent>
       <Container>
-        <ContainerContent className="-mt-20">
+        <ContainerContent className="pt-20 -mt-0">
           {articles?.map((article) => (
             <KPIHeader {...article} />
           ))}
@@ -21,4 +21,4 @@ const KpiContainer = () => {
   );
 };
 
-export default KpiContainer;
+export default KPIContent;

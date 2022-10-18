@@ -15,9 +15,13 @@ import {
   ReverseBack,
 } from "./styles";
 
-export const CardWrapper = styled.div`
-  ${tw`lg:w-full md:w-full md:items-start flex flex-col lg:flex-row lg:justify-between  lg:items-center md:flex-col lg:pt-20`}
+const CardWrapper = styled.div`
+  ${tw`lg:w-full md:w-full md:items-start flex flex-col lg:flex-row  justify-between  lg:items-center md:flex-col lg:pt-20 `}
 `;
+
+// const CardWrapper = styled.div`
+//   ${tw`lg:w-full md:w-full md:items-start flex flex-col lg:flex-row justify-between  lg:items-center md:flex-col lg:pt-20 `}
+// `;
 
 const ImageContainers = styled.div`
   margin: auto;
@@ -124,6 +128,9 @@ const Card = ({
     //   )}
     // </div>
 
+    // <CardWrapper
+    //   className={` md:flex-col lg:${reverse ? "flex-row-reverse" : "row"} `}
+    // >
     <CardWrapper>
       <ImageContainers>
         <ImageImage src={imgSrc} alt={imgAlt}></ImageImage>
