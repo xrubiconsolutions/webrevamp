@@ -12,7 +12,7 @@ const KPIContainer = ({ heading = "", text = "" }) => {
   return (
     <BodyContent>
       <Container>
-        <ContainerContent className="pt-20 -mt-20">
+        <ContainerContent className="-mt-20">
           <DescSection>
             <Heading>{heading}</Heading>
             <Paragraph>{text}</Paragraph>

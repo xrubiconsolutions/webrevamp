@@ -25,36 +25,36 @@ const EarnBenefit = () => {
       imgAlt: "trash",
       text: "Reduce your service cost",
     },
-    {
-      imgSrc: GuyPickUpTrash,
-      imgAlt: "trash",
-      text: "Provide world class service",
-    },
-    {
-      imgSrc: GuyPickUpTrash,
-      imgAlt: "trash",
-      text: "Reduce organization’s carbon footprint",
-    },
-    {
-      imgSrc: GuyPickUpTrash,
-      imgAlt: "trash",
-      text: "Geo-fencing location and global positioning system",
-    },
-    {
-      imgSrc: GuyPickUpTrash,
-      imgAlt: "trash",
-      text: "Eliminate overfilling by collecting waste real time",
-    },
-    {
-      imgSrc: GuyPickUpTrash,
-      imgAlt: "trash",
-      text: "Send optimized route directly to truck drivers",
-    },
-    {
-      imgSrc: GuyPickUpTrash,
-      imgAlt: "trash",
-      text: "Get instant payment on geo payment scheme",
-    },
+    // {
+    //   imgSrc: GuyPickUpTrash,
+    //   imgAlt: "trash",
+    //   text: "Provide world class service",
+    // },
+    // {
+    //   imgSrc: GuyPickUpTrash,
+    //   imgAlt: "trash",
+    //   text: "Reduce organization’s carbon footprint",
+    // },
+    // {
+    //   imgSrc: GuyPickUpTrash,
+    //   imgAlt: "trash",
+    //   text: "Geo-fencing location and global positioning system",
+    // },
+    // {
+    //   imgSrc: GuyPickUpTrash,
+    //   imgAlt: "trash",
+    //   text: "Eliminate overfilling by collecting waste real time",
+    // },
+    // {
+    //   imgSrc: GuyPickUpTrash,
+    //   imgAlt: "trash",
+    //   text: "Send optimized route directly to truck drivers",
+    // },
+    // {
+    //   imgSrc: GuyPickUpTrash,
+    //   imgAlt: "trash",
+    //   text: "Get instant payment on geo payment scheme",
+    // },
   ];
 
   return (

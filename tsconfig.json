@@ -20,11 +20,12 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/product/index.jsx",
-    "src/components/Products/KPI/Benefit.jsx",
+    "src/components/Products/KPI/Benefit.tsx",
     "src/components/Products/index.jsx",
-    "src/components/Products/Flex.jsx",
+    "src/components/Products/Flex.tsx",
     "src/components/Products/Earn/Earnaswaste.tsx",
-    "src/components/Products/Pay/Payaswaste.jsx"
+    "src/components/Products/Pay/Payaswaste.tsx",
+    "src/components/Products/Earn/Card.jsx"
   ],
   "exclude": ["node_modules"]
 }
