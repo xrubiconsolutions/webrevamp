@@ -2,7 +2,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { Button } from "../..";
 import { ImageImage, ImageContainer } from "../styles";
-import detect from "detect.js";
+
 import {
   ImageContent,
   Paragraph,
@@ -141,17 +141,14 @@ const Card = ({
             </Section>
           );
         })}
+
         <Br />
-        {ua.osfamily === "Andriod" ? (
-          <Button
-            children="Download Now!"
-            width={"20px"}
-            primary="primary"
-            white={"white"}
-          />
-        ) : (
-          ""
-        )}
+        <Button
+          children="Download Now!"
+          width={"20px"}
+          primary="primary"
+          white={"white"}
+        />
       </ContentContainer>
     </CardWrapper>
   );
