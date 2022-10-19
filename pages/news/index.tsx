@@ -1,10 +1,9 @@
-import NewsMedia from "../../src/components/News/News&Media";
-
+import Hero from "../../src/components/News/Hero";
 const index = () => {
   return (
     <>
-      <div className="bg-secondary">
-        <NewsMedia />
+      <div className="bg-red-500">
+        <Hero />
       </div>
     </>
   );

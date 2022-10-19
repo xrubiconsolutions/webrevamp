@@ -4,7 +4,7 @@ const FlexContainer = ({
   text = "",
   reverse = true,
   imgAlt = "",
-  imgSrc = null,
+  imgSrc = "",
 }) => {
   return (
     <>
