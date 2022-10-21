@@ -10,7 +10,7 @@ const FaqSection = styled.section`
 const FaqHeader = styled.header`
   ${tw`mt-4 flex flex-col space-y-3`}
 `;
-const FaqHeaderH1 = styled.section`
+const FaqHeaderH1 = styled.h1`
   ${tw`font-extrabold text-5xl text-blak-100 text-center `}
 `;
 const FaqHeaderP = styled.section`

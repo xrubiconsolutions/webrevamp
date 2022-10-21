@@ -4,7 +4,6 @@ import Image from "next/image";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Button, Container } from "../src/components";
-import Footer from "../src/components/Footer/footer";
 import Hero from "../src/components/UI/hero/hero";
 import Members from "../src/components/UI/members";
 import GlanceCards from "../src/components/UI/PakamAtGlance/glanceCards";
@@ -48,10 +47,10 @@ const Home: NextPage = () => {
           <BannerCaption>
             <BannerCaptionText>
               Earn Extra Cash today by becoming a <br />
-              <span>wastebanc</span> agent, for more info 👉🏾
+              <span>wastebanc</span> agent, for more info
             </BannerCaptionText>
             <BtnContainer>
-              <Button>Contact Us</Button>
+              <Button>Register</Button>
             </BtnContainer>
           </BannerCaption>
         </Container>

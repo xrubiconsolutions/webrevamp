@@ -13,10 +13,11 @@ const BannerSlideTitle = styled.h4`
 
 type props = {
   title: string;
+  classname: string;
   imgUrl: Array<string>;
 };
 
-const BannerSlide: FC<props> = ({ title, imgUrl }) => {
+const BannerSlide: FC<props> = ({ title, imgUrl, classname }) => {
   return (
     <BannerSlideContainer>
       <BannerSlideTitle>{title}</BannerSlideTitle>
@@ -37,7 +38,7 @@ const BannerSlide: FC<props> = ({ title, imgUrl }) => {
                 src={el}
                 width={200}
                 height={64}
-                className="object-contain !ml-2 lg:!ml-8"
+                className={classname}
               />
             ))}
           </div>
