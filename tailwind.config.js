@@ -18,7 +18,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         "goal-pattern": "url('/svg/pattern.svg')",
         "value-pattern": "url('/svg/valueBg.svg')",
-        footer: "url('/svg/bankeasybg.svg')",
+        "header-bg": "url('/svg/bg.svg')",
       }),
       animation: {
         joined: "joined 3s ease-in-out",
@@ -43,6 +43,7 @@ module.exports = {
       },
       fontFamily: {
         playball: ["Playball", "cursive"],
+        Raleway: ["Raleway", "sans-serif"],
       },
     },
   },

@@ -70,7 +70,7 @@ const Hero = () => {
             </HeroH1>
             <HeroP>Enabling people, planet, and profit .</HeroP>
             <HeroBtns>
-              <HeroBtnsLinkImg href="">
+              <HeroBtnsLinkImg href="https://apps.apple.com/ng/app/pakam-household-recycling-app/id1539296957">
                 <HeroBtnsImg
                   src="/svg/app store badge.svg"
                   alt="appstore"
@@ -78,7 +78,7 @@ const Hero = () => {
                   height={73}
                 />
               </HeroBtnsLinkImg>
-              <HeroBtnsLinkImg href="">
+              <HeroBtnsLinkImg href="https://play.google.com/store/apps/details?id=com.pakamcustomer">
                 <HeroBtnsImg
                   src="/svg/get-it-on-google-play-badge.svg"
                   alt="playstore"
@@ -88,6 +88,7 @@ const Hero = () => {
               </HeroBtnsLinkImg>
             </HeroBtns>
           </HeroCol>
+
           <HeroCol>
             <HeroImg>
               <Image
