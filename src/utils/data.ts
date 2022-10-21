@@ -14,7 +14,27 @@ import Business from "/public/img/Business.png";
 import Pakam from "/public/img/Pakam.png";
 import Image1 from "/public/img/Image1.png";
 import Image2 from "/public/img/Image2.png";
-import Image3 from "/public/img/Image3.png";
+import Image4 from "/public/img/image53.png";
+import Image5 from "/public/img/image53-1.png";
+import Image6 from "/public/img/image56.png";
+import Image7 from "/public/img/image57.png";
+import Image8 from "/public/img/image28.png";
+import Image9 from "/public/img/image31.png";
+import Image10 from "/public/img/image28-2.png";
+import Image11 from "/public/img/image28-1.png";
+import Image12 from "/public/img/image28-3.png";
+import Image13 from "/public/img/image28-4.png";
+import Image14 from "/public/img/image31-2.png";
+import Image15 from "/public/img/image31-3.png";
+import Image16 from "/public/img/image31-4.png";
+import PR from "/public/img/PressRelease.png";
+import Interview1 from "/public/img/Interview1.png";
+import Interview2 from "/public/img/Interview2.png";
+import Interview3 from "/public/img/Interview3.png";
+import Pub1 from "/public/img/Pub1.png";
+import Pub2 from "/public/img/Pub2.png";
+import Pub3 from "/public/img/Pub3.png";
+import Group from "/public/img/GRealease.png";
 
 export interface TechnologyModel {
   imgUrl?: any;
@@ -91,7 +111,7 @@ interface EarnWasteModel {
   reverse: boolean;
 }
 
-interface EarnWasteContentModel {
+export interface EarnWasteContentModel {
   imgSrc: any;
   imgAlt: string;
   header1: string;
@@ -99,8 +119,6 @@ interface EarnWasteContentModel {
   reverse: boolean;
   sub_text: Array<string>;
 }
-
-// Array<Record<string, any>>
 
 interface KPIData {
   heading: string;
@@ -675,7 +693,252 @@ export const featured = [
   "/img/Vanguard.png",
 ];
 
-export const NewsMediaArticles = [
+interface NewsMediaModel {
+  imgSrc: any;
+  imgAlt: string;
+  headline: string;
+  subtext: string;
+  link: string;
+  info: { imgSrc: any; text: string }[];
+  dates: { imgSrc: any; text: string }[];
+  bg?: boolean;
+  color?: boolean;
+  decoration?: boolean;
+}
+
+export const NewsMediaArticles: Array<NewsMediaModel> = [
+  {
+    imgSrc: Image4,
+    headline:
+      "LAWMA should commence prosecution of resident without wastebin in october",
+    subtext:
+      " The Lagos State Waste Management Authority (LAWMA) has pledged to commence prosecution of households without waste bins in the state from October 1, 2022.  ",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 20, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image5,
+    headline: "Lagos Without traffic pollution ",
+    subtext:
+      " Two hundred thousand tons of waste produced in Nigeria ends up in the ocean every year, according to estimates by the World Economic Forum.",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 14, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image6,
+    headline: '"Pakam" the mobile application for waste recycling in Lagos',
+    subtext:
+      'While plastic pollution affects the soil and water bodies in Nigeria, the government of this West African country is encouraging the start-up Pakam Technology whose mobile application "Pakam" has been contributing...',
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 13, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image7,
+    headline: "Waste managers in Nigeria meets, address recycling",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 12, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image8,
+    headline:
+      "LAWMA sets to make household ownership of wastebin mandatory by october 1st",
+    subtext:
+      "Lagos Waste Management Authority (LAWMA) has stated poise to ensure all households across the state own waste bins by October 1st as the agency celebrates the 3rd anniversary of the Lagos Recycle Initiative.",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 10, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image9,
+    headline: "LAWMA marks 3rd anniversary of recyclers initiative",
+    subtext:
+      "Lagos Waste Management Authority (LAWMA) has celebrated the 3rd anniversary of the Lagos Recycle Initiative, launched three years ago, to introduce waste sorting at source for recycling purposes, to tackle the challenge of plastic...",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 10, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image10,
+    headline: "Lagos sets pace in turning trash to treasure",
+    subtext:
+      "The Lagos State Government has said it will alleviate poverty by using waste recycling processes to create jobs for women across the state",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "June 21, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image11,
+    headline: "Waste recycling will create job for women",
+    subtext:
+      "From creating local equipment to aid waste disposal to forming partnerships with the private sector, Lagos State is setting up a winning model on how to formalise waste...",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "March 23, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image12,
+    headline: "From trash to cash",
+    subtext:
+      "“Many corporations have reengineered their operations to minimise their environmental impact... ",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "November 16, 2021",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image7,
+    headline: "Recycling enthusiast avocate change in waste disposal",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Oct 4, 2021",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image13,
+    headline:
+      "Graduate of economics wins $3,500 Ekoclimation prize for innovation in fertiliser",
+    subtext:
+      "Adegoke Adewale, a graduate of Economics from the University of Ado Ekiti, and his team on Friday emerged the first position winner with $3,500 prize at the final contest...",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 13, 2022",
+      },
+    ],
+  },
+
   {
     imgSrc: Image1,
     headline:
@@ -684,7 +947,20 @@ export const NewsMediaArticles = [
       "With Dr. Dolapo Fasawe as the general manager, the agency has grown in leaps and bounds since she assumed office on August 19, 2019.",
     imgAlt: "Lasepa GM",
     link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "August 19, 2021",
+      },
+    ],
   },
+
   {
     imgSrc: Image2,
     headline:
@@ -693,22 +969,233 @@ export const NewsMediaArticles = [
       "Lagos State is transiting from traditional waste management to conversion of waste materials – an innovation that is projected to generate 6,000 jobs.",
     imgAlt: "Babajide Sanwo-olu",
     link: "https://lagosstate.gov.ng/blog/2021/04/29/sanwo-olu-moves-to-create-6000-jobs-as-lagos-adopts-waste-conversion/",
+
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "August 19, 2021",
+      },
+    ],
   },
 
   {
-    imgSrc: Image3,
-    headline: "LAWMA records impressive start to Lagos recycle initiative",
+    imgSrc: Image14,
+    headline: "Lawma records, impressive to Lagos recycle initiative ",
     subtext:
       "Following the commencement of the Lagos Recycle Initiative, geared towards addressing the menace of plastic pollution in the state.",
-    imgAlt: "Recycle Truck",
-    link: "https://www.ekohotblog.com/2021/03/01/176149/",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "August 17, 2021",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image15,
+    headline: "Lawma continues to improve on waste mangement strategy. ",
+    subtext:
+      "It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "August 15, 2021",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Image16,
+    headline:
+      "Lagos showcase 102 trucks, 100 locally assembled bins to tackle waste ",
+    subtext:
+      "“Worried by resurgence of refuse in Lagos, the State Government, yesterday, unveiled 102 new truck waste collectors and 100 bins to improve waste collection in the metropolis..",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "August 5, 2021",
+      },
+    ],
+  },
+];
+
+export const PressRelase: Array<NewsMediaModel> = [
+  {
+    imgSrc: Group,
+    headline: "Lawma countinues to improve on waste mangement strategy.",
+    subtext:
+      " “It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/LightUser.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/LightDiscovery.png",
+        text: "October,2021",
+      },
+    ],
+    bg: true,
+    color: true,
+    decoration: true,
+  },
+];
+
+export const InterviewData: Array<NewsMediaModel> = [
+  {
+    imgSrc: Interview1,
+    headline:
+      "Cleaning up Lagos: How a startup is turning waste into a scarce resources that you and i will beg for one day.",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "October,2021",
+      },
+    ],
+  },
+
+  {
+    imgSrc: Interview2,
+    headline: "Recycle and Make Money",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "June 30,2021",
+      },
+    ],
   },
   {
-    imgSrc: Image3,
-    imgAlt: "LAWMA GM",
-    headline: "LAWMA’ll continue to improve on Waste Management Strategy",
-    subtext:
-      "“It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
-    link: "https://westernpostnigeria.com/lagos-recycle-we-must-continue-to-evolve-and-change-our-mindset-about-waste-lawma-md-odumboni-says-at-second-interactive-session/",
+    imgSrc: Interview3,
+    headline: "LAWMA Rewards Recyclers, Encourages Others",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "May 30,2021",
+      },
+    ],
+  },
+];
+
+export const PublicationData: Array<NewsMediaModel> = [
+  {
+    imgSrc: Pub2,
+    headline: "Circularity in Nigeria",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "July 20,2021",
+      },
+    ],
+  },
+  {
+    imgSrc: Pub3,
+    headline: "Plastic polution: Can recycling help save Lagos?",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "July 20,2021",
+      },
+    ],
+  },
+  {
+    imgSrc: Pub1,
+    headline: "Waste management in Lagos: The realities?",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    info: [
+      {
+        imgSrc: "/img/LightUser.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/LightDiscovery.png",
+        text: "October,2021",
+      },
+    ],
+    // bg: true,
+    // color: true,
+    // decoration: false,
   },
 ];

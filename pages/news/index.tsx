@@ -1,8 +1,8 @@
-import Hero from "../../src/components/News/Hero";
+import Hero from "../../src/components/UI/News/Hero";
 const index = () => {
   return (
     <>
-      <div className="bg-red-500">
+      <div className="">
         <Hero />
       </div>
     </>

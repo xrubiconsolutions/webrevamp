@@ -19,13 +19,13 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/product/index.jsx",
-    "src/components/Products/KPI/Benefit.tsx",
+    "pages/products/index.jsx",
+    "src/components/UI/Products/KPI/Benefit.tsx",
     "src/components/Products/index.jsx",
-    "src/components/Products/Flex.tsx",
-    "src/components/Products/Earn/Earnaswaste.tsx",
-    "src/components/Products/Pay/Payaswaste.tsx",
-    "src/components/Products/Earn/Card.jsx"
+    "src/components/UI/Products/Flex.tsx",
+    "src/components/UI/Products/Earn/Earnaswaste.tsx",
+    "src/components/UI/Products/Pay/Payaswaste.tsx",
+    "src/components/UI/Products/Earn/Card.jsx"
   ],
   "exclude": ["node_modules"]
 }
