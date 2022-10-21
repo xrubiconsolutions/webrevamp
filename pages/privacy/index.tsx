@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import BodyContainer from "../../src/components/BodyContainer";
-import PayContent from "../../src/components/Products/Pay/PayContent";
 import PrivacyCollectors from "../../src/components/UI/privacy/PrivacyCollectors";
 import PrivacyGenerators from "../../src/components/UI/privacy/PrivacyGenerators";
 
