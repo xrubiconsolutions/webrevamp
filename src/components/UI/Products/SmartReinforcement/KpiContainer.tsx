@@ -9,7 +9,7 @@ const KpiContainer = ({ heading = "", text = "" }) => {
   return (
     <BodyContent>
       <Container>
-        <ContainerContent className=" -mt-20">
+        <ContainerContent>
           {articles?.map((article) => (
             <KPIHeader {...article} />
           ))}

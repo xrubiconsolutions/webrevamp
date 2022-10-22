@@ -23,6 +23,19 @@ export const Texts = styled.div`
   //   top: 0;
   //   background: rgba(0, 0, 0, 0.1);
   }
+
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 134px initial;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  ${tw`flex flex-col items-center justify-center h-full lg:h-[300px] space-y-10 lg:space-y-5 p-4 lg:p-14 bg-header-bg`}
+
+
   h3 {
     ${tw`text-xl  tracking-normal md:text-3xl  leading-[60px] md:leading-[80px] font-light `}
   }

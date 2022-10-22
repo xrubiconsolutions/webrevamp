@@ -8,7 +8,7 @@ const FlexContainer = ({
 }) => {
   return (
     <>
-      <Flex>
+      <Flex reverse={reverse ? true : false}>
         <div>
           <Paragraph>{text}</Paragraph>
         </div>

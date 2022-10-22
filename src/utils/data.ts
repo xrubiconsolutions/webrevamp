@@ -35,6 +35,18 @@ import Pub1 from "/public/img/Pub1.png";
 import Pub2 from "/public/img/Pub2.png";
 import Pub3 from "/public/img/Pub3.png";
 import Group from "/public/img/GRealease.png";
+import EP from "/public/img/EarnPay.png";
+import Dashboard from "/public/img/DashboardScreen.png";
+import PayDash from "/public/img/PayDashboard.png";
+import PayContent from "/public/img/PayContent.png";
+import PayPhone from "/public/img/PayPhone.png";
+import SmartPhone from "/public/img/SmartPhone.png";
+import EarnPhone from "/public/img/EarnPhone.png";
+import Route from "/public/img/route.png";
+import Globe from "/public/img/globe.png";
+import GlobeEU from "/public/img/globeEu.png";
+import BusWoman from "/public/img/BusinessWoman.png";
+import SmartRF from "/public/img/SmartRF.png";
 
 export interface TechnologyModel {
   imgUrl?: any;
@@ -133,16 +145,16 @@ interface FeaturesModel {
 
 export const earnarticles: Array<EarnWasteModel> = [
   {
-    text: "Earn-as-You Waste is a recycling service that connects waste generators to waste collectors/aggregators in real time, ensuring individuals capture value for their waste. The Earn-as-You Waste mobile application includes a household app which enables household members (as an individual or commercial user like schools, businesses etc.) to schedule for a “pick-up”  or “drop-off” of their recyclable waste.The App features include multi-selection of waste categories, in-app chat with collectors, in-app direct to call, community chat, E-wallet, and learning resources on waste matters. With the Earn-as-You Waste App, users can easily sort their trash from source, schedule collection, and receive monetary value of this trash in their wallet. Users can simply transfer their  money directly to their bank accounts or donate to a charity of their choice. Experience a seamless flow while using your Earn-as-You Waste application.",
+    text: "Earn-as-You Waste is a recycling service that connects waste generators to waste collectors/aggregators in real time, ensuring individuals capture value for their waste. The Earn-as-You Waste mobile application includes a household app which enables household members (as an individual or commercial user like schools, businesses etc.) to schedule for a “pick-up” or “drop-off” of their recyclable waste. With the Earn-as-You Waste App, users can easily sort their trash from source, schedule collection, and receive monetary value of this trash in their wallet. Experience a seamless flow while using your Earn-as-You Waste application.",
     imgAlt: "",
-    imgSrc: PSR,
+    imgSrc: EP,
     reverse: false,
   },
 ];
 
 export const earncontentarticles: Array<EarnWasteContentModel> = [
   {
-    imgSrc: PSR,
+    imgSrc: EP,
     imgAlt: "pickup",
     header1: "Pickup Schedule Process",
     header2: "How It Works",
@@ -158,7 +170,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
   },
 
   {
-    imgSrc: PSR,
+    imgSrc: EarnPhone,
     imgAlt: "drop off",
     header1: "Drop off Schedule Process",
     header2: "How It Works",
@@ -171,7 +183,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
       "Choose waste category/categories and input the waste quantity in bags.",
       "Your E-wallet is credited as soon as the request is completed by the recycler. EARN-AS-YOU WASTE!!! Recycling made easy.",
     ],
-    reverse: true,
+    reverse: false,
   },
 ];
 
@@ -211,39 +223,42 @@ export const KPIFeaturesInfo: Array<FeaturesModel> = [
     text: "Know your daily pickup",
   },
   {
-    imgSrc: Paper,
+    imgSrc: Business,
     imgAlt: "trash",
     text: "Reduce your service cost",
   },
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: Globe,
     imgAlt: "trash",
     text: "Provide world class service",
   },
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: Pakam,
     imgAlt: "trash",
     text: "Reduce organization’s carbon footprint",
   },
+
   {
     imgSrc: Paper,
     imgAlt: "trash",
-    text: "Geo-fencing location and global positioning system",
-  },
-  {
-    imgSrc: GuyPickUpTrash,
-    imgAlt: "trash",
     text: "Eliminate overfilling by collecting waste real time",
   },
+
   {
-    imgSrc: Business,
+    imgSrc: Route,
     imgAlt: "trash",
     text: "Send optimized route directly to truck drivers",
   },
+
   {
-    imgSrc: Business,
+    imgSrc: BusWoman,
     imgAlt: "trash",
     text: "Get instant payment on geo payment scheme",
+  },
+  {
+    imgSrc: GlobeEU,
+    imgAlt: "trash",
+    text: "Geo-fencing location and global positioning system",
   },
 ];
 
@@ -251,7 +266,7 @@ export const Payarticles: Array<EarnWasteModel> = [
   {
     text: "Pay-as-You Waste is a full waste management application that enables citizens to properly dispose their non-recyclable and specialized waste to collectors. This service solves the day to day problem of delayed waste collection by PSP or waste management agencies. Pay-as-You Waste ensures an efficient and effective waste management system to eliminate the overflow of waste bins and environmental pollution in general. This service allows waste to be collected at just a click at an affordable pricing rate for  individuals and businesses. ",
     imgAlt: "",
-    imgSrc: PSR,
+    imgSrc: PayDash,
     reverse: true,
   },
 ];
@@ -260,14 +275,14 @@ export const Smartarticles: Array<EarnWasteModel> = [
   {
     text: "The Pakam Smart Enforcement is an integrated environmental reporting platform that provides an enabling environment for the public to report environmental infractions to environmental agencies in a faste, better, and unified manner. It also allows the regulatory agencies to connect with the reporting public for easy access to all infractions reported.",
     imgAlt: "Pakam Smart Reinforcement",
-    imgSrc: PSR,
+    imgSrc: SmartRF,
     reverse: false,
   },
 ];
 
 export const payContentarticles: Array<EarnWasteContentModel> = [
   {
-    imgSrc: PSR,
+    imgSrc: PayPhone,
     imgAlt: "pickup",
     header1: "",
     header2: "How It Works",
@@ -286,15 +301,15 @@ export const payContentarticles: Array<EarnWasteContentModel> = [
 
 export const smartContentarticles: Array<EarnWasteContentModel> = [
   {
-    imgSrc: PSR,
+    imgSrc: SmartPhone,
     imgAlt: "pickup",
     header1: "",
     header2: "How It Works",
     sub_text: [
-      "Download and install the (Pakam Waste Disposal)  from google play store and/or IOS app store.",
-      "Select your type of user (household or commercial) and create an account.",
+      "Download and install the Pakam User from google play store and/or IOS app store.",
+      "Create an account to gain access into the app",
       "Have a recycler/collector routed to your location for waste pickup.",
-      " Schedule for a waste (non-recyclable) pickup by entering the required information.",
+      " Click on the 'report request' to make a ive video of any environmental incident happening around you ",
       "A nearby collector will  accept your schedule and get routed to your                                                        location to complete the pickup.",
       "Your monthly bill invoice would be sent for payment.",
     ],
@@ -304,17 +319,17 @@ export const smartContentarticles: Array<EarnWasteContentModel> = [
 
 export const kpiFeatures: Array<FeaturesModel> = [
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: GlobeEU,
     imgAlt: "trash",
     text: "Geo fencing and global positioning",
   },
   {
-    imgSrc: Paper,
+    imgSrc: Route,
     imgAlt: "trash",
     text: "Send optimise routes directly to environmental agencies",
   },
   {
-    imgSrc: Business,
+    imgSrc: Globe,
     imgAlt: "trash",
     text: "Provide world class service.",
   },
@@ -710,11 +725,11 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   {
     imgSrc: Image4,
     headline:
-      "LAWMA should commence prosecution of resident without wastebin in october",
+      "LAWMA to commence prosecution of resident without wastebin in october",
     subtext:
       " The Lagos State Waste Management Authority (LAWMA) has pledged to commence prosecution of households without waste bins in the state from October 1, 2022.  ",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://guardian.ng/news/lawma-to-commence-prosecution-of-residents-without-waste-bin-in-october/",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -735,7 +750,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       " Two hundred thousand tons of waste produced in Nigeria ends up in the ocean every year, according to estimates by the World Economic Forum.",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.africarivista.it/lagos-senza-inquinamento-da-plastica/206849/",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -756,7 +771,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       'While plastic pollution affects the soil and water bodies in Nigeria, the government of this West African country is encouraging the start-up Pakam Technology whose mobile application "Pakam" has been contributing...',
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.afrik21.africa/en/nigeria-pakam-the-mobile-application-for-waste-recycling-in-lagos/",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -776,7 +791,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     headline: "Waste managers in Nigeria meets, address recycling",
     subtext: "",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.youtube.com/watch?v=PJd7CL9i0o4",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -798,7 +813,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       "Lagos Waste Management Authority (LAWMA) has stated poise to ensure all households across the state own waste bins by October 1st as the agency celebrates the 3rd anniversary of the Lagos Recycle Initiative.",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://nationaldailyng.com/lawma-set-to-make-households-ownership-of-waste-bin-mandatory-by-october-1st/?utm_source=rss&utm_medium=rss&utm_campaign=lawma-set-to-make-households-ownership-of-waste-bin-mandatory-by-october-1st",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -819,7 +834,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       "Lagos Waste Management Authority (LAWMA) has celebrated the 3rd anniversary of the Lagos Recycle Initiative, launched three years ago, to introduce waste sorting at source for recycling purposes, to tackle the challenge of plastic...",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://thegeniusmedia.com.ng/2022/09/10/lawma-marks-3rd-anniversary-of-lagos-recycle-initiative/?utm_source=rss&utm_medium=rss&utm_campaign=lawma-marks-3rd-anniversary-of-lagos-recycle-initiative",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -840,7 +855,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       "The Lagos State Government has said it will alleviate poverty by using waste recycling processes to create jobs for women across the state",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://businessday.ng/energy/article/lagos-sets-pace-in-turning-trash-to-treasure/",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -882,7 +897,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       "“Many corporations have reengineered their operations to minimise their environmental impact... ",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://thenationonlineng.net/from-trash-to-cash/",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -902,7 +917,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     headline: "Recycling enthusiast avocate change in waste disposal",
     subtext: "",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.youtube.com/watch?v=iUyFA-aplgk",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -924,7 +939,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       "Adegoke Adewale, a graduate of Economics from the University of Ado Ekiti, and his team on Friday emerged the first position winner with $3,500 prize at the final contest...",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://tribuneonlineng.com/graduate-of-economics-wins-3500-ekoclimathon-prize-for-innovation-in-fertiliser/",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -990,7 +1005,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       "Following the commencement of the Lagos Recycle Initiative, geared towards addressing the menace of plastic pollution in the state.",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "hhttps://www.ekohotblog.com/2021/03/01/176149/",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -1011,7 +1026,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     subtext:
       "It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://westernpost.ng/ ",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -1056,7 +1071,7 @@ export const PressRelase: Array<NewsMediaModel> = [
     subtext:
       " “It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "",
     info: [
       {
         imgSrc: "/img/LightUser.png",
@@ -1082,7 +1097,7 @@ export const InterviewData: Array<NewsMediaModel> = [
       "Cleaning up Lagos: How a startup is turning waste into a scarce resources that you and i will beg for one day.",
     subtext: "",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.linkedin.com/pulse/cleaning-up-lagos-how-nigerian-startup-turning-waste-/?trackingId=3OGTtNddjUDMAKuE8%2BzXhw%3D%3D",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -1102,7 +1117,7 @@ export const InterviewData: Array<NewsMediaModel> = [
     headline: "Recycle and Make Money",
     subtext: "",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.youtube.com/watch?v=5e8S_93xk1g",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -1121,7 +1136,7 @@ export const InterviewData: Array<NewsMediaModel> = [
     headline: "LAWMA Rewards Recyclers, Encourages Others",
     subtext: "",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.youtube.com/watch?v=6BEYg3-g47I",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -1143,7 +1158,7 @@ export const PublicationData: Array<NewsMediaModel> = [
     headline: "Circularity in Nigeria",
     subtext: "",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy83N2RhMzE2OC9wb2RjYXN0L3Jzcw/episode/NGRjMDQzM2QtN2M1MS00NDBhLWJlMjctOGFiZTRiNzA4YWE5?ep=14",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -1162,7 +1177,7 @@ export const PublicationData: Array<NewsMediaModel> = [
     headline: "Plastic polution: Can recycling help save Lagos?",
     subtext: "",
     imgAlt: "Pakam",
-    link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
+    link: "https://www.youtube.com/watch?v=nj0maJU-0vA",
     info: [
       {
         imgSrc: "/img/user.png",
@@ -1197,5 +1212,64 @@ export const PublicationData: Array<NewsMediaModel> = [
     // bg: true,
     // color: true,
     // decoration: false,
+  },
+];
+
+export interface ReviewData {
+  name: string;
+  role: string;
+  content: string;
+}
+
+export const Review: Array<ReviewData> = [
+  {
+    name: "Hodok Orok",
+    role: "Household User",
+    content:
+      "I had these two bags of plastic waste in my backyard for quite a long, long time now hoping to get a local recycler to come and pick them up. Then i heard of @pakam-ng, an initiative of the Lagos State Govt. @moelagos @lawma-gov. I called Mr. T @adewole-taiwo who explained to me how the Pakam app works and last week, I requested a pick-up and the response was swift.",
+  },
+
+  {
+    name: "Micheal Ogunleye",
+    role: "Household User",
+    content: "I recommend for every household",
+  },
+
+  {
+    name: "Micheal Ogunleye",
+    role: "Household User",
+    content:
+      "Once you schedule they will always find you to pickup. Very fast, efficient and reliable. I recommend for every household.",
+  },
+
+  {
+    name: "Godwin Felix",
+    role: "Household User",
+    content: "Good App",
+  },
+
+  {
+    name: "Taiwo Agbesin",
+    role: "Household User",
+    content: "Good App, it satifies my actions",
+  },
+
+  {
+    name: "Jadesola Samuel",
+    role: "Household User",
+    content:
+      "This is the best sustinable app I’ve ever seen. Quality services. Keep up the good work",
+  },
+
+  {
+    name: "Godwin Felix",
+    role: "Household User",
+    content: "A very welcoming innovation",
+  },
+
+  {
+    name: "Oluwatobi Asala",
+    role: "Household User",
+    content: "Superb",
   },
 ];

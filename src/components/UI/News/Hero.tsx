@@ -7,12 +7,14 @@ import PublicationsPodcast from "./Pubs&Podcast";
 import { HC, Texts, TabContainer } from "./styles";
 import { Container } from "../../index";
 
-const Hero = () => {
-  interface PageModel {
-    tab: string;
-    component: any;
-  }
+import BodyContainer from "../../BodyContainer/index";
 
+export interface PageModel {
+  tab: string;
+  component: any;
+}
+
+const Hero = () => {
   const pages: Array<PageModel> = [
     {
       tab: "News & Media ",
@@ -35,9 +37,11 @@ const Hero = () => {
     },
   ];
 
+  const tabNo = 0;
+
   return (
     <HC>
-      <Texts>
+      {/* <Texts>
         <Container>
           <h3>Latest Updates</h3>
           <h2>What the news is saying about us</h2>
@@ -50,7 +54,14 @@ const Hero = () => {
           center={true}
           paddingBottom={true}
         />
-      </TabContainer>
+      </TabContainer> */}
+      <BodyContainer
+        title=""
+        smaller_title="What the news are saying about us"
+        text="Latest Updates"
+        tabNo={tabNo}
+        pages={pages}
+      />
     </HC>
   );
 };

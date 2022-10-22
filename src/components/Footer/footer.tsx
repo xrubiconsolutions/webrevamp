@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Container } from "..";
@@ -13,7 +14,7 @@ const FooterContainerList = styled.div`
   ${tw`space-y-6`}
 `;
 const FooterContainerListP = styled.p`
-  ${tw`text-base text-white`}
+  ${tw`text-base text-white hover:cursor-pointer`}
 `;
 const FooterContainerCenter = styled.p`
   ${tw`space-y-2`}
@@ -61,12 +62,18 @@ const Footer = () => {
           <FooterContainerList>
             <FooterContainerListH6>Legal</FooterContainerListH6>
             <FooterContainerCenter>
-              <FooterContainerListP>Cookies Policy</FooterContainerListP>
+              <FooterContainerListP>
+                <Link href="/cookie">Cookies Policy</Link>
+              </FooterContainerListP>
               <FooterContainerListP>
                 End User License Agreement
               </FooterContainerListP>
-              <FooterContainerListP>Privacy Policy</FooterContainerListP>
-              <FooterContainerListP>Terms and Condition</FooterContainerListP>
+              <FooterContainerListP>
+                <Link href="/privacy">Privacy Policy</Link>
+              </FooterContainerListP>
+              <FooterContainerListP>
+                <Link href="/terms">Terms and Condition</Link>
+              </FooterContainerListP>
             </FooterContainerCenter>
           </FooterContainerList>
           <FooterContainerList>

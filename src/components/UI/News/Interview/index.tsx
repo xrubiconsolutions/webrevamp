@@ -7,13 +7,11 @@ import Card from "../News&Media/Card";
 const Interview = () => {
   return (
     <div className="">
-      <Container>
-        <CardContainer>
-          {InterviewData?.map((data, index) => {
-            return <Card {...data} key={index} />;
-          })}
-        </CardContainer>
-      </Container>
+      <CardContainer>
+        {InterviewData?.map((data, index) => {
+          return <Card {...data} key={index} />;
+        })}
+      </CardContainer>
     </div>
   );
 };

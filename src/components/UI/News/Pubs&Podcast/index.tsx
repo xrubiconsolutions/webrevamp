@@ -7,13 +7,11 @@ const Publications = () => {
   return (
     <>
       <div className="bg-secondary">
-        <Container>
-          <CardContainer>
-            {PublicationData?.map((article, index) => (
-              <Card {...article} key={index} />
-            ))}
-          </CardContainer>
-        </Container>
+        <CardContainer>
+          {PublicationData?.map((article, index) => (
+            <Card {...article} key={index} />
+          ))}
+        </CardContainer>
       </div>
     </>
   );

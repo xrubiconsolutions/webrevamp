@@ -9,7 +9,6 @@ const Earn = () => {
       <Payaswaste />
       <PayContent />
       <KpiContainer />
-      <Footer />
     </>
   );
 };

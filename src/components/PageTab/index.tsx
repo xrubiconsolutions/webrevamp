@@ -4,12 +4,11 @@ import tw from "twin.macro";
 import { FlexContainer, Container } from "..";
 
 const TabsContainer = styled(FlexContainer)<{
-  active?: boolean;
-  center?: boolean;
-  paddingBottom?: boolean;
+  center: boolean;
+  paddingBottom: boolean;
 }>`
-  ${tw`pt-5 text-xs lg:text-base overflow-hidden space-x-5 lg:space-x-20 w-[95%] lg:w-[90%] 2xl:w-3/4 mx-auto overflow-x-hidden`};
-  justify-content: ${({ center }) => center && "space-around"};
+  ${tw`pt-5 text-xs lg:text-base overflow-hidden space-x-5 lg:space-x-20   mx-auto overflow-x-hidden`};
+  justify-content: ${(props) => props.center && "space-around"};
 
   @media (max-width: 768px) {
     justify-content: ${({ center }) => center && "center"};
@@ -24,7 +23,7 @@ const TabsContainer = styled(FlexContainer)<{
   }
 
   > * {
-    ${tw`py-4`}
+    /* ${tw`py-4`} */
   }
 `;
 
@@ -38,7 +37,7 @@ const Tab = styled.p<{ active?: boolean; center?: boolean }>`
   bottom: ${({ center }) => (center ? "0" : "-2px")};
   margin-top: 30px;
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     font-size: 11px;
     letter-spacing: 0.5px;
   }
@@ -54,41 +53,44 @@ const Tab = styled.p<{ active?: boolean; center?: boolean }>`
   @media (min-width: 1024px) {
     font-size: 12.5px;
     letter-spacing: 1px;
-  }
-  &:hover {
-    color: white;
-  }
+  } */
 `;
 
 const PageTab = ({
   title = "",
   pages = [{ tab: "", component: () => <></> }],
   tab = 0,
+  onTabChange,
   ...props
 }) => {
   const [active, setActive] = useState(tab);
   const tabs = pages?.map(({ tab }) => tab);
 
   return (
-    <div>
+    <>
       <div className="bg-primary">
-        <Container>
+        <>
           <TabsContainer {...props}>
             {tabs?.map((tab, idx) => (
               <Tab
                 {...props}
                 key={idx}
                 active={active === idx}
-                onClick={() => setActive(idx)}
+                onClick={() => {
+                  setActive(idx);
+                  if (onTabChange) {
+                    onTabChange(pages[idx].component);
+                  }
+                }}
               >
                 {tab}
               </Tab>
             ))}
           </TabsContainer>
-        </Container>
+        </>
       </div>
-      <div>{pages[active].component}</div>
-    </div>
+      {!onTabChange && <div>{pages[active].component}</div>}
+    </>
   );
 };
 

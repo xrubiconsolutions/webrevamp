@@ -10,7 +10,7 @@ const KPIContent = () => {
   return (
     <BodyContent>
       <Container>
-        <ContainerContent className="pt-10 -mt-0">
+        <ContainerContent>
           {articles?.map((article) => (
             <KPIHeader {...article} />
           ))}

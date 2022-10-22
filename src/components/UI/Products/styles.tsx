@@ -11,10 +11,6 @@ export const OverallContainer = styled.div`
   @media (max-width: 1024px) {
     padding-bottom: 60px;
   }
-
-  @media (max-width: 450px) {
-    // padding-bottom: 50px;
-  }
 `;
 
 export const Heading = styled.h1`
@@ -34,7 +30,6 @@ export const Heading = styled.h1`
     font-size: 25px;
     line-height: 35px;
     padding-top: 40px;
-    // text-align: center;
   }
 
   @media (max-width: 376px) {
@@ -48,14 +43,24 @@ export const Heading = styled.h1`
   }
 `;
 
-export const Flex = styled.div`
+export const Flex = styled.div<{ reverse: boolean }>`
   
-${tw`flex flex-col lg:flex-row  lg: w-full gap-20 lg:mt-8 md:flex-col `}
+${tw`flex flex-col lg:w-full gap-20 lg:mt-20  `}
+flex-direction:${({ reverse }) => (reverse ? "row-reverse" : "row")};
+@media (max-width: 1024px) {
+  flex-direction:column;
+}
 > div:first-child{
-  ${tw`flex lg:w-[65%] md:w-full sm:w-full`}
+  ${tw`flex lg:w-[60%] md:w-full sm:w-full`}
+  @media (max-width:1024px){
+    width:100%;
+  }
 }
 > div:nth-child(2){
-  ${tw`flex lg:w-[30%] md:w-full sm:w-full`}
+  ${tw`flex lg:w-[40%] md:w-full sm:w-full`}
+  @media (max-width:1024px){
+    width:100%;
+  }
 }
   }
 `;
@@ -72,11 +77,12 @@ export const ImageContainer = styled.div`
   margin: auto;
 
   @media (max-width: 1024px) {
-    width: 320px;
+    width: 400px;
     margin-top: -30px;
   }
 
   @media (max-width: 769px) {
+    width: 350px;
     padding-top: 10px;
     padding-bottom: 0px;
   }
@@ -89,6 +95,7 @@ export const ImageContainer = styled.div`
   @media (min-width: 1025px) {
     ${tw`flex`}
     margin:30px 0;
-    width: 370px;
+
+    width: 450px;
   }
 `;

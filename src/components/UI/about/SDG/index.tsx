@@ -155,7 +155,7 @@ const SDG = () => {
                           src={image}
                           alt={alt}
                           onMouseEnter={() => {
-                            handleOpenModal(alt);
+                            handleOpenModal(alt as IValue);
                             setTimeout(closeModal, 3000);
                           }}
                         />

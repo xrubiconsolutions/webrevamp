@@ -1,7 +1,5 @@
 import EarnContent from "./CardContent";
-import Footer from "../../../Footer/footer";
 import Earnaswaste from "./Earnaswaste";
-import KPIContainer from "../KPI";
 import KPIContent from "./KPIContent";
 
 const Earn = () => {
@@ -10,7 +8,6 @@ const Earn = () => {
       <Earnaswaste />
       <EarnContent />
       <KPIContent />
-      <Footer />
     </>
   );
 };
