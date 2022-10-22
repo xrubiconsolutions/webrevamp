@@ -55,6 +55,7 @@ export interface TechnologyModel {
   link?: string;
   description?: string;
   isTitle?: boolean;
+  linkUrl?: string;
 }
 
 export const serve: Array<TechnologyModel> = [
@@ -63,18 +64,21 @@ export const serve: Array<TechnologyModel> = [
     title: "Citizens",
     text: "We are improving citizen engagement to waste management through waste on demand and incentivisation.. ",
     link: "Read more",
+    linkUrl: "/serve/citizens",
   },
   {
     imgUrl: "/svg/Group 625998.svg",
     title: "Business operators",
     text: "We are helping waste businesses to optimize their collection & operations.",
     link: "Read more",
+    linkUrl: "/serve/business-operators",
   },
   {
     imgUrl: "/svg/Group 625997.svg",
     title: "Agencies",
     text: "We are helping government and it’s agencies to build data for insight, track inclusion and build resilience with smart reporting. ",
     link: "Read more",
+    linkUrl: "/serve/agencies",
   },
 ];
 export const subscription: Array<TechnologyModel> = [
@@ -1271,5 +1275,73 @@ export const Review: Array<ReviewData> = [
     name: "Oluwatobi Asala",
     role: "Household User",
     content: "Superb",
+  },
+];
+
+export const citizens = {
+  id: "0",
+  img: "/img/Group 626021.png",
+  imgStart: "",
+  header: "Citizens.",
+  // title: "",
+  text: "Pakam aims to improve citizens engagement in  waste management through waste on-demand solutions and incentivisation, allowing citizens the opportunity to make sense of their waste either through our Earn-as-You Waste (Pakam Recycling) or Pay-as-You Waste (Pakam Waste Disposal) eco-system application.    ",
+};
+
+export const businessOperators = {
+  id: "1",
+  img: "/img/Group 626067.png",
+  imgStart: "start",
+  title: "Business Operators.",
+  text: "Pakam aims to enable the waste management ecosystem businesses by optimizing their collections and operations to ensure a seamless business transaction flow. We help business operators to monitor their assets, track material collection, connect waste materials from generators to collectors, pre-processor, processors, and treatment facilities, e.t.c. We also offer real-time business insight for businesses to operate in a better and competitive environment. Our solution allows businesses in the recycling eco-system to build a stable and sustainable material collection flow directly from source thus increasing value for materials across the value chain. Furthermore, we are creating value for businesses to ensure a seamless cash flow for materials transactions. Our solution has  created a unique  avenue for collectors within the ecosystem to get access to necessary support such as logistics, infrastures etc from investors, industry captains and the government.",
+};
+export const agencies = {
+  id: "2",
+  img: "/img/group-afro-americans-working-together 1.png",
+  imgStart: "",
+  header: "Agencies.",
+  text: "Pakam is proffering solutions for the government and its agencies to build data for insight, track inclusion and build resilience through our smart enforcement and reporting platform. Through our analytic data insight, we are able to empower smart city solutions. Through Pakam, agencies are able to ensure proper guidance for optimum performance within the ecosystem. We are aimed at providing avenues for government agencies  to play an active role in smart city development with system driven innovations. ",
+};
+
+export const contact = [
+  {
+    title: "Send Us a message ",
+    text: "We would love to talk about how we can work together ",
+    link: "Contact Support",
+  },
+  {
+    title: "Have Question? ",
+    text: "Explore our help desk for quick answers to your question  ",
+    link: "View help desk",
+  },
+  {
+    title: "Media and Press ",
+    text: "Get the lastest news and updates about our company and products   ",
+    link: "View help desk",
+  },
+];
+export const contact2 = [
+  {
+    title: "Office Addresss",
+    text: "127E, Ogunlana drive, surulere, Lagos State ",
+    // links: ["/img/facebook.png", "/img/instagram.png", "/img/twitter.png"],
+  },
+  {
+    title: "Support Mail ",
+    text: "info@pakam.ng",
+    // links: ["/img/facebook.png", "/img/instagram.png", "/img/twitter.png"],
+  },
+  {
+    title: "Phone Number",
+    text: "+234 - 912 261 6778 \n +234 - 708 664 6637",
+    // links: ["/img/facebook.png", "/img/instagram.png", "/img/twitter.png"],
+  },
+  {
+    title: "Socials",
+    links: [
+      "/img/facebookGreen.png",
+      "/img/instagramGreen.png",
+      "/img/twitterGreen.png",
+      "/img/whatsappGreen.png",
+    ],
   },
 ];

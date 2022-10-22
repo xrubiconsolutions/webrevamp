@@ -13,7 +13,7 @@ const Awards = () => {
       <BannerSection
         title="Awards and recognition"
         imgUrl={awards}
-        classname="object-contain"
+        classname="object-contain !min-h-[100px] lg:!min-h-full"
         width={240}
         height={100}
       />
