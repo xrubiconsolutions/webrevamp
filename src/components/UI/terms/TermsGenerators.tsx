@@ -4,7 +4,7 @@ import tw from "twin.macro";
 const TermsGeneratorSection = styled.section`
   ${tw`py-20`}
 `;
-const BodyP = styled.p`
+export const BodyP = styled.p`
   ${tw`mb-6`}
 `;
 const Bodyh6 = styled.h6`

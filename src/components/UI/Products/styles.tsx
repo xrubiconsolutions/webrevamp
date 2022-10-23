@@ -51,13 +51,13 @@ flex-direction:${({ reverse }) => (reverse ? "row-reverse" : "row")};
   flex-direction:column;
 }
 > div:first-child{
-  ${tw`flex lg:w-[60%] md:w-full sm:w-full`}
+  ${tw`flex lg:w-[65%] md:w-full sm:w-full`}
   @media (max-width:1024px){
     width:100%;
   }
 }
 > div:nth-child(2){
-  ${tw`flex lg:w-[40%] md:w-full sm:w-full`}
+  ${tw`flex lg:w-[35%] md:w-full sm:w-full`}
   @media (max-width:1024px){
     width:100%;
   }

@@ -16,7 +16,13 @@ const Terms: NextPage = () => {
   const tabNo = 0;
   return (
     <>
-      <BodyContainer title="Terms and Conditions" tabNo={tabNo} pages={pages} />
+      <BodyContainer
+        title="Terms and Conditions"
+        tabNo={tabNo}
+        pages={pages}
+        smaller_title=""
+        text=""
+      />
     </>
   );
 };

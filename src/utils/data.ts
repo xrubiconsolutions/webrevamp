@@ -164,11 +164,11 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
     header2: "How It Works",
     sub_text: [
       "Download and install the app from Android play-store and/or IOS app-store",
-      "Schedule waste pickup at a click from the mobile app.",
-      "Have a recycler/collector routed to your location for waste pickup.",
-      "Have a recycler/collector routed to your location for waste pickup.",
-      "Earn a reward for every completed waste scheduled pickup",
-      "Earn a reward for every completed waste scheduled pickup",
+      "Select your type of user (individual or commercial) and create an account.",
+      "Sign In.",
+      "Click schedule request and select the “schedule pickup” option for your sorted recyclable waste from within the Pakam app",
+      "A nearby collector accepts your schedule and gets routed to your location to complete the pickup.",
+      "Your E-wallet is credited as soon as the request is completed. EARN-AS-YOU WASTE!!! Recycling made easy.",
     ],
     reverse: false,
   },
@@ -181,10 +181,11 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
     sub_text: [
       "Download and install the (Pakam Household Application) from goggle play store and/or IOS app store)",
       "Select your type of user (individual or commercial) and create account.",
-      "Have a recycler/collector routed to your location for waste pickup.",
       "Sign In",
-      "Select your type of user (individual or commercial) and create account.",
+      "Click schedule request and select the “schedule drop-off” option. Select a nearby recycling company for waste for drop-off.",
       "Choose waste category/categories and input the waste quantity in bags.",
+      "Choose a preferred date for waste drop-off ",
+      "Confirm and submit a drop-off request",
       "Your E-wallet is credited as soon as the request is completed by the recycler. EARN-AS-YOU WASTE!!! Recycling made easy.",
     ],
     reverse: false,
@@ -723,6 +724,7 @@ interface NewsMediaModel {
   bg?: boolean;
   color?: boolean;
   decoration?: boolean;
+  inPage?: boolean;
 }
 
 export const NewsMediaArticles: Array<NewsMediaModel> = [
@@ -1091,6 +1093,7 @@ export const PressRelase: Array<NewsMediaModel> = [
     bg: true,
     color: true,
     decoration: true,
+    inPage: true,
   },
 ];
 
@@ -1275,6 +1278,49 @@ export const Review: Array<ReviewData> = [
     name: "Oluwatobi Asala",
     role: "Household User",
     content: "Superb",
+  },
+];
+
+export const ExpertReviewData: Array<ReviewData> = [
+  {
+    name: "Poonam Watine",
+    role: "Knowledge Curation Specialist at WEF",
+    content:
+      "Great understanding and specific experience on the waste sector in Nigeria. The application also seems very user-friendly and innovative.",
+  },
+
+  {
+    name: "Haidy Ear-Dupuy",
+    role: "Senior Social Development  & CCADB",
+    content:
+      "Pakam shows understanding of the problem and have proposed a technological solution for linking the workers who collect plastics. The solution can potentially work in Indonesia, it may just need some adaptation to the situation in the country. ",
+  },
+
+  {
+    name: "Oskar Orling",
+    role: "Entrepreneur,  Member of the WEF expert network",
+    content:
+      "Once you schedule they will always find you to pickup. Very fast, efficient and reliable. I recommend for every household.",
+  },
+
+  {
+    name: "Zoe Lenkiewicz",
+    role: "Technical & social specialist in global waste & resources",
+    content:
+      "After learning about PAKAM from Adeleye Odebunmi, I am not surprised this is gaining so much attention and support. It is a very well thought through and impactful platform-as-a service, offering a win-win-win for waste pickers, resident and local government.Congrats!",
+  },
+
+  {
+    name: "Hammed olowonyo",
+    role: "CEO PROCYCLE",
+    content: "Pakam is the future, very interactive and seamless.",
+  },
+
+  {
+    name: "Jadesola Samuel",
+    role: "Household User",
+    content:
+      "This is the best sustinable app I’ve ever seen. Quality services. Keep up the good work",
   },
 ];
 

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Button } from "../../..";
@@ -51,6 +52,13 @@ const Card = ({
   sub_text,
   reverse,
 }: EarnWasteContentModel) => {
+  const [device, setDevice] = useState("");
+
+  useEffect(() => {
+    var platform = require("platform");
+    setDevice(platform?.os?.family);
+  }, [device]);
+
   return (
     // <div>
     //   {!reverse ? (
@@ -143,15 +151,38 @@ const Card = ({
         })}
 
         <Br />
-        <Button
-          children="Download Now!"
-          icons={false}
-          weight={false}
-          primary={true}
-          white={true}
-          width={true}
-          className=""
-        />
+
+        {device === "Windows" ? (
+          <a
+            href="https://play.google.com/store/apps/details?id=com.pakamcustomer"
+            target="_blank"
+          >
+            <Button
+              children="Download Now!"
+              icons={false}
+              weight={false}
+              primary={true}
+              white={true}
+              width={true}
+              className=""
+            />
+          </a>
+        ) : (
+          <a
+            href="https://apps.apple.com/ng/app/pakam-household-recycling-app/id1539296957"
+            target="_blank"
+          >
+            <Button
+              children="Download Now!"
+              icons={false}
+              weight={false}
+              primary={true}
+              white={true}
+              width={true}
+              className=""
+            />
+          </a>
+        )}
       </ContentContainer>
     </CardWrapper>
   );

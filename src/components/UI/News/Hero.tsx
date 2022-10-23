@@ -5,7 +5,6 @@ import PressRelease from "./PressRealease";
 import Interviews from "./Interview";
 import PublicationsPodcast from "./Pubs&Podcast";
 import { HC, Texts, TabContainer } from "./styles";
-import { Container } from "../../index";
 
 import BodyContainer from "../../BodyContainer/index";
 
@@ -36,6 +35,8 @@ const Hero = () => {
       component: <PublicationsPodcast />,
     },
   ];
+
+  // const tabValue = pages?.map((page) => page.tab);
 
   const tabNo = 0;
 

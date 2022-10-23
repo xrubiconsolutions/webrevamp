@@ -1,5 +1,4 @@
 import Card from "./Card";
-import { Container } from "../../..";
 import { CardContainer } from "./styles";
 import { NewsMediaArticles } from "../../../../utils/data";
 

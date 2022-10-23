@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { FlexContainer, Container } from "..";
@@ -28,32 +28,20 @@ const TabsContainer = styled(FlexContainer)<{
 `;
 
 const Tab = styled.p<{ active?: boolean; center?: boolean }>`
-  ${tw`cursor-pointer mb-0 px-1 relative border-b-2`};
+  ${tw`cursor-pointer mb-0 px-1 relative border-b-2 text-base lg:text-lg tracking-wider md:mt-10`};
   color: ${({ active }) => (active ? "#FFF" : "#A3A3A3")};
 
   border-color: #fff;
   border-style: solid;
   border-bottom-width: ${({ active }) => (active ? "2px" : "0")};
   bottom: ${({ center }) => (center ? "0" : "-2px")};
-  margin-top: 30px;
 
-  /* @media (max-width: 1024px) {
-    font-size: 11px;
-    letter-spacing: 0.5px;
+  @media (max-width: 1024px) {
   }
 
-  @media (max-width: 450px) {
-    font-size: 9px;
-  }
+  // @media (max-width: 435px) {
 
-  @media (max-width: 376px) {
-    font-size: 8px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 12.5px;
-    letter-spacing: 1px;
-  } */
+  // }
 `;
 
 const PageTab = ({
@@ -71,7 +59,7 @@ const PageTab = ({
       <div className="bg-primary">
         <>
           <TabsContainer {...props}>
-            {tabs?.map((tab, idx) => (
+            {tabs?.map((tab, idx, component) => (
               <Tab
                 {...props}
                 key={idx}
@@ -86,6 +74,8 @@ const PageTab = ({
                 {tab}
               </Tab>
             ))}
+
+            {tabs?.map((tab, index) => {})}
           </TabsContainer>
         </>
       </div>

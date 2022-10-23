@@ -3,10 +3,9 @@ import { Container } from "../../../index";
 import { CardContainer } from "../News&Media/styles";
 import { PressRelase } from "../../../../utils/data";
 import Card from "../News&Media/Card";
-import { useRouter } from "next/router";
+// Testing..
 
 const PressRelease = () => {
-  console.log(useRouter().route);
   return (
     <div className="bg-secondary">
       <CardContainer>

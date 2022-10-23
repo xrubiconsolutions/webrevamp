@@ -22,7 +22,7 @@ const TitleH1 = styled.h1`
 `;
 
 const TitleH2 = styled.h1`
-  ${tw`text-white text-4xl text-center font-extrabold md:text-6xl leading-snug md:max-w-[65%] mx-auto`}
+  ${tw`text-white text-2xl text-center font-extrabold   md:text-4xl  lg:text-6xl lg:max-w-[65%] mx-auto`}
 `;
 
 const P = styled.p`
@@ -50,6 +50,9 @@ const BodyContainer: FC<props> = ({
   children,
 }) => {
   const [tabBody, setTabBody] = useState(pages[0].component);
+
+  console.log("The Name of the Tab Component", tabBody.type.name);
+
   const updateBody = (elem: JSX.Element) => {
     setTabBody(elem);
   };
@@ -59,7 +62,11 @@ const BodyContainer: FC<props> = ({
         <P>{text}</P>
         <TitleH1>{title}</TitleH1>
         <Container>
-          <TitleH2>{smaller_title}</TitleH2>
+          <TitleH2>
+            {tabBody.type.name !== "ExpertReview"
+              ? smaller_title
+              : "What experts are saying about us"}
+          </TitleH2>
         </Container>
         <PageTab
           tab={tabNo !== undefined ? tabNo : 0}

@@ -35,7 +35,9 @@ const Card = ({
 }) => {
   return (
     <CardWrapper bg={bg ? true : false}>
-      <ImageHolder src={imgSrc} alt={imgAlt}></ImageHolder>
+      <div>
+        <ImageHolder src={imgSrc} alt={imgAlt}></ImageHolder>
+      </div>
       <Contains col={color ? true : false}>
         <Link href={link} target="_blank">
           <H2 col={color ? true : false} decoration={decoration ? true : false}>
