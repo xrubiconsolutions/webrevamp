@@ -12,11 +12,10 @@ const FlexContainer = ({
         <div>
           <Paragraph>{text}</Paragraph>
         </div>
-        <div>
-          <ImageContainer>
-            <ImageImage src={imgSrc} alt={imgAlt}></ImageImage>
-          </ImageContainer>
-        </div>
+
+        <ImageContainer>
+          <ImageImage src={imgSrc} alt={imgAlt}></ImageImage>
+        </ImageContainer>
       </Flex>
     </>
   );

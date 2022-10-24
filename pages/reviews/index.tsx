@@ -3,7 +3,7 @@ import BodyContainer from "../../src/components/BodyContainer";
 import Testimonial from "../../src/components/UI/Review/Testimonial/index";
 import ExpertReview from "../../src/components/UI/Review/ExpertReview/index";
 import { PageModel } from "../../src/components/UI/News/Hero";
-import TestimonialCard from "../../src/components/UI/Review/Testimonial/TestimonialCard";
+
 
 const index = () => {
   const pages: Array<PageModel> = [

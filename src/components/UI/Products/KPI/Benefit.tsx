@@ -12,7 +12,6 @@ const FeaturesSection = styled.div`
   }
 
   @media (max-width: 450px) {
-    margin-bottom: 70px;
     margin-top: -10px;
   }
 

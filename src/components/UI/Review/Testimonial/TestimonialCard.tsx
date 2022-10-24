@@ -8,14 +8,14 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 const ImageContainer = styled.div`
-  ${tw`absolute top-[10px] right-[-15px]`}
+  ${tw`absolute top-[20px] right-[-15px]`}
 `;
 const TestimonialCard = ({ content, name, role }: ReviewData) => {
   return (
     <Wrapper>
       <div className="relative">
         <ImageContainer>
-          <Image src={Quote} width={130} height={90}></Image>
+          <Image src={Quote} width={150} height={100}></Image>
         </ImageContainer>
         <Name>{name || "Michael Ogunleye"}</Name>
         <Role>{role || "household owners"}</Role>

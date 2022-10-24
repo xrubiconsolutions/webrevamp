@@ -28,7 +28,7 @@ const TabsContainer = styled(FlexContainer)<{
 `;
 
 const Tab = styled.p<{ active?: boolean; center?: boolean }>`
-  ${tw`cursor-pointer mb-0 px-1 relative border-b-2 text-base lg:text-lg tracking-wider md:mt-10`};
+  ${tw`cursor-pointer mb-0 px-1 relative border-b-2 text-xs  lg:text-lg tracking-wider md:mt-10`};
   color: ${({ active }) => (active ? "#FFF" : "#A3A3A3")};
 
   border-color: #fff;
@@ -36,7 +36,9 @@ const Tab = styled.p<{ active?: boolean; center?: boolean }>`
   border-bottom-width: ${({ active }) => (active ? "2px" : "0")};
   bottom: ${({ center }) => (center ? "0" : "-2px")};
 
-  @media (max-width: 1024px) {
+  @media (max-width: 769px) {
+    margin-bottom: 30px;
+    padding-top: 40px;
   }
 
   // @media (max-width: 435px) {

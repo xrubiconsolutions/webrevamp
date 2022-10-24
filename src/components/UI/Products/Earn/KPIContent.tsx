@@ -1,5 +1,5 @@
 import React from "react";
-import { BodyContent, ContainerContent } from "../KPI/styles";
+import { BodyContent } from "../KPI/styles";
 import KPIHeader from "../KPI/KPIHeader";
 import Benefit from "../KPI/Benefit";
 import { Container } from "../../..";
@@ -10,12 +10,10 @@ const KPIContent = () => {
   return (
     <BodyContent>
       <Container>
-        <ContainerContent>
-          {articles?.map((article) => (
-            <KPIHeader {...article} />
-          ))}
-          <Benefit />
-        </ContainerContent>
+        {articles?.map((article) => (
+          <KPIHeader {...article} />
+        ))}
+        <Benefit />
       </Container>
     </BodyContent>
   );

@@ -18,36 +18,20 @@ const OverallContainer = styled.div`
   width: 310px;
   cursor: pointer;
 
-  @media screen and (min-width: 960px) {
-    width: 280px;
-    height: 250px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    width: 280px;
-    height: 220px;
-  }
-
-  @media (max-width: 769px) {
-    width: 80%;
-    height: 85%;
-    margin: auto;
-  }
-
   @media (max-width: 500px) {
-    width: 80%;
+    width: 90%;
     height: 85%;
     margin: auto;
   }
 
   > div {
     height: 73%;
-    background-color: ${tw`bg-primary flex items-center justify-center rounded-t-3xl`};
+    background-color: ${tw`bg-primary flex items-center justify-center `};
   }
 
   > p {
     height: 27%;
-    ${tw` border-primary border-2 border-solid flex items-center justify-center font-bold text-base`}
+    ${tw` border-primary border-2 border-solid flex items-center justify-center font-bold text-xs`}
     font-family:Raleway;
   }
 `;
@@ -70,8 +54,6 @@ const ImageContainers = styled.div`
     transform: scale(1.2);
   }
 `;
-
-// tetsing
 
 const Card = ({ imgSrc = "", text = "", imgAlt = "", ...props }) => {
   return (

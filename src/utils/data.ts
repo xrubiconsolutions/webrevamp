@@ -188,7 +188,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
       "Confirm and submit a drop-off request",
       "Your E-wallet is credited as soon as the request is completed by the recycler. EARN-AS-YOU WASTE!!! Recycling made easy.",
     ],
-    reverse: false,
+    reverse: true,
   },
 ];
 

@@ -3,17 +3,17 @@ import tw from "twin.macro";
 
 export const CardWrapper = styled.div<{ rev: boolean }>`
   ${tw`lg:w-full md:w-full md:items-start flex justify-between  lg:items-center  lg:pt-20 `}
-  flex-direction:${({ rev }) => (rev ? "row-reverse" : "row")};
+  flex-direction: ${({ rev }) => (rev ? "row-reverse" : "row")};
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
-export const ImageContent = styled.div<{ rev: boolean }>`
-  ${tw`lg:w-[50%]`};
+export const ImageContent = styled.div`
+  ${tw`lg:w-[50%]  `};
 `;
-
 export const ImageContainers = styled.div<{ rev: boolean }>`
   margin: auto;
 
@@ -42,14 +42,14 @@ export const ImageContainers = styled.div<{ rev: boolean }>`
 `;
 
 export const ContentContainer = styled.div`
-  ${tw`lg:w-[50%]  mt-10`}
+  ${tw` lg:w-[100%] xl:w-[50%]  mt-10  lg:pr-10`}
 `;
 
 export const ProcessHeader = styled.div`
-  ${tw`text-2xl font-medium lg:text-[20px]  md:text-2xl  `}
+  ${tw`text-base  font-medium lg:text-[20px]  md:text-2xl md:text-left `}
 `;
 export const WorkHeader = styled.div`
-  ${tw` text-6xl font-bold lg:text-6xl lg:font-extrabold text-primary pt-5 pb-6 md:font-bold `}
+  ${tw` text-4xl  font-bold lg:text-6xl lg:font-extrabold text-primary pt-1 pb-4 md:font-bold md:text-left`}
 `;
 
 export const Section = styled.div`
@@ -58,7 +58,7 @@ export const Section = styled.div`
 `;
 
 export const Paragraph = styled.div<{ rev: boolean }>`
-  ${tw` text-lg lg:text-xl lg:leading-[25px] text-body  `};
+  ${tw` text-sm leading-[27px] lg:text-lg lg:leading-[25px] text-body  `};
 `;
 
 export const Span = styled.span`

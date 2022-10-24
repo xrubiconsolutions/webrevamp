@@ -24,14 +24,14 @@ export const H2 = styled.h2<{ col?: boolean; decoration: boolean }>`
 `;
 
 export const H3 = styled.h3`
-  ${tw`text-base  tracking-wider pt-2 pb-8 leading-9 font-medium`}
+  ${tw`text-sm  tracking-wider pt-2 pb-8 leading-9 font-medium`}
 `;
 export const Flex = styled.div`
   ${tw`flex justify-between text-lg`}
 `;
 
 export const Div = styled.div`
-  ${tw`flex justify-between text-lg font-medium`}
+  ${tw`flex justify-between text-xs font-medium`}
 `;
 export const Link = styled.a``;
 

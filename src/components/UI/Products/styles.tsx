@@ -44,29 +44,24 @@ export const Heading = styled.h1`
 `;
 
 export const Flex = styled.div<{ reverse: boolean }>`
-  
-${tw`flex flex-col lg:w-full gap-20 lg:mt-20  `}
-flex-direction:${({ reverse }) => (reverse ? "row-reverse" : "row")};
-@media (max-width: 1024px) {
-  flex-direction:column;
-}
-> div:first-child{
-  ${tw`flex lg:w-[65%] md:w-full sm:w-full`}
-  @media (max-width:1024px){
-    width:100%;
+  ${tw`flex flex-col lg:w-full gap-20 lg:mt-10  `}
+  flex-direction:${({ reverse }) => (reverse ? "row-reverse" : "row")};
+  @media (max-width: 1024px) {
+    flex-direction: column;
   }
-}
-> div:nth-child(2){
-  ${tw`flex lg:w-[35%] md:w-full sm:w-full`}
-  @media (max-width:1024px){
-    width:100%;
+  > div:first-child {
+    ${tw`flex lg:w-[65%] md:w-full sm:w-full`}
+    @media (max-width:1024px) {
+      width: 100%;
+    }
   }
-}
+  > div:nth-child(2) {
+    ${tw`flex md:w-[55%] lg:w-[60%] xl:w-[35%] sm:w-full`}
   }
 `;
 
 export const Paragraph = styled.p`
-  ${tw`  text-white pt-10  pb-14 lg:pb-20  md:text-xl lg:text-[16px] leading-[27px] lg:leading-[40px] md:leading-10  `}
+  ${tw`  text-white pt-10  pb-10 lg:pb-20  lg:text-[16px]  lg:leading-[40px] text-sm leading-loose `}
 `;
 
 export const ImageImage = styled(Image)`
@@ -75,27 +70,16 @@ export const ImageImage = styled(Image)`
 
 export const ImageContainer = styled.div`
   margin: auto;
-
   @media (max-width: 1024px) {
-    width: 400px;
-    margin-top: -30px;
+    margin-top: -50px;
   }
 
   @media (max-width: 769px) {
-    width: 350px;
     padding-top: 10px;
     padding-bottom: 0px;
   }
 
-  @media (max-width: 450px) {
-    width: 230px;
-    padding-top: 0px;
-  }
-
   @media (min-width: 1025px) {
-    ${tw`flex`}
-    margin:30px 0;
-
-    width: 450px;
+    margin: 30px 0;
   }
 `;

@@ -36,8 +36,6 @@ const Hero = () => {
     },
   ];
 
-  // const tabValue = pages?.map((page) => page.tab);
-
   const tabNo = 0;
 
   return (
@@ -58,7 +56,7 @@ const Hero = () => {
       </TabContainer> */}
       <BodyContainer
         title=""
-        smaller_title="What the news are saying about us"
+        smaller_title="What the news is saying about us"
         text="Latest Updates"
         tabNo={tabNo}
         pages={pages}

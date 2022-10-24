@@ -22,7 +22,11 @@ const TitleH1 = styled.h1`
 `;
 
 const TitleH2 = styled.h1`
-  ${tw`text-white text-2xl text-center font-extrabold   md:text-4xl  lg:text-6xl lg:max-w-[65%] mx-auto`}
+  ${tw`text-white text-xl  text-center font-extrabold   md:text-4xl  md:max-w-[80%] lg:max-w-[65%] mx-auto`}
+
+  @media (max-width:768px) {
+    margin-top: -40px;
+  }
 `;
 
 const P = styled.p`
@@ -50,8 +54,6 @@ const BodyContainer: FC<props> = ({
   children,
 }) => {
   const [tabBody, setTabBody] = useState(pages[0].component);
-
-  console.log("The Name of the Tab Component", tabBody.type.name);
 
   const updateBody = (elem: JSX.Element) => {
     setTabBody(elem);
