@@ -5,7 +5,7 @@ import Image from "next/image";
 export const OverallContainer = styled.div`
   ${tw`bg-primary`}
   @media (min-width: 1024px) {
-    padding-bottom: 100px;
+    padding-bottom: 70px;
   }
 
   @media (max-width: 1024px) {
@@ -50,13 +50,13 @@ export const Flex = styled.div<{ reverse: boolean }>`
     flex-direction: column;
   }
   > div:first-child {
-    ${tw`flex lg:w-[65%] md:w-full sm:w-full`}
+    ${tw`flex lg:w-[60%] md:w-full sm:w-full`}
     @media (max-width:1024px) {
       width: 100%;
     }
   }
   > div:nth-child(2) {
-    ${tw`flex md:w-[55%] lg:w-[60%] xl:w-[35%] sm:w-full`}
+    ${tw`flex md:w-[55%] lg:w-[65%] xl:w-[35%] sm:w-full`}
   }
 `;
 

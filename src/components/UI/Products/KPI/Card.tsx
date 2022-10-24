@@ -1,16 +1,14 @@
 import styled from "styled-components";
 import tw from "twin.macro";
-import Image from "next/image";
 import { ImageContent } from "../Earn/styles";
-import { ImageImage, ImageContainer } from "../styles";
-// import {}
+import { ImageImage } from "../styles";
 
 const CardContainer = styled.div`
   // ${tw` flex flex-col justify-center items-center p-2 bg-primary gap-10 rounded-t-xl`}
 `;
 
 const P = styled.p`
-  ${tw`text-primary p-10 text-center`}
+  ${tw`text-primary p-9 text-center`}
 `;
 
 const OverallContainer = styled.div`
@@ -25,7 +23,7 @@ const OverallContainer = styled.div`
   }
 
   > div {
-    height: 73%;
+    height: 65%;
     background-color: ${tw`bg-primary flex items-center justify-center `};
   }
 
@@ -40,14 +38,13 @@ const ImageContainers = styled.div`
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 1024px) {
-    width: 110px;
+    width: 100px;
   }
 
   @media (min-width: 1024px) {
     ${tw`flex`}
     margin:30px 0;
-    width: 110px;
-    transition: all 0.5s ease-in-out;
+    width: 100px;
   }
 
   &:hover {

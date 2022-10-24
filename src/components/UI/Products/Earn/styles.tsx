@@ -2,7 +2,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const CardWrapper = styled.div<{ rev: boolean }>`
-  ${tw`lg:w-full md:w-full md:items-start flex justify-between  lg:items-center  lg:pt-20 `}
+  ${tw`lg:w-full md:w-full md:items-start flex justify-between  lg:items-center  lg:pt-4 `}
   flex-direction: ${({ rev }) => (rev ? "row-reverse" : "row")};
 
   @media (max-width: 1024px) {
@@ -12,7 +12,7 @@ export const CardWrapper = styled.div<{ rev: boolean }>`
 `;
 
 export const ImageContent = styled.div`
-  ${tw`lg:w-[50%]  `};
+  ${tw`lg:w-[50%] `};
 `;
 export const ImageContainers = styled.div<{ rev: boolean }>`
   margin: auto;
@@ -42,7 +42,7 @@ export const ImageContainers = styled.div<{ rev: boolean }>`
 `;
 
 export const ContentContainer = styled.div`
-  ${tw` lg:w-[100%] xl:w-[50%]  mt-10  lg:pr-10`}
+  ${tw` lg:w-[100%] xl:w-[50%]  mt-10 lg:pr-10`}
 `;
 
 export const ProcessHeader = styled.div`

@@ -9,7 +9,7 @@ export const BackgroundContainer = styled.div`
   ${tw`bg-secondary `};
 
   @media (min-width: 1024px) {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 
   @media (max-width: 1024px) {
