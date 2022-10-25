@@ -12,23 +12,25 @@ const P = styled.p`
 `;
 
 const OverallContainer = styled.div`
-  height: 220px;
-  width: 310px;
   cursor: pointer;
 
-  @media (max-width: 500px) {
-    width: 90%;
-    height: 85%;
-    margin: auto;
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    height: 100%;
   }
 
   > div {
     height: 65%;
-    background-color: ${tw`bg-primary flex items-center justify-center `};
+    background-color: ${tw`bg-primary flex items-center justify-center rounded-t-lg`};
   }
 
   > p {
-    height: 27%;
+    height: 30%;
     ${tw` border-primary border-2 border-solid flex items-center justify-center font-bold text-xs`}
     font-family:Raleway;
   }
@@ -38,7 +40,7 @@ const ImageContainers = styled.div`
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 1024px) {
-    width: 100px;
+    width: 80px;
   }
 
   @media (min-width: 1024px) {

@@ -19,7 +19,9 @@ const Products = () => {
     { tab: "Smart Reinforcement", component: <SmartReinforcement /> },
   ];
 
-  return <PageTab pages={pages} prevLink="/," center={true} />;
+  return (
+    <PageTab pages={pages} prevLink="/," center={true} tab={0} onTabChange="" />
+  );
 };
 
 export default Products;

@@ -40,10 +40,6 @@ const Tab = styled.p<{ active?: boolean; center?: boolean }>`
     margin-bottom: 30px;
     padding-top: 40px;
   }
-
-  // @media (max-width: 435px) {
-
-  // }
 `;
 
 const PageTab = ({

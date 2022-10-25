@@ -4,15 +4,15 @@ import tw from "twin.macro";
 export const CardWrapper = styled.div``;
 
 export const Content = styled.p`
-  ${tw`text-xs leading-7 pt-7 pb-5 text-body font-medium`};
+  ${tw`text-xs leading-7 pt-4 pb-3 text-body font-medium`};
 `;
 
 export const Name = styled.p`
-  ${tw`text-2xl font-bold leading-loose`};
+  ${tw`text-base font-bold leading-loose`};
 `;
 
 export const Role = styled.p`
-  ${tw`font-normal text-xl leading-loose text-primary italic`}
+  ${tw`font-normal font-medium text-sm leading-snug text-primary italic`}
 `;
 
 export const CardSection = styled.aside``;

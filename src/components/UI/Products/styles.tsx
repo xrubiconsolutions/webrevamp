@@ -14,7 +14,7 @@ export const OverallContainer = styled.div`
 `;
 
 export const Heading = styled.h1`
-  ${tw`text-left md:text-center text-xl md:text-3xl text-white pt-10  font-semibold font-Raleway lg:text-4xl `}
+  ${tw`text-left md:text-center text-xl md:text-3xl text-white pt-10  font-semibold font-Raleway lg:text-4xl `};
 
   @media (max-width: 1024px) {
     font-size: 31px;
@@ -27,18 +27,18 @@ export const Heading = styled.h1`
   }
 
   @media (max-width: 450px) {
-    font-size: 25px;
+    font-size: 28px;
     line-height: 35px;
     padding-top: 40px;
   }
 
   @media (max-width: 376px) {
-    font-size: 22px;
+    font-size: 25px;
+    margin-top: -20px;
   }
 
   @media (min-width: 1440px) {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 47px;
     padding-top: 60px;
   }
 `;
@@ -50,28 +50,37 @@ export const Flex = styled.div<{ reverse: boolean }>`
     flex-direction: column;
   }
   > div:first-child {
-    ${tw`flex lg:w-[60%] md:w-full sm:w-full`}
-    @media (max-width:1024px) {
-      width: 100%;
-    }
+    ${tw`flex xl:w-[65%] md:w-full sm:w-full`};
   }
   > div:nth-child(2) {
-    ${tw`flex md:w-[55%] lg:w-[65%] xl:w-[35%] sm:w-full`}
+    ${tw`flex md:w-[50%] lg:w-[100%] xl:w-[35%] sm:w-full `};
+
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+
+    @media (max-width: 768px) {
+      width: 45%;
+    }
+
+    @media (max-width: 500px) {
+      width: 80%;
+    }
   }
 `;
 
 export const Paragraph = styled.p`
-  ${tw`  text-white pt-10  pb-10 lg:pb-20  lg:text-[16px]  lg:leading-[40px] text-sm leading-loose `}
+  ${tw`text-white pt-10 lg:pt-0 xl:pt-10 pb-10 lg:pb-20  lg:text-base lg:leading-[40px] text-sm leading-9 font-light`}
 `;
 
 export const ImageImage = styled(Image)`
-  object-fit: contain;
+  // object-fit: contain;
 `;
 
 export const ImageContainer = styled.div`
   margin: auto;
   @media (max-width: 1024px) {
-    margin-top: -50px;
+    margin-top: -60px;
   }
 
   @media (max-width: 769px) {

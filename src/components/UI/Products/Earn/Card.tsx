@@ -18,7 +18,10 @@ import {
 } from "./styles";
 
 const ImageContainers = styled.div<{ rev: boolean }>`
-  ${tw`w-[70%] mt-10  md:w-[45%] md:mt-20 md:mb-5 lg:w-[100%] xl:w-[65%] ml-auto mr-auto lg:m-0`}
+  ${tw`w-[55%] mt-10  md:w-[100%] md:mt-10 md:mb-5 lg:w-[90%] `}
+  @media (max-width:1024px) {
+    margin: 60px auto 10px auto;
+  }
 `;
 
 const Card = ({

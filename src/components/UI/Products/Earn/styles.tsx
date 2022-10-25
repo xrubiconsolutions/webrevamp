@@ -12,7 +12,7 @@ export const CardWrapper = styled.div<{ rev: boolean }>`
 `;
 
 export const ImageContent = styled.div`
-  ${tw`lg:w-[50%] `};
+  ${tw`  md:w-[45%] lg:w-[35%] `};
 `;
 export const ImageContainers = styled.div<{ rev: boolean }>`
   margin: auto;
@@ -46,23 +46,23 @@ export const ContentContainer = styled.div`
 `;
 
 export const ProcessHeader = styled.div`
-  ${tw`text-base  font-medium lg:text-[20px]  md:text-2xl md:text-left `}
+  ${tw`text-base font-medium lg:text-[20px]  md:text-2xl md:text-left `}
 `;
 export const WorkHeader = styled.div`
-  ${tw` text-4xl  font-bold lg:text-6xl lg:font-extrabold text-primary pt-1 pb-4 md:font-bold md:text-left`}
+  ${tw` text-4xl  font-extrabold lg:text-5xl lg:font-extrabold text-primary pt-1 pb-7 md:font-bold md:text-left`}
 `;
 
 export const Section = styled.div`
-  ${tw`flex gap-5 pb-7 `}
-  font-family:Raleway;
+  ${tw`flex gap-5 pb-7 lg:pb-6 `};
+  font-family: Raleway;
 `;
 
 export const Paragraph = styled.div<{ rev: boolean }>`
-  ${tw` text-sm leading-[27px] lg:text-lg lg:leading-[25px] text-body  `};
+  ${tw` text-sm leading-[20px] lg:text-base lg:leading-[25px] text-body  `};
 `;
 
 export const Span = styled.span`
-  ${tw`text-[15px]  lg:text-2xl lg:font-medium`}
+  ${tw`text-sm font-medium `}
 `;
 
 export const Br = styled.div`
