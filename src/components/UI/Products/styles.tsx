@@ -74,7 +74,7 @@ export const Paragraph = styled.p`
 `;
 
 export const ImageImage = styled(Image)`
-  // object-fit: contain;
+  object-fit: contain;
 `;
 
 export const ImageContainer = styled.div`
