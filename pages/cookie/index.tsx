@@ -19,6 +19,8 @@ const Cookie: NextPage = () => {
         title="Cookie policy for Pakam"
         tabNo={tabNo}
         pages={pages}
+        smaller_title=""
+        text=""
       />
     </>
   );

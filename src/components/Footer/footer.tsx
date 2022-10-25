@@ -66,7 +66,7 @@ const Footer = () => {
                 <Link href="/cookie">Cookies Policy</Link>
               </FooterContainerListP>
               <FooterContainerListP>
-                End User License Agreement
+                <Link href="/aggrement">End User License Agreement</Link>
               </FooterContainerListP>
               <FooterContainerListP>
                 <Link href="/privacy">Privacy Policy</Link>

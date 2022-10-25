@@ -6,14 +6,14 @@ import tw from "twin.macro";
 import PR from "/public/img/PressRelease.png";
 
 const Date = styled.p`
-  ${tw`text-xl tracking-wider pt-0 md: pt-14`}
+  ${tw`text-lg tracking-wider pt-0 md: pt-14`}
 `;
 const Heading = styled.h2`
-  ${tw`text-primary font-bold text-4xl lg:text-5xl  py-8 text-center`}
+  ${tw`text-primary font-bold text-2xl lg:text-3xl  py-8 text-center`}
 `;
 
 const BodyP = styled.p`
-  ${tw`text-lg pb-10 leading-loose tracking-wide `}
+  ${tw`text-base pb-10 leading-loose tracking-wide `}
 `;
 
 const Controller = styled.div`

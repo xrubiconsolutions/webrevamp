@@ -16,7 +16,13 @@ const Privacy: NextPage = () => {
   const tabNo = 0;
   return (
     <>
-      <BodyContainer title="Privacy policy" tabNo={tabNo} pages={pages} />
+      <BodyContainer
+        title="Privacy policy"
+        tabNo={tabNo}
+        pages={pages}
+        smaller_title=""
+        text=""
+      />
     </>
   );
 };

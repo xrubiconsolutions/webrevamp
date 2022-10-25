@@ -42,7 +42,7 @@ const Card = ({
           <Image
             src={imgSrc}
             layout="responsive"
-            width={550}
+            width={500}
             height={300}
             className="mt-10"
           />
@@ -61,7 +61,7 @@ const Card = ({
             {headline}
           </H2>
         </Link>
-        <H3>{`${subtext.substring(0, 100)}....`}</H3>
+        <H3>{`${subtext.substring(0, 150)}....`}</H3>
 
         <Flex>
           <Div>
