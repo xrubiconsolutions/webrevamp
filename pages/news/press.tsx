@@ -89,7 +89,7 @@ const press = () => {
         </BodyP>
 
         <Button
-          children="Back To Press"
+          children="Back To News"
           onClick={() => {
             router.back();
           }}
