@@ -7,7 +7,7 @@ export const CardContainer = styled.div`
 `;
 
 export const CardWrapper = styled.div<{ bg: boolean }>`
-  ${tw`rounded-sm min-h-[200px] w-[96%]  pb-5 bg-white`};
+  ${tw`rounded-sm min-h-[200px] w-[100%]  pb-5 bg-white`};
   background: ${({ bg }) => (bg ? " #005700;" : "white")};
   box-shadow: 0px 9.34521px 27.4405px rgba(215, 228, 249, 0.7);
 

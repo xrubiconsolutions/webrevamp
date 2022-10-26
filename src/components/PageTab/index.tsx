@@ -38,7 +38,11 @@ const Tab = styled.p<{ active?: boolean; center?: boolean }>`
 
   @media (max-width: 769px) {
     margin-bottom: 30px;
-    padding-top: 40px;
+  }
+
+  @media (max-width: 450px) {
+    margin-bottom: 30px;
+    padding-top: 10px;
   }
 `;
 

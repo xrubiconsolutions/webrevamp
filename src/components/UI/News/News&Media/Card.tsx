@@ -9,6 +9,7 @@ import {
   Contains,
 } from "./styles";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Card = ({
   imgAlt,
@@ -21,6 +22,7 @@ const Card = ({
   bg,
   color,
   decoration,
+  inPage,
 }: {
   headline: string;
   subtext: string;
@@ -32,11 +34,11 @@ const Card = ({
   bg?: boolean;
   color?: boolean;
   decoration?: boolean;
+  inPage?: boolean;
 }) => {
+  const router = useRouter();
   return (
     <CardWrapper bg={bg ? true : false}>
-      {/* <Image src={imgSrc} layout="responsive" width={550} height={300} /> */}
-
       <Contains col={color ? true : false}>
         <div style={{ marginTop: "20px" }}>
           <Image
@@ -47,20 +49,32 @@ const Card = ({
             className="mt-10"
           />
         </div>
-
-        {/* <Image
-          src={imgSrc}
-          layout="responsive"
-          width={550}
-          // height={300}
-          className="mt-10"
-        /> */}
-
-        <Link href={link} target="_blank">
+        {/* <Link href={link} target="_blank">
           <H2 col={color ? true : false} decoration={decoration ? true : false}>
             {headline}
           </H2>
-        </Link>
+        </Link> */}
+
+        {inPage ? (
+          <H2
+            col={color ? true : false}
+            decoration={decoration ? true : false}
+            onClick={() => router.push("/news/press")}
+            className="cursor-pointer"
+          >
+            {headline}
+          </H2>
+        ) : (
+          <Link href={link} target="_blank">
+            <H2
+              col={color ? true : false}
+              decoration={decoration ? true : false}
+            >
+              {headline}
+            </H2>
+          </Link>
+        )}
+
         <H3>{`${subtext.substring(0, 150)}....`}</H3>
 
         <Flex>

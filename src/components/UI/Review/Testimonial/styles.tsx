@@ -18,9 +18,9 @@ export const Role = styled.p`
 export const CardSection = styled.aside``;
 
 export const Wrapper = styled.div`
-  ${tw`rounded-[10px] min-h-[340px] w-[98%] leading-[24px]   bg-white`};
+  ${tw`rounded-[10px] min-h-[340px] w-[100%] leading-[24px]   bg-white`};
   padding: 20px 30px;
-  box-shadow: 0px 9.34521px 27.4405px rgba(215, 228, 249, 0.5);
+  box-shadow: 0px 9.34521px 27.4405px rgba(215, 228, 249, 0.2);
   transition: all 500ms ease-in-out;
 
   &:hover {

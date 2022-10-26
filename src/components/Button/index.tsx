@@ -8,6 +8,7 @@ type props = {
   children?: ReactNode;
   type?: "button" | "submit" | "reset" | undefined;
   className?: string;
+  onClick: () => void;
 };
 
 const Button: FC<props> = ({
@@ -17,6 +18,7 @@ const Button: FC<props> = ({
   children,
   type,
   className = "",
+  onClick,
 }) => {
   return (
     <button
@@ -26,6 +28,7 @@ const Button: FC<props> = ({
         "flex justify-center items-center disabled:opacity-50 bg-secondary min-w-[122.46px] overflow-hidden relative h-[50px] my-1 rounded-2xl text-sm font-bold text-primary px-[30px] py-[20px] ml-4",
         className
       )}
+      onClick={onClick}
     >
       {loading ? (
         <svg

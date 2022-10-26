@@ -22,7 +22,7 @@ const TitleH1 = styled.h1`
 `;
 
 const TitleH2 = styled.h1`
-  ${tw`text-white text-xl  text-center font-extrabold   md:text-4xl  md:max-w-[80%] lg:max-w-[65%] mx-auto`}
+  ${tw`text-white text-2xl  text-center font-extrabold md:text-4xl  md:max-w-[80%] lg:max-w-[65%] mx-auto`}
 
   @media (max-width:768px) {
     margin-top: -40px;
@@ -30,7 +30,7 @@ const TitleH2 = styled.h1`
 `;
 
 const P = styled.p`
-  ${tw`text-white text-2xl md:font-medium md:text-3xl`}
+  ${tw`text-white text-xl md:font-medium md:text-2xl mt-5`}
 `;
 const BodySection = styled.section`
   ${tw`bg-secondary`}

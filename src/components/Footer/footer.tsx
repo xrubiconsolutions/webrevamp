@@ -45,18 +45,29 @@ const Footer = () => {
               Pakam enabling people, planet and profit
             </FooterContainerListP>
             <AppContainer>
-              <Image
-                src="/img/Google play.png"
-                alt="play store"
-                width={120}
-                height={40}
-              />
-              <Image
-                src="/img/apple.png"
-                alt="app store"
-                width={120}
-                height={40}
-              />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.pakamcustomer"
+                target="_blank"
+              >
+                <Image
+                  src="/img/Google play.png"
+                  alt="play store"
+                  width={120}
+                  height={40}
+                />
+              </a>
+
+              <a
+                href="https://apps.apple.com/ng/app/pakam-household-recycling-app/id1539296957"
+                target="_blank"
+              >
+                <Image
+                  src="/img/apple.png"
+                  alt="app store"
+                  width={120}
+                  height={40}
+                />
+              </a>
             </AppContainer>
           </FooterContainerList>
           <FooterContainerList>
@@ -86,24 +97,41 @@ const Footer = () => {
               <FooterContainerListP>+234 - 708 664 6637</FooterContainerListP>
               <FooterContainerListP>info@pakam.ng</FooterContainerListP>
               <AppContainer>
-                <Image
-                  src="/img/facebook.png"
-                  alt="facebook"
-                  width={25.82}
-                  height={26.67}
-                />
-                <Image
-                  src="/img/instagram.png"
-                  alt="instagram"
-                  width={25.82}
-                  height={26.67}
-                />
-                <Image
-                  src="/img/twitter.png"
-                  alt="twitter"
-                  width={25.82}
-                  height={26.67}
-                />
+                <a
+                  href="https://web.facebook.com/people/Pakam/100067730415458/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/img/facebook.png"
+                    alt="facebook"
+                    width={25.82}
+                    height={26.67}
+                  />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/pakam_ng/?igshid=YmMyMTA2M2Y%3D"
+                  target="_blank"
+                >
+                  <Image
+                    src="/img/instagram.png"
+                    alt="instagram"
+                    width={25.82}
+                    height={26.67}
+                  />
+                </a>
+
+                <a
+                  href="https://twitter.com/_Pakam?t=x-7tBM5MyJeUK4oqR53uFg&s=09"
+                  target="_blank"
+                >
+                  <Image
+                    src="/img/twitter.png"
+                    alt="twitter"
+                    width={25.82}
+                    height={26.67}
+                  />
+                </a>
               </AppContainer>
             </FooterContainerCenter>
           </FooterContainerList>

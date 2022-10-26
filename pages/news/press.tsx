@@ -4,6 +4,9 @@ import Image from "next/image";
 import styled from "styled-components";
 import tw from "twin.macro";
 import PR from "/public/img/PressRelease.png";
+// import Button from "../../src/components/Button";
+import { useRouter } from "next/router";
+import { Button } from "../../src/components/index";
 
 const Date = styled.p`
   ${tw`text-lg tracking-wider pt-0 md: pt-14`}
@@ -25,6 +28,8 @@ const Br = styled.div`
 `;
 
 const press = () => {
+  const router = useRouter();
+
   return (
     <div className="bg-secondary">
       <Container>
@@ -51,7 +56,7 @@ const press = () => {
           and material traceability.{" "}
         </BodyP>
 
-        <div className="mt-10 mb-20">
+        <div className="mt-5 mb-12">
           <Controller>
             <Image src={PR}></Image>
           </Controller>
@@ -82,6 +87,19 @@ const press = () => {
           collection. With time, the companies will also collaborate on building
           collection infrastructure to support the ecosystem.{" "}
         </BodyP>
+
+        <Button
+          children="Back To Press"
+          onClick={() => {
+            router.back();
+          }}
+          icons={false}
+          weight={false}
+          primary={true}
+          white={true}
+          width={true}
+          className=""
+        />
         <Br />
       </Container>
     </div>

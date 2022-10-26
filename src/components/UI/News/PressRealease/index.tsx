@@ -3,11 +3,8 @@ import { Container } from "../../../index";
 import { CardContainer } from "../News&Media/styles";
 import { PressRelase } from "../../../../utils/data";
 import Card from "../News&Media/Card";
-import { useRouter } from "next/router";
 
 const PressRelease = () => {
-  const router = useRouter();
-  console.log("useRouter", router);
   return (
     <div className="bg-secondary">
       <CardContainer>

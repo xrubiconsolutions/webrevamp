@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import { Container } from "../..";
 
 const BodyP = styled.div`
-  ${tw` text-sm md:text-base pb-7 leading-loose tracking-tight leading-[] `}
+  ${tw` text-sm md:text-base pb-7 leading-loose tracking-wide `}
 `;
 
 const Mt = styled.div`
