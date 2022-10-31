@@ -28,7 +28,7 @@ const FaqForm = styled.div`
   align-items: center;
 `;
 const FaqFormTitle = styled.h3`
-  ${tw`font-bold text-3xl lg:text-5xl mb-10`}
+  ${tw`font-bold text-3xl lg:text-5xl mb-10 text-center`}
   color: #21312a;
 `;
 const FormContainer = styled.form`
