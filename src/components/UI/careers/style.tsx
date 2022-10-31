@@ -69,6 +69,10 @@ export const TData = styled.td`
   ${tw`border p-2  `}
   border-bottom: 1.5px solid #EFF0F7;
 
+  @media (min-width: 400px) {
+    ${tw`p-3  `}
+  }
+
   @media (min-width: 768px) {
     border-top: 0;
     border-left: 0;
