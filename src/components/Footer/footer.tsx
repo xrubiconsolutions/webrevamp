@@ -3,6 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Container } from "..";
+import { FaWhatsapp } from "react-icons/fa";
 
 const FooterSection = styled.footer`
   ${tw`flex items-center justify-center gap-8  bg-primary`}// background: #F5F6FD;
@@ -74,7 +75,7 @@ const Footer = () => {
             <FooterContainerListH6>Legal</FooterContainerListH6>
             <FooterContainerCenter>
               <FooterContainerListP>
-                <Link href="/cookie">Cookies Policy</Link>
+                <Link href="/cookie">Cookie Policy</Link>
               </FooterContainerListP>
               <FooterContainerListP>
                 <Link href="/aggrement">End User License Agreement</Link>
@@ -83,7 +84,7 @@ const Footer = () => {
                 <Link href="/privacy">Privacy Policy</Link>
               </FooterContainerListP>
               <FooterContainerListP>
-                <Link href="/terms">Terms and Condition</Link>
+                <Link href="/terms">Terms and Conditions</Link>
               </FooterContainerListP>
             </FooterContainerCenter>
           </FooterContainerList>
@@ -91,7 +92,7 @@ const Footer = () => {
             <FooterContainerListH6>Contact Us</FooterContainerListH6>
             <FooterContainerCenter>
               <FooterContainerListP>
-                127 Ogunlana Drive, Surulere
+                127, Ogunlana Drive, Surulere
               </FooterContainerListP>
               <FooterContainerListP>+234 - 912 261 6778</FooterContainerListP>
               <FooterContainerListP>+234 - 708 664 6637</FooterContainerListP>
@@ -131,6 +132,10 @@ const Footer = () => {
                     width={25.82}
                     height={26.67}
                   />
+                </a>
+
+                <a href="" target="_blank">
+                  <FaWhatsapp fontSize={27} color="white" />
                 </a>
               </AppContainer>
             </FooterContainerCenter>

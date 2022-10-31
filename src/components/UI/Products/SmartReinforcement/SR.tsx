@@ -11,7 +11,7 @@ const SR = () => {
     <div>
       <OverallContainer>
         <Container>
-          <Heading>Pakam Smart Reinforcement.</Heading>
+          <Heading>Pakam Smart Enforcement.</Heading>
           {articles.map((article) => {
             return <FlexContainer {...article} />;
           })}

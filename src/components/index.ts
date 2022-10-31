@@ -46,17 +46,21 @@ export const Button = styled.button<{
   white?: boolean;
   width?: boolean;
   className?: string;
+  isBorder?: boolean;
 }>`
   ${({ icons }) => (icons ? tw`flex items-center justify-center` : "")};
-  border-radius: 59.65px;
+  // border-radius: 59.65px;
+  border-radius: ${({ isBorder }) => (!isBorder ? "59.65px" : "10px")};
 
   background: ${({ primary }) => (primary ? "#008300" : "#FFFFFF")};
   white-space: nowrap;
   color: ${({ white }) => (white ? "white" : "#008300")};
-  padding: 11px 46.5px;
+  // padding: 11px 46.5px;
+  padding: ${({ isBorder }) => (!isBorder ? "11px 46.5px" : "15px 60px")};
   font-weight: ${({ weight }) => (weight ? 500 : 700)};
   border: ${({ white }) => (white ? "none" : "1px solid #b8d7c7")};
   font-size: 16px;
+
   outline: none;
   cursor: pointer;
   &:hover {
