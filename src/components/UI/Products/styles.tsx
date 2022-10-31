@@ -14,7 +14,7 @@ export const OverallContainer = styled.div`
 `;
 
 export const Heading = styled.h1`
-  ${tw`text-left md:text-center text-xl md:text-3xl text-white pt-10  font-semibold font-Raleway lg:text-4xl `};
+  ${tw`text-left md:text-center text-xl md:text-3xl text-white pt-10 font-extrabold font-Raleway lg:text-4xl `};
 
   @media (max-width: 1024px) {
     font-size: 31px;

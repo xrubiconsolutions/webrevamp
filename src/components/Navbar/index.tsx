@@ -1,4 +1,4 @@
-// @ts-ignore
+2;
 import { useState, useEffect, FC } from "react";
 import styled from "styled-components";
 import { IconContext } from "react-icons/lib";
@@ -22,7 +22,10 @@ const AppNav = styled.nav<{ scrollNavbar: boolean }>`
   align-items: center;
   position: sticky;
   top: 0px;
-  z-index: 104;
+  z-index: 99999;
+  -webkit-transform: translateZ(0px);
+  /* transform: translate3d(0, 0, 0); */
+  /* -webkit-transform: translate3d(0, 0, 0); */
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --tw-ring-offset-shadow: 0 0 transparent;

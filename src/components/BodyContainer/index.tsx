@@ -18,7 +18,7 @@ const TitleContainer = styled.header`
 `;
 
 const TitleH1 = styled.h1`
-  ${tw`text-white font-extrabold text-6xl`}
+  ${tw`text-white font-extrabold text-4xl lg:text-6xl `}
 `;
 
 const TitleH2 = styled.h1`

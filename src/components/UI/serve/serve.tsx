@@ -20,8 +20,10 @@ const ServeCardContainer = styled.div`
 `;
 const ServeCard = styled.div`
   ${tw`bg-white px-4 py-8 rounded-xl grid items-start justify-start gap-2 cursor-pointer`}
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d; */
+  transform: translate3d(0);
   transform: perspective(1000px);
+
   &:hover {
     ${tw`bg-secondary cursor-pointer`}
   }
