@@ -34,3 +34,10 @@
 .swiper-pagination-bullet-active {
   background-color: #005700 !important;
 }
+
+.react-hooks-paginator .page-item:hover .page-link,
+.react-hooks-paginator .page-item.active .page-link {
+  background-color: #005700 !important;
+  border-color: #005700 !important;
+  color: #fff;
+}

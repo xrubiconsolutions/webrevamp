@@ -65,7 +65,7 @@ const Hero = () => {
         <HeroRow>
           <HeroCol>
             <HeroH1>
-              Digital marketplace for waste,<span>recycling,</span> and smart
+              Digital marketplace for waste,<span> recycling,</span> and smart
               enforcement.
             </HeroH1>
             <HeroP>Enabling people, planet, and profit .</HeroP>

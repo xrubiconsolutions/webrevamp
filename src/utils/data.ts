@@ -58,6 +58,41 @@ export interface TechnologyModel {
   linkUrl?: string;
 }
 
+export interface PerksBenefitsModel {
+  imgUrl?: any;
+  imgAlt: string;
+  text?: string;
+}
+
+export const PerksBenefit: Array<PerksBenefitsModel> = [
+  {
+    imgUrl: "/svg/Challenging.svg",
+    imgAlt: "Pakm",
+    text: "Challenging Projects",
+  },
+  {
+    imgUrl: "/svg/DiverseTeam.svg",
+    imgAlt: "Pakam",
+    text: "Diverse Team",
+  },
+  {
+    imgUrl: "/svg/Enjoyable.svg",
+    imgAlt: "Pakam",
+    text: "Enjoyable Workspace",
+  },
+  {
+    imgUrl: "/svg/Global.svg",
+    imgAlt: "Pakam",
+    text: "Global Benefits",
+  },
+  { imgUrl: "/svg/Hybrid.svg", imgAlt: "Pakam", text: "Hybrid Working" },
+  {
+    imgUrl: "/svg/Career.svg",
+    imgAlt: "Pakam",
+    text: "Career Development",
+  },
+];
+
 export const serve: Array<TechnologyModel> = [
   {
     imgUrl: "/svg/Group 625999.svg",
@@ -179,7 +214,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
     header1: "Drop off Schedule Process",
     header2: "How It Works",
     sub_text: [
-      "Download and install the (Pakam Household Application) from goggle play store and/or IOS app store)",
+      "Download and install the Pakam Household Application from goggle play store and/or IOS app store)",
       "Select your type of user (individual or commercial) and create account.",
       "Sign In",
       "Click schedule request and select the “schedule drop-off” option. Select a nearby recycling company for waste for drop-off.",
@@ -269,7 +304,7 @@ export const KPIFeaturesInfo: Array<FeaturesModel> = [
 
 export const Payarticles: Array<EarnWasteModel> = [
   {
-    text: "Pay-as-You Waste is a full waste management application that enables citizens to properly dispose their non-recyclable and specialized waste to collectors. This service solves the day to day problem of delayed waste collection by PSP or waste management agencies. Pay-as-You Waste ensures an efficient and effective waste management system to eliminate the overflow of waste bins and environmental pollution in general. This service allows waste to be collected at just a click at an affordable pricing rate for  individuals and businesses. ",
+    text: "Pay-as-you Waste is a full waste management application that enables citizens to properly dispose their non-recyclable and specialized waste to collectors. This service solves the day to day problem of delayed waste collection by PSP or waste management agencies. Pay-as-You Waste ensures an efficient and effective waste management system to eliminate the overflow of waste bins and environmental pollution in general. This service allows waste to be collected at just a click at an affordable pricing rate for  individuals and businesses. ",
     imgAlt: "",
     imgSrc: PayDash,
     reverse: true,
@@ -292,7 +327,7 @@ export const payContentarticles: Array<EarnWasteContentModel> = [
     header1: "",
     header2: "How It Works",
     sub_text: [
-      "Download and install the (Pakam Waste Disposal)  from google play store and/or IOS app store.",
+      "Download and install the Pakam Waste Disposal  from google play store and/or IOS app store.",
       "Select your type of user (household or commercial) and create an account.",
       "Have a recycler/collector routed to your location for waste pickup.",
       "Schedule for a waste (non-recyclable) pickup by entering the required information.",

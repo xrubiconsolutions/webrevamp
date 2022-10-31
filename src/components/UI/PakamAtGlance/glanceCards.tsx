@@ -36,6 +36,7 @@ const GlanceCardsContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   ${tw`space-y-4 lg:space-y-0`}
+
   @media screen and (min-width: 920px) {
     padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem) / (100 - 30)));
     padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem) / (100 - 30)));
@@ -82,49 +83,56 @@ const GlanceCards = () => {
           <GlanceCardsContainer>
             <GlanceCardHeading>Pakam Technology at a Glance.</GlanceCardHeading>
 
-            <GlanceCard>
-              <Lottie
-                animationData={subscription[1].imgUrl}
-                loop={true}
-                className="w-1/4 h-2/5"
-              />
-              <GlanceCardTitle>{subscription[1].title}</GlanceCardTitle>
-              <GlanceCardBody>
-                Pakam pay as you waste is a platform as a service. for waste{" "}
-                disposal that encourages proper disposal of specialised &{" "}
-                non-recyclable waste on demand.{" "}
-              </GlanceCardBody>
-              <GlanceCardLink href="">{subscription[1].link}</GlanceCardLink>
-            </GlanceCard>
+            <Link href="/products">
+              <GlanceCard>
+                <Lottie
+                  animationData={subscription[1].imgUrl}
+                  loop={true}
+                  className="w-1/4 h-2/5"
+                />
+                <GlanceCardTitle>{subscription[1].title}</GlanceCardTitle>
+                <GlanceCardBody>
+                  Pakam pay as you waste is a platform as a service. for waste{" "}
+                  disposal that encourages proper disposal of specialised &{" "}
+                  non-recyclable waste on demand.{" "}
+                </GlanceCardBody>
+                <GlanceCardLink href="">{subscription[1].link}</GlanceCardLink>
+              </GlanceCard>
+            </Link>
 
-            <GlanceCard>
-              <Lottie
-                animationData={subscription[0].imgUrl}
-                loop={true}
-                className="w-1/4 h-2/5"
-              />
-              <GlanceCardTitle>{subscription[0].title}</GlanceCardTitle>
-              <GlanceCardBody>
-                Pakam earn as you waste is a recycling platform as a service
-                that connects recyclable waste generators to recyclable waste{" "}
-                collectors while creating value from waste.
-              </GlanceCardBody>
-              <GlanceCardLink href="">{subscription[0].link}</GlanceCardLink>
-            </GlanceCard>
-            <GlanceCard>
-              <Lottie
-                animationData={subscription[2].imgUrl}
-                loop={true}
-                className="w-1/4 h-2/5"
-              />
-              <GlanceCardTitle>{subscription[2].title}</GlanceCardTitle>
-              <GlanceCardBody>
-                Pakam smart enforcement is an environmental reporting platform
-                that connects reporting public to environmental agencies in
-                real-time.
-              </GlanceCardBody>
-              <GlanceCardLink href="">{subscription[2].link}</GlanceCardLink>
-            </GlanceCard>
+            <Link href="/products">
+              <GlanceCard>
+                <Lottie
+                  animationData={subscription[0].imgUrl}
+                  loop={true}
+                  className="w-1/4 h-2/5"
+                />
+                <GlanceCardTitle>{subscription[0].title}</GlanceCardTitle>
+                <GlanceCardBody>
+                  Pakam earn as you waste is a recycling platform as a service
+                  that connects recyclable waste generators to recyclable waste{" "}
+                  collectors while creating value from waste.
+                </GlanceCardBody>
+                <GlanceCardLink href="">{subscription[0].link}</GlanceCardLink>
+              </GlanceCard>
+            </Link>
+
+            <Link href="/products">
+              <GlanceCard>
+                <Lottie
+                  animationData={subscription[2].imgUrl}
+                  loop={true}
+                  className="w-1/4 h-2/5"
+                />
+                <GlanceCardTitle>{subscription[2].title}</GlanceCardTitle>
+                <GlanceCardBody>
+                  Pakam smart enforcement is an environmental reporting platform
+                  that connects reporting public to environmental agencies in
+                  real-time.
+                </GlanceCardBody>
+                <GlanceCardLink href="">{subscription[2].link}</GlanceCardLink>
+              </GlanceCard>
+            </Link>
           </GlanceCardsContainer>
         </Container>
       </GlanceCardsSection>

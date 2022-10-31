@@ -9,7 +9,7 @@ const Earnaswaste = () => {
     <div>
       <OverallContainer>
         <Container>
-          <Heading>Earn-as-you-waste (Pakam Households).</Heading>
+          <Heading>Earn-as-you Waste (Pakam Household).</Heading>
           {earnarticles.map((article) => {
             return <FlexContainer {...article} />;
           })}

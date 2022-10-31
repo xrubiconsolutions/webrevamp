@@ -12,15 +12,23 @@ const Products = () => {
 
   const pages: Array<PageModel> = [
     {
-      tab: "Earn As You Waste ",
+      tab: "Earn-as-you Waste ",
       component: <Earn />,
     },
-    { tab: "Pay As You Waste", component: <Pay /> },
-    { tab: "Smart Reinforcement", component: <SmartReinforcement /> },
+    { tab: "Pay-as-you Waste", component: <Pay /> },
+    { tab: "Smart Enforcement", component: <SmartReinforcement /> },
   ];
 
   return (
-    <PageTab pages={pages} prevLink="/," center={true} tab={0} onTabChange="" />
+    <div className="pt-16 bg-primary">
+      <PageTab
+        pages={pages}
+        prevLink="/,"
+        center={true}
+        tab={0}
+        onTabChange=""
+      />
+    </div>
   );
 };
 
