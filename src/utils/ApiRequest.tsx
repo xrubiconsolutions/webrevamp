@@ -15,14 +15,10 @@ export const ApiRequest = () => {
   return instance;
 };
 
-type Props = {
-  formData: {};
-};
-
-export const careerRegister = (formData: Props) => {
+export const careerRegister = (formData: {}) => {
   return ApiRequest().post("/user/uploadresume", formData);
 };
 
-export const faqRequest = (formData: Props) => {
-  return ApiRequest().post("/v2/contactUs", formData);
+export const faqRequest = (data: {}) => {
+  return ApiRequest().post("/v2/contactUs", data);
 };

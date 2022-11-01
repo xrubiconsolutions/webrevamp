@@ -7,6 +7,7 @@ import Accordion from "../../src/components/Accordion/accordion";
 import Input from "../../src/components/Input/input";
 import { faqs } from "../../src/utils/data";
 import { faqRequest } from "../../src/utils/ApiRequest";
+import { toast } from "react-toastify";
 
 const FaqSection = styled.section`
   ${tw`bg-secondary py-6 lg:py-20`}
@@ -83,13 +84,11 @@ const Faqs: NextPage = () => {
     email: "",
     message: "",
   };
+
   const [values, setValues] = useState(defaultFormData);
 
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-
-  console.log("todo,", email, message);
-
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -98,28 +97,43 @@ const Faqs: NextPage = () => {
 
   const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     // setValues({ ...values, [e.target.name]: e.target.value });
-
-    setTodo(e.target.value);
   };
-  let successMessage = "Question successfully sent!!";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement> | any) => {
     e.preventDefault();
     const form = new FormData(e.target);
     const data = Object.fromEntries(form.entries());
 
-    console.log("Data", data);
-
     try {
       setIsLoading(true);
       const sendData = await faqRequest(data);
       if (sendData?.data?.statusCode >= 400) {
         setIsLoading(false);
-        setErrorMessage(sendData.data.error.response?.data.error);
+        // setErrorMessage(sendData.data.error.response?.data.error);
+        toast(sendData.data.error.response?.data.error, {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
         setError(true);
       } else {
         setIsLoading(false);
-        setSuccess(true);
+        // setSuccess(true);
+        toast("Question successfully sent!!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
         setEmail("");
         setMessage("");
       }
@@ -127,12 +141,6 @@ const Faqs: NextPage = () => {
       console.log("error", error);
     }
   };
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setAlert(false);
-  //   }, 3000);
-  // }, []);
 
   return (
     <>
@@ -151,20 +159,6 @@ const Faqs: NextPage = () => {
         </Container>
       </FaqSection>
       <FaqForm>
-        {(success || error) && (
-          <div
-            className={`register__messageBanner text-left font-medium ${
-              success && "-success"
-            } ${error && "-error"}`}
-          >
-            {success && (
-              <p className="text-primary text-left text-2xl pb-5 ">
-                {success && successMessage}
-              </p>
-            )}
-          </div>
-        )}
-
         <FaqFormTitle>Still have questions? Shoot.</FaqFormTitle>
         <FormContainer onSubmit={handleSubmit}>
           <FormWrapper>
@@ -175,8 +169,6 @@ const Faqs: NextPage = () => {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              // value={values.email}
-              // onChange={handleChange}
               required={true}
             />
           </FormWrapper>
@@ -186,8 +178,6 @@ const Faqs: NextPage = () => {
             rows={10}
             name="message"
             value={message}
-            // value={values.message}
-            // onChange={(e) => setValues(e.target.value)}
             onChange={(e) => setMessage(e.target.value)}
           ></Textarea>
           <ButtonWrappper>

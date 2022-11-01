@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { Button } from "../../..";
 import { careerRegister } from "../../../../utils/ApiRequest";
+import { ToastContainer, toast } from "react-toastify";
 
 const UploadContainer = styled.div`
   ${tw`flex flex-col justify-center py-12 bg-secondary`}
@@ -126,7 +127,16 @@ const Forms = () => {
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const defaultFormData: {} = {
+  type DefaultProps = {
+    fullname?: string;
+    phonenumber: string;
+    email: string;
+    jobtitle: string;
+    linkedin: string;
+    resume: string;
+  };
+
+  const defaultFormData: DefaultProps = {
     fullname: "",
     phonenumber: "",
     email: "",
@@ -135,12 +145,11 @@ const Forms = () => {
     resume: "",
   };
   const [values, setValues] = useState(defaultFormData);
-  const [alert, setAlert] = useState(true);
+  const { fullname, email, jobtitle, linkedin, resume, phonenumber } = values;
 
   const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
-  let successMessage = "We have recieved your application.";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement> | any) => {
     e.preventDefault();
@@ -152,23 +161,38 @@ const Forms = () => {
       const sendData = await careerRegister(data);
       if (sendData?.data?.statusCode >= 400) {
         setIsLoading(false);
-        setErrorMessage(sendData.data.error.response?.data.error);
+        // setErrorMessage(sendData.data.error.response?.data.error);
+        toast(sendData.data.error.response?.data.error, {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
         setError(true);
       } else {
         setIsLoading(false);
-        setSuccess(true);
+
+        toast("We have recieved your application.", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+
         setValues(defaultFormData);
       }
     } catch (error) {
       console.log("error", error);
     }
   };
-
-  useEffect(() => {
-    setTimeout(() => {
-      setAlert(false);
-    }, 3000);
-  }, []);
 
   type Props = {
     id?: number;
@@ -192,6 +216,7 @@ const Forms = () => {
       label: "Full Name",
       htmlFor: "Fullname",
       required: true,
+      value: fullname,
     },
 
     {
@@ -203,6 +228,7 @@ const Forms = () => {
       htmlFor: "phonenumber",
       required: true,
       pattern: "/^(+)?(234|0)[0-9]*?.*/",
+      value: phonenumber,
     },
 
     {
@@ -213,6 +239,7 @@ const Forms = () => {
       label: "Email",
       htmlFor: "email",
       required: true,
+      value: email,
     },
 
     {
@@ -223,6 +250,7 @@ const Forms = () => {
       label: "Job Title",
       htmlFor: "jobtitle",
       required: true,
+      value: jobtitle,
     },
 
     {
@@ -234,6 +262,7 @@ const Forms = () => {
       htmlFor: "linkedin",
       className: "form__FormLabel",
       required: true,
+      value: linkedin,
     },
 
     {
@@ -244,6 +273,7 @@ const Forms = () => {
       htmlFor: "selectedFile",
       className: "form__FormLabel",
       required: true,
+      value: resume,
     },
   ];
 
@@ -254,26 +284,6 @@ const Forms = () => {
           Would like to be part of our team?{" "}
           <span className="text-primary">Get in touch</span>
         </UploadHeader>
-        {(success || error) && (
-          <div
-            className={`register__messageBanner p-4 text-left font-medium pb-7 ${
-              success && "-success"
-            } ${error && "-error"}`}
-          >
-            {alert && (
-              <div className="text-primary">
-                {success ? "Registration Successfully" : "Registration Failed"}
-              </div>
-            )}
-            {alert && (
-              <p className="text-primary ">
-                {errorMessage}
-                {/* {success && successMessage} */}
-              </p>
-            )}
-          </div>
-        )}
-
         <UploadFieldContainer onSubmit={handleSubmit}>
           <div>
             <Form>
@@ -288,6 +298,7 @@ const Forms = () => {
                   errorMessage,
                   required,
                   pattern,
+                  value,
                 }: Props) => {
                   return (
                     <div>
@@ -297,7 +308,7 @@ const Forms = () => {
                         placeholder={placeholder}
                         type={type}
                         name={name}
-                        value={values[name]}
+                        value={value}
                         onChange={handleChange}
                         required={required}
                         pattern={pattern}

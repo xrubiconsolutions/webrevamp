@@ -24,7 +24,7 @@ const TabsContainer = styled(FlexContainer)<{
   }
 
   @media (max-width: 500px) {
-    ${tw`pt-0 pb-7`}
+    ${tw`pt-5 pb-7`}
   }
 `;
 
@@ -37,6 +37,13 @@ const Tab = styled.p<{ active?: boolean; center?: boolean }>`
   border-bottom-width: ${({ active }) => (active ? "2px" : "0")};
   bottom: ${({ center }) => (center ? "0" : "-2px")};
 `;
+
+// type Props = {
+//   title?: string;
+//   tab?: number;
+//   onTabChange?: () => void;
+//   pages?:''
+// };
 
 const PageTab = ({
   title = "",
