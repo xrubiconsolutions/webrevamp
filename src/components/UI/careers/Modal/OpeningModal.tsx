@@ -22,9 +22,9 @@ interface ModalProps {
 
 interface PopModel {
   JobTitle?: string;
-  DepartmentMission?: Array<any>;
-  Responsibility?: Array<any> | any;
-  Requirement?: any;
+  DepartmentMission?: Array<[]>;
+  Responsibility: Array<[]>;
+  Requirement: Array<[]>;
 }
 
 const OpeningsModal = ({
