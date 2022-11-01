@@ -101,7 +101,7 @@ const Faqs: NextPage = () => {
 
     setTodo(e.target.value);
   };
-  let successMessage = "Question successfully sent!";
+  let successMessage = "Question successfully sent!!";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement> | any) => {
     e.preventDefault();
@@ -158,7 +158,7 @@ const Faqs: NextPage = () => {
             } ${error && "-error"}`}
           >
             {success && (
-              <p className="text-primary text-left ">
+              <p className="text-primary text-left text-2xl pb-5 ">
                 {success && successMessage}
               </p>
             )}
