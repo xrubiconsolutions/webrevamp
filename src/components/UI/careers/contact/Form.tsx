@@ -135,9 +135,6 @@ const Forms = () => {
     resume: "",
   };
   const [values, setValues] = useState(defaultFormData);
-
-  // const [popupContent, setPopupContent] = useState<Array<any>>([]);
-
   const [alert, setAlert] = useState(true);
 
   const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {

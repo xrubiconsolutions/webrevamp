@@ -24,7 +24,7 @@ const TabsContainer = styled(FlexContainer)<{
   }
 
   @media (max-width: 500px) {
-    ${tw`pt-5 pb-7`}
+    ${tw`pt-0 pb-7`}
   }
 `;
 

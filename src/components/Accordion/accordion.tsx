@@ -23,7 +23,7 @@ type props = {
   data?: Array<TechnologyModel>;
 };
 const Accordion = ({ data }: props) => {
-  console.log(data, "Arraydata");
+  // console.log(data, "Arraydata");
   const [clicked, setClicked] = useState(0);
 
   const toggle = (index: number) => {

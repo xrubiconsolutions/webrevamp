@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const constant = {
-  baseUrl: "https://packamserver.herokuapp.com/api",
+  // baseUrl: "https://packamserver.herokuapp.com/api",
+  baseUrl: "https://pakam-staging.herokuapp.com/api",
 };
 
 // Resusable requests template
@@ -20,4 +21,8 @@ type Props = {
 
 export const careerRegister = (formData: Props) => {
   return ApiRequest().post("/user/uploadresume", formData);
+};
+
+export const faqRequest = (formData: Props) => {
+  return ApiRequest().post("/v2/contactUs", formData);
 };

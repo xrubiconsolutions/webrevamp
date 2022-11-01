@@ -47,7 +47,6 @@ type Props = {
   placeholder?: string;
   name?: string;
   value?: string;
-  placeholder?: string;
 };
 const FormInput = ({ label, onChange, id }: Props) => {
   return (
