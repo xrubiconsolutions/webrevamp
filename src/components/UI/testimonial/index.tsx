@@ -128,7 +128,12 @@ const Testimonial = () => {
                       <SwiperHeaderH5>Ehinola Abimbola</SwiperHeaderH5>
                       <SwiperHeaderH6>Household User</SwiperHeaderH6>
                     </SwiperHeader>
-                    <Image src="/svg/quote.svg" height={90} width={140} />
+                    <Image
+                      src="/svg/quote.svg"
+                      height={90}
+                      width={140}
+                      alt="quote"
+                    />
                   </SwiperHeaderContainer>
                   <SwiperHeaderP>
                     This is a good initiative, but i think your man power is

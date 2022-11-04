@@ -19,7 +19,7 @@ const Terms: NextPage = () => {
       <BodyContainer
         title="Terms and Conditions"
         tabNo={tabNo}
-        pages={pages}
+        pages={pages as any}
         smaller_title=""
         text=""
       />

@@ -67,6 +67,7 @@ const Serve = () => {
                 <ImageContainer>
                   <Image
                     src={el.imgUrl}
+                    alt=""
                     width={80}
                     height={60}
                     className="flex self-start"

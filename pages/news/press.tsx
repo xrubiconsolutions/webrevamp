@@ -27,7 +27,7 @@ const Br = styled.div`
   ${tw`pb-20`}
 `;
 
-const press = () => {
+const Press = () => {
   const router = useRouter();
 
   return (
@@ -58,7 +58,7 @@ const press = () => {
 
         <div className="mt-5 mb-12">
           <Controller>
-            <Image src={PR}></Image>
+            <Image src={PR} alt=""></Image>
           </Controller>
         </div>
 
@@ -89,7 +89,6 @@ const press = () => {
         </BodyP>
 
         <Button
-          children="Back To News"
           onClick={() => {
             router.back();
           }}
@@ -99,11 +98,13 @@ const press = () => {
           white={true}
           width={true}
           className=""
-        />
+        >
+          Back To News
+        </Button>
         <Br />
       </Container>
     </div>
   );
 };
 
-export default press;
+export default Press;

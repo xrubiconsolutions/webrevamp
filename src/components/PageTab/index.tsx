@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, FC } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { FlexContainer, Container } from "..";
@@ -38,14 +38,16 @@ const Tab = styled.p<{ active?: boolean; center?: boolean }>`
   bottom: ${({ center }) => (center ? "0" : "-2px")};
 `;
 
-// type Props = {
-//   title?: string;
-//   tab?: number;
-//   onTabChange?: () => void;
-//   pages?:''
-// };
+type Props = {
+  title?: string;
+  tab?: number;
+  center?: boolean;
+  onTabChange?: (element: React.ReactNode | JSX.Element | Element) => void;
+  pages?: Array<{ tab: string; component: JSX.Element }>;
+  prevLink?: string;
+};
 
-const PageTab = ({
+const PageTab: FC<Props> = ({
   title = "",
   pages = [{ tab: "", component: () => <></> }],
   tab = 0,
@@ -60,7 +62,7 @@ const PageTab = ({
       <div className="">
         ,
         <Container>
-          <TabsContainer {...props}>
+          <TabsContainer {...(props as any)}>
             {tabs?.map((tab, idx, component) => (
               <Tab
                 {...props}

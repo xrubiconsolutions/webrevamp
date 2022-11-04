@@ -18,7 +18,7 @@ const Cookie: NextPage = () => {
       <BodyContainer
         title="Cookie policy for Pakam"
         tabNo={tabNo}
-        pages={pages}
+        pages={pages as any}
         smaller_title=""
         text=""
       />

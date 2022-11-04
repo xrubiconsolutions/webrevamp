@@ -26,7 +26,7 @@ const Products = () => {
         prevLink="/,"
         center={true}
         tab={0}
-        onTabChange=""
+        // onTabChange=""
       />
     </div>
   );

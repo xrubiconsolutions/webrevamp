@@ -15,7 +15,7 @@ const Aggrement: NextPage = () => {
       <BodyContainer
         title=""
         tabNo={tabNo}
-        pages={pages}
+        pages={pages as any}
         smaller_title="Pakam Mobile Application End User Lincense Aggrement"
         text=""
       />

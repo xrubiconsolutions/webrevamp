@@ -81,6 +81,7 @@ const Contact = () => {
                         el.links!.map((el: string | undefined, i: any) => (
                           <Image
                             src={el!}
+                            key={i}
                             alt="socials"
                             width={25.82}
                             height={26.67}
@@ -96,6 +97,7 @@ const Contact = () => {
                 src="/img/Rectangle 3463371 (1).png"
                 height={387}
                 width={580}
+                alt="contact"
               />
             </ConatctImageContainer>
           </ContactContainer>

@@ -3,8 +3,7 @@ import tw from "twin.macro";
 // impor
 
 export const HC = styled.div`
-  ${tw``}
-  poaition:relative;
+  ${tw``}/* poaition:relative; */
 `;
 
 export const Texts = styled.div`
@@ -22,7 +21,7 @@ export const Texts = styled.div`
   //   right: 0;
   //   top: 0;
   //   background: rgba(0, 0, 0, 0.1);
-  }
+  /* }
 
   width: 100%;
   z-index: 2;
@@ -42,7 +41,7 @@ export const Texts = styled.div`
 
   h2 {
     ${tw`text-3xl tracking-normal md:text-5xl lg:text-7xl font-bold leading-[25px] md:leading-[50px] `}
-  }
+  } */
 `;
 
 export const TabContainer = styled.div`

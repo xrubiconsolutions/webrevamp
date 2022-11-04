@@ -13,7 +13,7 @@ const SmartContent = () => {
     <BackgroundContainer>
       <Container>
         {articles.map((article, index) => {
-          return <Card {...article} />;
+          return <Card {...article} key={index} />;
         })}
       </Container>
     </BackgroundContainer>

@@ -51,7 +51,7 @@ type props = {
   smaller_text?: string;
   classname?: string;
   tabNo: number;
-  pages: Array<{ tab: string; component: () => JSX.Element }>;
+  pages: Array<{ tab: string; component: JSX.Element }>;
   isButton?: boolean;
   careerTitle?: string;
 };
@@ -116,7 +116,8 @@ const BodyContainer: FC<props> = ({
           pages={pages}
           prevLink="/"
           center={true}
-          onTabChange={updateBody}
+          // onTabChange={updateBody}
+          onTabChange={(elem) => updateBody(elem as JSX.Element)}
         />
       </TitleContainer>
 

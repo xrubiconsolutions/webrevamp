@@ -19,7 +19,7 @@ const Privacy: NextPage = () => {
       <BodyContainer
         title="Privacy policy"
         tabNo={tabNo}
-        pages={pages}
+        pages={pages as any}
         smaller_title=""
         text=""
       />

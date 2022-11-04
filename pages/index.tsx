@@ -53,6 +53,7 @@ const Home: NextPage = () => {
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSete7w0TI_H2PwT2_60ezC5nEE1CnTMUQeQ01AkJoCy-u3CZg/viewform"
                 target="_blank"
+                rel="noopener"
               >
                 <Button>Register</Button>
               </a>

@@ -32,9 +32,8 @@ const BannerSection: FC<props> = ({
         <BannerTitle>{title}</BannerTitle>
         <div className="mt-8 flex items-center justify-center flex-wrap">
           {imgUrl.map((el, i) => (
-            <div>
+            <div key={i}>
               <Image
-                key={i}
                 src={el}
                 width={width}
                 height={height}
