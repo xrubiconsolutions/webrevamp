@@ -134,7 +134,10 @@ const Footer = () => {
                   />
                 </a>
 
-                <a href="" target="_blank">
+                <a
+                  href="https://api.whatsapp.com/message/7U3WYHMHI3HPF1?autoload=1&app_absent=0"
+                  target="_blank"
+                >
                   <FaWhatsapp fontSize={27} color="white" />
                 </a>
               </AppContainer>

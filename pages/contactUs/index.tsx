@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container } from "../../src/components";
 import Image from "next/image";
 import { contact, contact2 } from "../../src/utils/data";
+import Link from "next/link";
 
 const ContactSection = styled.div`
   padding: 3.2rem 0;
@@ -72,11 +73,12 @@ const Contact = () => {
           <ContactContainer className="!flex !flex-col-reverse lg:!grid lg:!grid-cols-2 ">
             <ConatctText2Container>
               {contact2.map((el, i) => {
+                console.log("el", el);
                 return (
                   <ConatctTextWrapper key={i}>
                     <ConatctTextContainerh6>{el.title}</ConatctTextContainerh6>
                     <ConatctTextContainerP>{el.text}</ConatctTextContainerP>
-                    <ConatctTextContainerLinks>
+                    {/* <ConatctTextContainerLinks>
                       {el.links &&
                         el.links!.map((el: string | undefined, i: any) => (
                           <Image
@@ -87,6 +89,23 @@ const Contact = () => {
                             height={26.67}
                           />
                         ))}
+                    </ConatctTextContainerLinks> */}
+                    <ConatctTextContainerLinks>
+                      {el.links?.map((el, i) => {
+                        return (
+                          <Link href={el.imgLink}>
+                            <a href={el.imgLink} target="_blank">
+                              <Image
+                                src={el.imgSrc}
+                                key={i}
+                                alt="socials"
+                                width={25.82}
+                                height={26.67}
+                              />
+                            </a>
+                          </Link>
+                        );
+                      })}
                     </ConatctTextContainerLinks>
                   </ConatctTextWrapper>
                 );

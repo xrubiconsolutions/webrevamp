@@ -47,6 +47,7 @@ const AppNavLogo = styled.div`
 `;
 const MobileIcon = styled.div`
   ${tw`hidden`}
+
   @media screen and (max-width: 960px) {
     ${tw`block absolute top-0 right-0 text-3xl cursor-pointer`}
     transform: translate(-100%, 60%);
@@ -57,6 +58,7 @@ const NavMenu = styled.ul<{ click: boolean }>`
   ${tw`flex items-center text-center`}
   list-style: none;
   margin-right: -24px;
+
   @media screen and (max-width: 960px) {
     ${tw`flex  flex-col w-full absolute opacity-100 bg-secondary`}
     top: 80px;
@@ -269,6 +271,7 @@ function Navbar() {
                   </NavLinks>
                 </Link>
               </NavItem>
+
               {button ? null : (
                 <NavItemBtn>
                   <NavBtnLink href="/contactUs">

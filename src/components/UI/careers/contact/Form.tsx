@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import { Button } from "../../..";
 import { careerRegister } from "../../../../utils/ApiRequest";
 import { ToastContainer, toast } from "react-toastify";
+import { H2 } from "../../News/News&Media/styles";
 
 const UploadContainer = styled.div`
   ${tw`flex flex-col justify-center py-12 bg-secondary`}
@@ -283,6 +284,11 @@ const Forms = () => {
         <UploadHeader>
           Would like to be part of our team?{" "}
           <span className="text-primary">Get in touch</span>
+          {isLoading && (
+            <div className="text-base pt-5 text-primary">
+              Form Submission in Progress...
+            </div>
+          )}
         </UploadHeader>
         <UploadFieldContainer onSubmit={handleSubmit}>
           <div>

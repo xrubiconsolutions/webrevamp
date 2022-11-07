@@ -1419,10 +1419,31 @@ export const contact2 = [
   {
     title: "Socials",
     links: [
-      "/img/facebookGreen.png",
-      "/img/instagramGreen.png",
-      "/img/twitterGreen.png",
-      "/img/whatsappGreen.png",
+      {
+        imgSrc: "/img/facebookGreen.png",
+        imgLink: "https://web.facebook.com/people/Pakam/100067730415458/",
+      },
+
+      {
+        imgSrc: "/img/instagramGreen.png",
+        imgLink: "https://www.instagram.com/pakam_ng/?igshid=YmMyMTA2M2Y%3D",
+      },
+
+      {
+        imgSrc: "/img/twitterGreen.png",
+        imgLink: "https://twitter.com/_Pakam?t=x-7tBM5MyJeUK4oqR53uFg&s=09",
+      },
+      {
+        imgSrc: "/img/whatsappGreen.png",
+        imgLink:
+          "https://api.whatsapp.com/message/7U3WYHMHI3HPF1?autoload=1&app_absent=0",
+      },
     ],
+    // links: [
+    //   "/img/facebookGreen.png",
+    //   "/img/instagramGreen.png",
+    //   "/img/twitterGreen.png",
+    //   "/img/whatsappGreen.png",
+    // ],
   },
 ];

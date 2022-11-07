@@ -160,6 +160,11 @@ const Faqs: NextPage = () => {
       </FaqSection>
       <FaqForm>
         <FaqFormTitle>Still have questions? Shoot.</FaqFormTitle>
+        {isLoading && (
+          <div className="text-base pt-5 text-primary">
+            Form Submission in Progress...
+          </div>
+        )}
         <FormContainer onSubmit={handleSubmit}>
           <FormWrapper>
             <FormLabel> Email</FormLabel>
