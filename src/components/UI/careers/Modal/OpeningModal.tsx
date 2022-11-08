@@ -3,7 +3,6 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import Modal from "./modal";
 // import Button from "../Button";
-import { RiCreativeCommonsZeroLine } from "react-icons/Ri";
 import { Button } from "../../..";
 
 const ResponsibilityContainer = styled.ul`
