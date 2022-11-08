@@ -7,46 +7,46 @@ import OpenUp from "./97262-open-up-dffs.json";
 import SocialNetwork from "./91955-social-media-network.json";
 import ProblemSolvingTeam from "./73386-problem-solving-team.json";
 
-import GuyPickUpTrash from "/public/img/GupPickupTrash.png";
-import PSR from "/public/img/PSR.png";
-import Paper from "/public/img/Paper.png";
-import Business from "/public/img/Business.png";
-import Pakam from "/public/img/Pakam.png";
-import Image1 from "/public/img/Image1.png";
-import Image2 from "/public/img/Image2.png";
-import Image4 from "/public/img/image53.png";
-import Image5 from "/public/img/image53-1.png";
-import Image6 from "/public/img/image56.png";
-import Image7 from "/public/img/image57.png";
-import Image8 from "/public/img/image28.png";
-import Image9 from "/public/img/image31.png";
-import Image10 from "/public/img/image28-2.png";
-import Image11 from "/public/img/image28-1.png";
-import Image12 from "/public/img/image28-3.png";
-import Image13 from "/public/img/image28-4.png";
-import Image14 from "/public/img/image31-2.png";
-import Image15 from "/public/img/image31-3.png";
-import Image16 from "/public/img/image31-4.png";
-import PR from "/public/img/PressRelease.png";
-import Interview1 from "/public/img/Interview1.png";
-import Interview2 from "/public/img/Interview2.png";
-import Interview3 from "/public/img/Interview3.png";
-import Pub1 from "/public/img/Pub1.png";
-import Pub2 from "/public/img/Pub2.png";
-import Pub3 from "/public/img/Pub3.png";
-import Group from "/public/img/GRealease.png";
-import EP from "/public/img/EarnPay.png";
-import Dashboard from "/public/img/DashboardScreen.png";
-import PayDash from "/public/img/PayDashboard.png";
-import PayContent from "/public/img/PayContent.png";
-import PayPhone from "/public/img/PayPhone.png";
-import SmartPhone from "/public/img/SmartPhone.png";
-import EarnPhone from "/public/img/EarnPhone.png";
-import Route from "/public/img/route.png";
-import Globe from "/public/img/globe.png";
-import GlobeEU from "/public/img/globeEu.png";
-import BusWoman from "/public/img/BusinessWoman.png";
-import SmartRF from "/public/img/SmartRF.png";
+// import GuyPickUpTrash from "/img/GupPickupTrash.png";
+
+// import Paper from "/img/Paper.png";
+// import Business from "/img/Business.png";
+// import Pakam from "/img/Pakam.png";
+// import Image1 from "/img/Image1.png";
+// import Image2 from "/img/Image2.png";
+// import Image4 from "/img/image53.png";
+// import Image5 from "/img/image53-1.png";
+// import Image6 from "/img/image56.png";
+// import Image7 from "/img/image57.png";
+// import Image8 from "/img/image28.png";
+// import Image9 from "/img/image31.png";
+// import Image10 from "/img/image28-2.png";
+// import Image11 from "/img/image28-1.png";
+// import Image12 from "/img/image28-3.png";
+// import Image13 from "/img/image28-4.png";
+// import Image14 from "/img/image31-2.png";
+// import Image15 from "/img/image31-3.png";
+// import Image16 from "/img/image31-4.png";
+// import PR from "/img/PressRelease.png";
+// import Interview1 from "/img/Interview1.png";
+// import Interview2 from "/img/Interview2.png";
+// import Interview3 from "/img/Interview3.png";
+// import Pub1 from "/img/Pub1.png";
+// import Pub2 from "/img/Pub2.png";
+// import Pub3 from "/img/Pub3.png";
+// import Group from "/img/GRealease.png";
+// import EP from "/img/EarnPay.png";
+// import Dashboard from "/img/DashboardScreen.png";
+// import PayDash from "/img/PayDashboard.png";
+// import PayContent from "/img/PayContent.png";
+// import PayPhone from "/img/PayPhone.png";
+// import SmartPhone from "/img/SmartPhone.png";
+// import EarnPhone from "/img/EarnPhone.png";
+// import Route from "/img/route.png";
+// import Globe from "/img/globe.png";
+// import GlobeEU from "/img/globeEu.png";
+// import BusWoman from "/img/BusinessWoman.png";
+// import SmartRF from "/img/SmartRF.png";
 
 export interface TechnologyModel {
   imgUrl?: any;
@@ -186,14 +186,14 @@ export const earnarticles: Array<EarnWasteModel> = [
   {
     text: "Earn-as-You Waste is a recycling service that connects waste generators to waste collectors/aggregators in real time, ensuring individuals capture value for their waste. The Earn-as-You Waste mobile application includes a household app which enables household members (as an individual or commercial user like schools, businesses etc.) to schedule for a “pick-up” or “drop-off” of their recyclable waste. With the Earn-as-You Waste App, users can easily sort their trash from source, schedule collection, and receive monetary value of this trash in their wallet. Experience a seamless flow while using your Earn-as-You Waste application.",
     imgAlt: "",
-    imgSrc: EP,
+    imgSrc: "/img/EarnPay.png",
     reverse: false,
   },
 ];
 
 export const earncontentarticles: Array<EarnWasteContentModel> = [
   {
-    imgSrc: EP,
+    imgSrc: "/img/EarnPay.png",
     imgAlt: "pickup",
     header1: "Pickup Schedule Process",
     header2: "How It Works",
@@ -209,7 +209,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
   },
 
   {
-    imgSrc: EarnPhone,
+    imgSrc: "/img/EarnPhone.png",
     imgAlt: "drop off",
     header1: "Drop off Schedule Process",
     header2: "How It Works",
@@ -258,45 +258,45 @@ export const KPIarticles: Array<KPIData> = [
 
 export const KPIFeaturesInfo: Array<FeaturesModel> = [
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: "/img/GupPickupTrash.png",
     imgAlt: "trash",
     text: "Know your daily pickup",
   },
   {
-    imgSrc: Business,
+    imgSrc: "/img/Business.png",
     imgAlt: "trash",
     text: "Reduce your service cost",
   },
   {
-    imgSrc: Globe,
+    imgSrc: "/img/globe.png",
     imgAlt: "trash",
     text: "Provide world class service",
   },
   {
-    imgSrc: Pakam,
+    imgSrc: "/img/Pakam.png",
     imgAlt: "trash",
     text: "Reduce organization’s carbon footprint",
   },
 
   {
-    imgSrc: Paper,
+    imgSrc: "/img/Paper.png",
     imgAlt: "trash",
     text: "Eliminate overfilling by collecting waste real time",
   },
 
   {
-    imgSrc: Route,
+    imgSrc: "/img/route.png",
     imgAlt: "trash",
     text: "Send optimized route directly to truck drivers",
   },
 
   {
-    imgSrc: BusWoman,
+    imgSrc: "/img/BusinessWoman.png",
     imgAlt: "trash",
     text: "Get instant payment on geo payment scheme",
   },
   {
-    imgSrc: GlobeEU,
+    imgSrc: "/img/globeEu.png",
     imgAlt: "trash",
     text: "Geo-fencing location and global positioning system",
   },
@@ -306,7 +306,7 @@ export const Payarticles: Array<EarnWasteModel> = [
   {
     text: "Pay-as-you Waste is a full waste management application that enables citizens to properly dispose their non-recyclable and specialized waste to collectors. This service solves the day to day problem of delayed waste collection by PSP or waste management agencies. Pay-as-You Waste ensures an efficient and effective waste management system to eliminate the overflow of waste bins and environmental pollution in general. This service allows waste to be collected at just a click at an affordable pricing rate for  individuals and businesses. ",
     imgAlt: "",
-    imgSrc: PayDash,
+    imgSrc: "/img/PayDashboard.png",
     reverse: true,
   },
 ];
@@ -315,14 +315,14 @@ export const Smartarticles: Array<EarnWasteModel> = [
   {
     text: "The Pakam Smart Enforcement is an integrated environmental reporting platform that provides an enabling environment for the public to report environmental infractions to environmental agencies in a faste, better, and unified manner. It also allows the regulatory agencies to connect with the reporting public for easy access to all infractions reported.",
     imgAlt: "Pakam Smart Reinforcement",
-    imgSrc: SmartRF,
+    imgSrc: "/img/SmartRF.png",
     reverse: false,
   },
 ];
 
 export const payContentarticles: Array<EarnWasteContentModel> = [
   {
-    imgSrc: PayPhone,
+    imgSrc: "/img/PayPhone.png",
     imgAlt: "pickup",
     header1: "",
     header2: "How It Works",
@@ -341,7 +341,7 @@ export const payContentarticles: Array<EarnWasteContentModel> = [
 
 export const smartContentarticles: Array<EarnWasteContentModel> = [
   {
-    imgSrc: SmartPhone,
+    imgSrc: "/img/SmartPhone.png",
     imgAlt: "pickup",
     header1: "",
     header2: "How It Works",
@@ -359,22 +359,22 @@ export const smartContentarticles: Array<EarnWasteContentModel> = [
 
 export const kpiFeatures: Array<FeaturesModel> = [
   {
-    imgSrc: GlobeEU,
+    imgSrc: "/img/globeEu.png",
     imgAlt: "trash",
     text: "Geo fencing and global positioning",
   },
   {
-    imgSrc: Route,
+    imgSrc: "/img/route.png",
     imgAlt: "trash",
     text: "Send optimise routes directly to environmental agencies",
   },
   {
-    imgSrc: Globe,
+    imgSrc: "/img/globe.png",
     imgAlt: "trash",
     text: "Provide world class service.",
   },
   {
-    imgSrc: Pakam,
+    imgSrc: "/img/Pakam.png",
     imgAlt: "trash",
     text: "Reduce organization carbon footprint",
   },
@@ -382,42 +382,42 @@ export const kpiFeatures: Array<FeaturesModel> = [
 
 export const payKpifeatures: Array<FeaturesModel> = [
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: "/img/GupPickupTrash.png",
     imgAlt: "trash",
     text: "Provide world class service",
   },
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: "/img/GupPickupTrash.png",
     imgAlt: "trash",
     text: "Reduce organization’s carbon footprint",
   },
   {
-    imgSrc: Paper,
+    imgSrc: "/img/Paper.png",
     imgAlt: "trash",
     text: "Geo-fencing location and global positioning system",
   },
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: "/img/GupPickupTrash.png",
     imgAlt: "trash",
     text: "Eliminate overfilling by collecting waste real time",
   },
   {
-    imgSrc: Business,
+    imgSrc: "/img/Business.png",
     imgAlt: "trash",
     text: "Send optimized route directly to truck drivers",
   },
   {
-    imgSrc: Business,
+    imgSrc: "/img/Business.png",
     imgAlt: "trash",
     text: "Get instant payment on geo payment scheme",
   },
   {
-    imgSrc: Paper,
+    imgSrc: "/img/Paper.png",
     imgAlt: "trash",
     text: "Geo-fencing location and global positioning system",
   },
   {
-    imgSrc: GuyPickUpTrash,
+    imgSrc: "/img/GupPickupTrash.png",
     imgAlt: "trash",
     text: "Eliminate overfilling by collecting waste real time",
   },
@@ -764,7 +764,7 @@ interface NewsMediaModel {
 
 export const NewsMediaArticles: Array<NewsMediaModel> = [
   {
-    imgSrc: Image4,
+    imgSrc: "/img/image53.png",
     headline:
       "LAWMA to commence prosecution of resident without wastebin in october",
     subtext:
@@ -786,7 +786,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image5,
+    imgSrc: "/img/image53-1.png",
     headline: "Lagos Without traffic pollution ",
     subtext:
       " Two hundred thousand tons of waste produced in Nigeria ends up in the ocean every year, according to estimates by the World Economic Forum.",
@@ -807,7 +807,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image6,
+    imgSrc: "/img/image56.png",
     headline: '"Pakam" the mobile application for waste recycling in Lagos',
     subtext:
       'While plastic pollution affects the soil and water bodies in Nigeria, the government of this West African country is encouraging the start-up Pakam Technology whose mobile application "Pakam" has been contributing...',
@@ -828,7 +828,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image7,
+    imgSrc: "/img/image57.png",
     headline: "Waste managers in Nigeria meets, address recycling",
     subtext: "",
     imgAlt: "Pakam",
@@ -848,7 +848,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image8,
+    imgSrc: "/img/image28.png",
     headline:
       "LAWMA sets to make household ownership of wastebin mandatory by october 1st",
     subtext:
@@ -870,7 +870,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image9,
+    imgSrc: "/img/image31.png",
     headline: "LAWMA marks 3rd anniversary of recyclers initiative",
     subtext:
       "Lagos Waste Management Authority (LAWMA) has celebrated the 3rd anniversary of the Lagos Recycle Initiative, launched three years ago, to introduce waste sorting at source for recycling purposes, to tackle the challenge of plastic...",
@@ -891,7 +891,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image10,
+    imgSrc: "/img/image28-2.png",
     headline: "Lagos sets pace in turning trash to treasure",
     subtext:
       "The Lagos State Government has said it will alleviate poverty by using waste recycling processes to create jobs for women across the state",
@@ -912,7 +912,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image11,
+    imgSrc: "/img/image28-1.png",
     headline: "Waste recycling will create job for women",
     subtext:
       "From creating local equipment to aid waste disposal to forming partnerships with the private sector, Lagos State is setting up a winning model on how to formalise waste...",
@@ -933,7 +933,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image12,
+    imgSrc: "/img/image28-3.png",
     headline: "From trash to cash",
     subtext:
       "“Many corporations have reengineered their operations to minimise their environmental impact... ",
@@ -954,7 +954,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image7,
+    imgSrc: "/img/image57.png",
     headline: "Recycling enthusiast avocate change in waste disposal",
     subtext: "",
     imgAlt: "Pakam",
@@ -974,7 +974,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image13,
+    imgSrc: "/img/image28-4.png",
     headline:
       "Graduate of economics wins $3,500 Ekoclimation prize for innovation in fertiliser",
     subtext:
@@ -996,7 +996,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image1,
+    imgSrc: "/img/Image1.png",
     headline:
       "Dr. Dolapo Fasawe: Making Case for the Environment at COP2 6 through LASEPA",
     subtext:
@@ -1018,7 +1018,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image2,
+    imgSrc: "/img/Image2.png",
     headline:
       "Sanwo-Olu moves to create 6,000 jobs as lagos adopts waste conversion",
     subtext:
@@ -1041,7 +1041,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image14,
+    imgSrc: "/img/image31-2.png",
     headline: "Lawma records, impressive to Lagos recycle initiative ",
     subtext:
       "Following the commencement of the Lagos Recycle Initiative, geared towards addressing the menace of plastic pollution in the state.",
@@ -1062,7 +1062,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image15,
+    imgSrc: "/img/image31-3.png",
     headline: "Lawma continues to improve on waste mangement strategy. ",
     subtext:
       "It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
@@ -1083,7 +1083,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Image16,
+    imgSrc: "/img/image31-4.png",
     headline:
       "Lagos showcase 102 trucks, 100 locally assembled bins to tackle waste ",
     subtext:
@@ -1107,7 +1107,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
 
 export const PressRelase: Array<NewsMediaModel> = [
   {
-    imgSrc: Group,
+    imgSrc: "/img/GRealease.png",
     headline: "Lawma countinues to improve on waste mangement strategy.",
     subtext:
       " “It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
@@ -1134,7 +1134,7 @@ export const PressRelase: Array<NewsMediaModel> = [
 
 export const InterviewData: Array<NewsMediaModel> = [
   {
-    imgSrc: Interview1,
+    imgSrc: "/img/Interview1.png",
     headline:
       "Cleaning up Lagos: How a startup is turning waste into a scarce resources that you and i will beg for one day.",
     subtext: "",
@@ -1155,7 +1155,7 @@ export const InterviewData: Array<NewsMediaModel> = [
   },
 
   {
-    imgSrc: Interview2,
+    imgSrc: "/img/Interview2.png",
     headline: "Recycle and Make Money",
     subtext: "",
     imgAlt: "Pakam",
@@ -1174,7 +1174,7 @@ export const InterviewData: Array<NewsMediaModel> = [
     ],
   },
   {
-    imgSrc: Interview3,
+    imgSrc: "/img/Interview3.png",
     headline: "LAWMA Rewards Recyclers, Encourages Others",
     subtext: "",
     imgAlt: "Pakam",
@@ -1196,7 +1196,7 @@ export const InterviewData: Array<NewsMediaModel> = [
 
 export const PublicationData: Array<NewsMediaModel> = [
   {
-    imgSrc: Pub2,
+    imgSrc: "/img/Pub2.png",
     headline: "Circularity in Nigeria",
     subtext: "",
     imgAlt: "Pakam",
@@ -1215,7 +1215,7 @@ export const PublicationData: Array<NewsMediaModel> = [
     ],
   },
   {
-    imgSrc: Pub3,
+    imgSrc: "/img/Pub3.png",
     headline: "Plastic polution: Can recycling help save Lagos?",
     subtext: "",
     imgAlt: "Pakam",
@@ -1234,7 +1234,7 @@ export const PublicationData: Array<NewsMediaModel> = [
     ],
   },
   {
-    imgSrc: Pub1,
+    imgSrc: "/img/Pub1.png",
     headline: "Waste management in Lagos: The realities?",
     subtext: "",
     imgAlt: "Pakam",
