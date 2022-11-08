@@ -22,7 +22,7 @@ const CareerBodyText = styled.p`
   ${tw`font-thin text-center text-lg md:text-xl lg:text-3xl`}
 `;
 const Careers: NextPage = () => {
-  const [isJobOpen, setIsJobOpen] = useState(false);
+  const [isJobOpen, setIsJobOpen] = useState(true);
 
   const pages: Array<PageModel> = [
     {

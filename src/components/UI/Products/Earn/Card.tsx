@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import { Button } from "../../..";
 import { ImageImage } from "../styles";
 import { EarnWasteContentModel } from "../../../../utils/data";
+import Image from "next/image";
 
 import {
   ImageContent,
@@ -43,7 +44,21 @@ const Card = ({
     <CardWrapper rev={reverse ? true : false}>
       <ImageContent>
         <ImageContainers rev={reverse ? true : false}>
-          <ImageImage src={imgSrc} alt={imgAlt}></ImageImage>
+          {/* <ImageImage
+            src={imgSrc}
+            alt={imgAlt}
+            width={500}
+            height={300}
+            className="object-contain"
+          ></ImageImage> */}
+
+          <Image
+            src={imgSrc}
+            alt={imgAlt}
+            width={800}
+            height={800}
+            className="object-contain"
+          />
         </ImageContainers>
       </ImageContent>
 

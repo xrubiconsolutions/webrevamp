@@ -46,7 +46,7 @@ const Card = ({
             layout="responsive"
             width={500}
             height={300}
-            className="mt-10"
+            className="mt-10 object-cover"
           />
         </div>
         {/* <Link href={link} target="_blank">
