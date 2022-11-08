@@ -1,7 +1,6 @@
 import React from "react";
 import { ReviewData } from "../../../../utils/data";
 import { Name, Role, Content, Wrapper } from "./styles";
-import { RiDoubleQuotesR } from "react-icons/Ri";
 import Quote from "/public/img/Quote.png";
 import Image from "next/image";
 import styled from "styled-components";
