@@ -155,11 +155,12 @@ export const whatwedo: Array<TechnologyModel> = [
   },
 ];
 
-interface EarnWasteModel {
+export interface EarnWasteModel {
   imgSrc: any;
   imgAlt: string;
   text: string;
   reverse: boolean;
+  top?: boolean;
 }
 
 export interface EarnWasteContentModel {
@@ -188,6 +189,7 @@ export const earnarticles: Array<EarnWasteModel> = [
     imgAlt: "",
     imgSrc: "/img/EarnPay.png",
     reverse: false,
+    top: true,
   },
 ];
 
@@ -308,6 +310,7 @@ export const Payarticles: Array<EarnWasteModel> = [
     imgAlt: "",
     imgSrc: "/img/PayDashboard.png",
     reverse: true,
+    top: false,
   },
 ];
 
@@ -317,6 +320,7 @@ export const Smartarticles: Array<EarnWasteModel> = [
     imgAlt: "Pakam Smart Reinforcement",
     imgSrc: "/img/SmartRF.png",
     reverse: false,
+    top: false,
   },
 ];
 

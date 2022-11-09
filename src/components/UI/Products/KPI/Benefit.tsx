@@ -11,8 +11,8 @@ const Benefit = () => {
   const articles = KPIFeaturesInfo;
   return (
     <FeaturesSection>
-      {articles?.map((article) => {
-        return <Card {...article} />;
+      {articles?.map((article, i) => {
+        return <Card {...article} key={i} />;
       })}
     </FeaturesSection>
   );

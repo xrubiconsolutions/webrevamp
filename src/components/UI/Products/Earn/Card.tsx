@@ -43,23 +43,13 @@ const Card = ({
   return (
     <CardWrapper rev={reverse ? true : false}>
       <ImageContent>
-        <ImageContainers rev={reverse ? true : false}>
-          {/* <ImageImage
-            src={imgSrc}
-            alt={imgAlt}
-            width={500}
-            height={300}
-            className="object-contain"
-          ></ImageImage> */}
-
-          <Image
-            src={imgSrc}
-            alt={imgAlt}
-            width={800}
-            height={800}
-            className="object-contain"
-          />
-        </ImageContainers>
+        <Image
+          src={imgSrc}
+          alt={imgAlt}
+          width={600}
+          height={450}
+          className="object-contain"
+        />
       </ImageContent>
 
       <ContentContainer>
@@ -68,7 +58,7 @@ const Card = ({
 
         {sub_text?.map((item, index) => {
           return (
-            <Section>
+            <Section key={index}>
               <Span> {index + 1}.</Span>
               <Paragraph rev={reverse ? true : false}>{item}</Paragraph>
             </Section>

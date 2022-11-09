@@ -10,8 +10,8 @@ const Earnaswaste = () => {
       <OverallContainer>
         <Container>
           <Heading>Earn-as-you Waste (Pakam Household).</Heading>
-          {earnarticles.map((article) => {
-            return <FlexContainer {...article} />;
+          {earnarticles.map((article, i) => {
+            return <FlexContainer {...article} key={i} />;
           })}
         </Container>
       </OverallContainer>

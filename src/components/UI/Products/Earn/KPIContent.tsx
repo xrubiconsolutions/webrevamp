@@ -10,8 +10,8 @@ const KPIContent = () => {
   return (
     <BodyContent>
       <Container>
-        {articles?.map((article) => (
-          <KPIHeader {...article} />
+        {articles?.map((article, i) => (
+          <KPIHeader {...article} key={i} />
         ))}
         <Benefit />
       </Container>

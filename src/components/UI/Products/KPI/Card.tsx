@@ -72,9 +72,13 @@ const Card = ({ imgSrc = "", text = "", imgAlt = "", ...props }) => {
 
       <Overall>
         <div className="h-[160px]">
-          <ImageContainers>
-            <Image src={imgSrc} alt={imgAlt} width={200} height={200}></Image>
-          </ImageContainers>
+          <Image
+            src={imgSrc}
+            alt={imgAlt}
+            width={100}
+            height={100}
+            className="object-contain"
+          ></Image>
         </div>
         <div className="h-[80px]">
           <P>{text}</P>
