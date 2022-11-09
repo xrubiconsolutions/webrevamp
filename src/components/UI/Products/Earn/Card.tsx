@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Button } from "../../..";
-import { ImageImage } from "../styles";
+// import { ImageImage } from "../styles";
 import { EarnWasteContentModel } from "../../../../utils/data";
 import Image from "next/image";
 
