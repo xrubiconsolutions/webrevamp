@@ -1107,6 +1107,47 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
       },
     ],
   },
+
+  {
+    imgSrc: "/img/Mark.png",
+    headline: "Tacking Pollution Through Recycling Of aste Produtcs",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: "/img/Mark1.png",
+    headline:
+      "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
 ];
 
 export const PressRelase: Array<NewsMediaModel> = [
