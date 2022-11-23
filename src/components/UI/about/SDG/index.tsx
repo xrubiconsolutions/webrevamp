@@ -86,6 +86,7 @@ const SDG = () => {
     title: "",
     subtitle: "",
   });
+
   function openModal() {
     setIsOpen(true);
   }
@@ -96,7 +97,6 @@ const SDG = () => {
   type IValue = keyof typeof SDGImageModalValue;
   const handleOpenModal = (value: IValue) => {
     if (!SDGImageModalValue[value]) return;
-
     setInfo({ modalalt: "", url: "", title: "", subtitle: "" });
     setTimeout(() => {
       setInfo(SDGImageModalValue[value]);
