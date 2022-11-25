@@ -51,7 +51,7 @@ const Home: NextPage = () => {
             </BannerCaptionText>
             <BtnContainer>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSete7w0TI_H2PwT2_60ezC5nEE1CnTMUQeQ01AkJoCy-u3CZg/viewform"
+                href="https://forms.zohopublic.com/pakamtechnologylimited/form/WASTEBANCAGENTREGISTRATION/formperma/QOZQSCayHg6Fjw_5HUgtUJ1Hew4KbBag7-LNW7RsFPU"
                 target="_blank"
                 rel="noopener"
               >

@@ -121,7 +121,7 @@ const Testimonial = () => {
                   </SwiperHeaderP>
                 </SwiperContainer>
               </SwiperSlide>
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <SwiperContainer>
                   <SwiperHeaderContainer>
                     <SwiperHeader>
@@ -144,7 +144,7 @@ const Testimonial = () => {
                     again.
                   </SwiperHeaderP>
                 </SwiperContainer>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
                 <SwiperContainer>
                   <SwiperHeaderContainer>
@@ -172,8 +172,7 @@ const Testimonial = () => {
                   </SwiperHeaderContainer>
                   <SwiperHeaderP>
                     This is the best sustinable app I’ve ever seen. Quality
-                    services, but poor customer service response. Keep up the
-                    good work.
+                    services. Keep up the good work
                   </SwiperHeaderP>
                 </SwiperContainer>
               </SwiperSlide>

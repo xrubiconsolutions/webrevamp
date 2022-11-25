@@ -11,7 +11,7 @@ const TabsContainer = styled(FlexContainer)<{
   justify-content: ${(props) => props.center && "space-between"};
 
   @media (max-width: 768px) {
-    justify-content: ${({ center }) => center && "center"};
+    justify-content: ${({ center }) => center && "space-between"};
     gap: 10px;
   }
 

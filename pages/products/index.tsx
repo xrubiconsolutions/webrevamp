@@ -12,10 +12,10 @@ const Products = () => {
 
   const pages: Array<PageModel> = [
     {
-      tab: "Earn-as-you Waste ",
+      tab: "Earn-as-You Waste ",
       component: <Earn />,
     },
-    { tab: "Pay-as-you Waste", component: <Pay /> },
+    { tab: "Pay-as-You Waste", component: <Pay /> },
     { tab: "Smart Enforcement", component: <SmartReinforcement /> },
   ];
 

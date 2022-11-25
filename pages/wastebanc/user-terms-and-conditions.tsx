@@ -202,7 +202,7 @@ const UserTerms = () => {
               waste is not sorted, the User shall pay the collector a mutually
               agreed cash for performing such task on-behave of the user.
               Otherwise, collector shall collect the waste and shall not be
-              registered for the user in the case of earn as you waste.
+              registered for the user in the case of Earn-as-You Waste.
             </p>
             <p>
               3.6 If you have requested collection services using the Wastebanc

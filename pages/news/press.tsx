@@ -46,7 +46,7 @@ const Press = () => {
         <BodyP>
           Pakam is a next-generation unified waste management collection
           software & reporting platform start-up, enabling circularity &
-          responsible disposal of waste on an earn as you waste basis to achieve
+          responsible disposal of waste on an Earn-as-You Waste basis to achieve
           a zero-waste circular economy. Pakam connects waste from the
           generating public and/or businesses to waste companies through waste
           collector in real-time, activates transactions in real-time, and

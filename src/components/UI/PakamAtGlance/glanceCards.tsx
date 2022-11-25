@@ -29,6 +29,7 @@ const GlanceCard = styled.article`
   }
   @media screen and (min-width: 1200px) {
     max-height: 285px;
+    // min-height: 300px;
   }
 `;
 const GlanceCardsContainer = styled.div`
@@ -69,7 +70,7 @@ const GlanceCardTitle = styled.h6`
   ${tw` font-extrabold text-primary text-xl`}
 `;
 const GlanceCardBody = styled.p`
-  ${tw`text-base font-medium`}
+  ${tw`text-sm leading-normal font-medium`}
 `;
 const GlanceCardLink = styled.a`
   ${tw`text-sm font-extrabold`}
@@ -92,9 +93,9 @@ const GlanceCards = () => {
                 />
                 <GlanceCardTitle>{subscription[1].title}</GlanceCardTitle>
                 <GlanceCardBody>
-                  Pakam pay as you waste is a platform as a service. for waste{" "}
-                  disposal that encourages proper disposal of specialised &{" "}
-                  non-recyclable waste on demand.{" "}
+                  Pay-as-You Waste is a full waste management appication that
+                  enables citizen to properly dispose their non-recyclable and
+                  specialized waste to collector.
                 </GlanceCardBody>
                 <GlanceCardLink href="">{subscription[1].link}</GlanceCardLink>
               </GlanceCard>
@@ -109,9 +110,12 @@ const GlanceCards = () => {
                 />
                 <GlanceCardTitle>{subscription[0].title}</GlanceCardTitle>
                 <GlanceCardBody>
-                  Pakam earn as you waste is a recycling platform as a service
-                  that connects recyclable waste generators to recyclable waste{" "}
-                  collectors while creating value from waste.
+                  {/* Earn-as-You Waste is a recycling service that connects waste
+                  generators to waste collectors/aggregators in real time,
+                  ensuring individuals capture value for their waste. */}
+                  Earn-as-You Waste is a recycling service that connects waste
+                  generators to waste collectors/aggregators in real time,
+                  ensuring individuals capture value for their waste.
                 </GlanceCardBody>
                 <GlanceCardLink href="">{subscription[0].link}</GlanceCardLink>
               </GlanceCard>
@@ -126,9 +130,13 @@ const GlanceCards = () => {
                 />
                 <GlanceCardTitle>{subscription[2].title}</GlanceCardTitle>
                 <GlanceCardBody>
-                  Pakam smart enforcement is an environmental reporting platform
+                  {/* Pakam smart enforcement is an environmental reporting platform
                   that connects reporting public to environmental agencies in
-                  real-time.
+                  real-time. */}
+                  The Pakam Smart Enforcement is an integrated environmental
+                  reporting platform that provides an enabling environment for
+                  the public to report environmental infractions to
+                  environmental agencies in faster, better, and unified manner.
                 </GlanceCardBody>
                 <GlanceCardLink href="">{subscription[2].link}</GlanceCardLink>
               </GlanceCard>

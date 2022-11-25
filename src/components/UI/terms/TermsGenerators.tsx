@@ -182,7 +182,7 @@ const TermsGenerators = () => {
     //     pickup or drop off. If waste is not sorted, the generator shall pay the
     //     collector a mutually agreed cash for performing such task on-behave of
     //     the generator. Otherwise, collector shall collect the waste and shall
-    //     not be registered for the generator in the case of earn as you waste.
+    //     not be registered for the generator in the case of Earn-as-You Waste.
     //   </BodyP>
     //   <BodyP>
     //     3.6 If you have requested collection services using the Pakam app and
