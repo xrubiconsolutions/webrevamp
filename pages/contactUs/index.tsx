@@ -4,6 +4,9 @@ import { Container } from "../../src/components";
 import Image from "next/image";
 import { contact, contact2 } from "../../src/utils/data";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { BsArrowUpRight } from "react-icons/bs";
+import { Map } from "../../src/components/UI/Map/Map";
 
 const ContactSection = styled.div`
   padding: 3.2rem 0;
@@ -43,6 +46,8 @@ const ConatctTextContainerLinks = styled.div`
   ${tw`flex items-center gap-5`}
 `;
 const Contact = () => {
+  const router = useRouter();
+
   return (
     <ContactSection>
       <Container>
@@ -51,9 +56,10 @@ const Contact = () => {
           <ContactContainer>
             <ConatctImageContainer>
               <Image
-                src="/img/Rectangle 3463371.png"
+                src="/img/contact.png"
                 height={387}
                 width={580}
+                objectFit="cover"
               />
             </ConatctImageContainer>
             <ConatctTextContainer>
@@ -63,14 +69,25 @@ const Contact = () => {
                     <ConatctTextContainerh6>{el.title}</ConatctTextContainerh6>
                     <ConatctTextContainerP>{el.text}</ConatctTextContainerP>
                     <ConatctTextContainerLink>
-                      {el.link}
+                      {/* <a> {el.link}</a> */}
+
+                      <div
+                        onClick={() => router.push(`${el.linkto}`)}
+                        className="hover:cursor-pointer w-[30%] flex items-center justify-start gap-1"
+                      >
+                        {el.link}
+                        <span>
+                          <BsArrowUpRight />
+                        </span>
+                      </div>
                     </ConatctTextContainerLink>
                   </ConatctTextWrapper>
                 );
               })}
             </ConatctTextContainer>
           </ContactContainer>
-          <ContactContainer className="!flex !flex-col-reverse lg:!grid lg:!grid-cols-2 ">
+
+          <ContactContainer className="!flex !flex-col-reverse lg:!grid lg:!grid-cols-2  ">
             <ConatctText2Container>
               {contact2.map((el, i) => {
                 console.log("el", el);
@@ -111,14 +128,17 @@ const Contact = () => {
                 );
               })}
             </ConatctText2Container>
-            <ConatctImageContainer>
-              <Image
-                src="/img/Rectangle 3463371 (1).png"
+            {/* <ConatctImageContainer> */}
+            {/* <Image
+                src="/img/contact1.png"
                 height={387}
                 width={580}
                 alt="contact"
-              />
-            </ConatctImageContainer>
+                objectFit="contain"
+              /> */}
+
+            <Map />
+            {/* </ConatctImageContainer> */}
           </ContactContainer>
         </div>
       </Container>

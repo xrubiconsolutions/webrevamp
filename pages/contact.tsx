@@ -1,14 +1,10 @@
-import { NextPage } from "next";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { Button, Container } from "../../src/components";
-import Accordion from "../../src/components/Accordion/accordion";
-import Input from "../../src/components/Input/input";
-import { faqs } from "../../src/utils/data";
-import { faqRequest } from "../../src/utils/ApiRequest";
 import { toast } from "react-toastify";
-import { useRouter } from "next/router";
+import Input from "../src/components/Input/input";
+import { faqRequest } from "../src/utils/ApiRequest";
+import { Button } from "../src/components";
 
 const FaqSection = styled.section`
   ${tw`bg-secondary py-6 lg:py-20`}
@@ -77,10 +73,9 @@ const ButtonWrappper = styled.div`
   ${tw`mt-4 flex mx-auto`}
 `;
 
-const Faqs: NextPage = () => {
+const contact = () => {
   const [primary, setPrimary] = useState(true);
   const [white, setWhite] = useState(true);
-
   const defaultFormData: {} = {
     email: "",
     message: "",
@@ -144,21 +139,7 @@ const Faqs: NextPage = () => {
   };
 
   return (
-    <>
-      <FaqSection>
-        <Container>
-          <FaqHeader>
-            <FaqHeaderH1>FAQs</FaqHeaderH1>
-
-            <FaqHeaderP>
-              You have got any questions? we’ve got you covered!
-            </FaqHeaderP>
-          </FaqHeader>
-          <FaqBody>
-            <Accordion data={faqs} />
-          </FaqBody>
-        </Container>
-      </FaqSection>
+    <div>
       <FaqForm id="form">
         <FaqFormTitle>Still have questions? Shoot.</FaqFormTitle>
         {isLoading && (
@@ -193,8 +174,8 @@ const Faqs: NextPage = () => {
           </ButtonWrappper>
         </FormContainer>
       </FaqForm>
-    </>
+    </div>
   );
 };
 
-export default Faqs;
+export default contact;

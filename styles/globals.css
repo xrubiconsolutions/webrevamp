@@ -41,3 +41,28 @@
   border-color: #005700 !important;
   color: #fff;
 }
+
+.map-container {
+  height: 400px;
+  width: 90%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .map-container {
+    margin-top: -55px;
+    margin-bottom: 30px;
+    height: 350px;
+    width: 70%;
+    width: 580px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .map-container {
+    margin-top: -55px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 100%;
+  }
+}

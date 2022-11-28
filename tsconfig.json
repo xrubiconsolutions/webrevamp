@@ -25,7 +25,8 @@
     "src/components/UI/Products/Flex.tsx",
     "src/components/UI/Products/Earn/Earnaswaste.tsx",
     "src/components/UI/Products/Pay/Payaswaste.tsx",
-    "src/components/UI/Products/Earn/Card.jsx"
+    "src/components/UI/Products/Earn/Card.jsx",
+    "src/components/UI/Map/Map.ts"
   ],
   "exclude": ["node_modules"]
 }
