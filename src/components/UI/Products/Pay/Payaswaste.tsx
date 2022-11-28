@@ -12,7 +12,7 @@ const Payaswaste = () => {
     <div>
       <OverallContainer>
         <Container>
-          <Heading>Pay-as-you Waste (Pakam Waste Disposal).</Heading>
+          <Heading>Pay-as-You Waste (Pakam Waste Disposal).</Heading>
           {articles.map((article) => {
             return <FlexContainer {...article} />;
           })}

@@ -43,38 +43,35 @@ export const Heading = styled.h1`
   }
 `;
 
-export const Flex = styled.div<{ reverse: boolean }>`
-  ${tw`flex flex-col lg:w-full gap-20 lg:mt-10  `}
+export const Flex = styled.div<{ reverse: boolean; top: boolean }>`
+  ${tw`flex flex-col lg:w-full gap-10 items-center justify-between mt-0`}
   flex-direction:${({ reverse }) => (reverse ? "row-reverse" : "row")};
+  padding-top: ${({ top }) => (top ? "70px" : "")};
   @media (max-width: 1024px) {
     flex-direction: column;
+    padding-top: ${({ top }) => (top ? "10px" : "")};
+  }
+
+  @media (max-width: 728px) {
+    padding-top: ${({ top }) => (top ? "20px" : "")};
   }
   > div:first-child {
-    ${tw`flex xl:w-[65%] md:w-full sm:w-full`};
+    ${tw`xl:w-[65%]`}
   }
   > div:nth-child(2) {
-    ${tw`flex md:w-[50%] lg:w-[100%] xl:w-[35%] sm:w-full `};
-
-    @media (max-width: 1024px) {
-      width: 50%;
-    }
-
-    @media (max-width: 768px) {
-      width: 45%;
-    }
-
-    @media (max-width: 500px) {
-      width: 80%;
-    }
+    ${tw`xl:w-[30%]`}
   }
 `;
 
-export const Paragraph = styled.p`
-  ${tw`text-white pt-10 lg:pt-0 xl:pt-10 pb-10 lg:pb-20  lg:text-base lg:leading-[40px] text-sm leading-9 font-light`}
+export const Paragraph = styled.p<{ reverse: boolean }>`
+  ${tw`text-white pt-10 lg:pt-0 xl:pt-10 pb-10 lg:pb-20  lg:text-base lg:leading-[40px] text-sm leading-9 font-light`};
+  margin-top: ${({ reverse }) => (reverse ? "30px" : "")};
 `;
 
-export const ImageImage = styled(Image)`
-  // object-fit: contain;
+export const ImageContains = styled.div<{ top: boolean }>`
+  @media (max-width: 1024px) {
+    margin-top: ${({ top }) => (!top ? "-80px" : "")};
+  }
 `;
 
 export const ImageContainer = styled.div`

@@ -9,9 +9,9 @@ const Earnaswaste = () => {
     <div>
       <OverallContainer>
         <Container>
-          <Heading>Earn-as-you Waste (Pakam Household).</Heading>
-          {earnarticles.map((article) => {
-            return <FlexContainer {...article} />;
+          <Heading>Earn-as-You Waste (Pakam Household).</Heading>
+          {earnarticles.map((article, i) => {
+            return <FlexContainer {...article} key={i} />;
           })}
         </Container>
       </OverallContainer>

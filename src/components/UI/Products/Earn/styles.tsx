@@ -2,17 +2,16 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const CardWrapper = styled.div<{ rev: boolean }>`
-  ${tw`lg:w-full md:w-full md:items-start flex justify-between  lg:items-center  lg:pt-4 `}
+  ${tw`md:flex justify-between items-center pt-16 pb-0  md:pb-10`}
   flex-direction: ${({ rev }) => (rev ? "row-reverse" : "row")};
-
   @media (max-width: 1024px) {
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
   }
 `;
 
 export const ImageContent = styled.div`
-  ${tw`  md:w-[45%] lg:w-[35%] `};
+  ${tw` w-full md:w-[47%]`}
 `;
 export const ImageContainers = styled.div<{ rev: boolean }>`
   margin: auto;
@@ -42,7 +41,7 @@ export const ImageContainers = styled.div<{ rev: boolean }>`
 `;
 
 export const ContentContainer = styled.div`
-  ${tw` lg:w-[100%] xl:w-[50%]  mt-10 lg:pr-10`}
+  ${tw`w-full md:w-[47%] pt-10 `}
 `;
 
 export const ProcessHeader = styled.div`
@@ -54,11 +53,10 @@ export const WorkHeader = styled.div`
 
 export const Section = styled.div`
   ${tw`flex gap-5 pb-7 lg:pb-6 `};
-  font-family: Raleway;
 `;
 
 export const Paragraph = styled.div<{ rev: boolean }>`
-  ${tw` text-sm leading-[20px] lg:text-base lg:leading-[25px] text-body  `};
+  ${tw` text-sm leading-[20px] lg:text-base lg:leading-[25px] text-body`};
 `;
 
 export const Span = styled.span`

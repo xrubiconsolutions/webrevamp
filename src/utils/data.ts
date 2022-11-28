@@ -97,21 +97,21 @@ export const serve: Array<TechnologyModel> = [
   {
     imgUrl: "/svg/Group 625999.svg",
     title: "Citizens",
-    text: "We are improving citizen engagement to waste management through waste on demand and incentivisation.. ",
+    text: "Pakam aims to improve citizen engagement in waste management through waste on-demand solution  and incentivisation. ",
     link: "Read more",
     linkUrl: "/serve/citizens",
   },
   {
     imgUrl: "/svg/Group 625998.svg",
     title: "Business operators",
-    text: "We are helping waste businesses to optimize their collection & operations.",
+    text: "Pakam aims to enable the waste management ecosystem businesses by optimizing their collections and operations to ensure a seamless business transaction flow.",
     link: "Read more",
     linkUrl: "/serve/business-operators",
   },
   {
     imgUrl: "/svg/Group 625997.svg",
     title: "Agencies",
-    text: "We are helping government and it’s agencies to build data for insight, track inclusion and build resilience with smart reporting. ",
+    text: "Pakam is proffering solutions for the government and its agencies to build data for insight, track inclusion and build resilience through our smart enforcement and reporting platform.  ",
     link: "Read more",
     linkUrl: "/serve/agencies",
   },
@@ -119,13 +119,13 @@ export const serve: Array<TechnologyModel> = [
 export const subscription: Array<TechnologyModel> = [
   {
     imgUrl: analytics,
-    title: "Earn as you waste",
+    title: "Earn-as-You Waste",
     text: ``,
     link: "Read more",
   },
   {
     imgUrl: payment,
-    title: "Pay as you waste",
+    title: "Pay-as-You Waste",
     text: "",
     link: "Read more",
   },
@@ -143,7 +143,7 @@ export const whatwedo: Array<TechnologyModel> = [
   },
   {
     imgUrl: "/img/coins.png",
-    title: "Waste managemenet consultancy",
+    title: "Waste Management Consultancy ",
   },
   {
     imgUrl: "/img/entypo_news.png",
@@ -155,11 +155,12 @@ export const whatwedo: Array<TechnologyModel> = [
   },
 ];
 
-interface EarnWasteModel {
+export interface EarnWasteModel {
   imgSrc: any;
   imgAlt: string;
   text: string;
   reverse: boolean;
+  top?: boolean;
 }
 
 export interface EarnWasteContentModel {
@@ -188,6 +189,7 @@ export const earnarticles: Array<EarnWasteModel> = [
     imgAlt: "",
     imgSrc: "/img/EarnPay.png",
     reverse: false,
+    top: true,
   },
 ];
 
@@ -203,7 +205,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
       "Sign In.",
       "Click schedule request and select the “schedule pickup” option for your sorted recyclable waste from within the Pakam app",
       "A nearby collector accepts your schedule and gets routed to your location to complete the pickup.",
-      "Your E-wallet is credited as soon as the request is completed. EARN-AS-YOU WASTE!!! Recycling made easy.",
+      "Your E-wallet is credited as soon as the request is completed. Earn-as-You Waste!!! Recycling made easy.",
     ],
     reverse: false,
   },
@@ -221,7 +223,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
       "Choose waste category/categories and input the waste quantity in bags.",
       "Choose a preferred date for waste drop-off ",
       "Confirm and submit a drop-off request",
-      "Your E-wallet is credited as soon as the request is completed by the recycler. EARN-AS-YOU WASTE!!! Recycling made easy.",
+      "Your E-wallet is credited as soon as the request is completed by the recycler. Earn-as-You Waste!!! Recycling made easy.",
     ],
     reverse: true,
   },
@@ -304,10 +306,11 @@ export const KPIFeaturesInfo: Array<FeaturesModel> = [
 
 export const Payarticles: Array<EarnWasteModel> = [
   {
-    text: "Pay-as-you Waste is a full waste management application that enables citizens to properly dispose their non-recyclable and specialized waste to collectors. This service solves the day to day problem of delayed waste collection by PSP or waste management agencies. Pay-as-You Waste ensures an efficient and effective waste management system to eliminate the overflow of waste bins and environmental pollution in general. This service allows waste to be collected at just a click at an affordable pricing rate for  individuals and businesses. ",
+    text: "Pay-as-You Waste is a full waste management application that enables citizens to properly dispose their non-recyclable and specialized waste to collectors. This service solves the day to day problem of delayed waste collection by PSP or waste management agencies. Pay-as-You Waste ensures an efficient and effective waste management system to eliminate the overflow of waste bins and environmental pollution in general. This service allows waste to be collected at just a click at an affordable pricing rate for  individuals and businesses. ",
     imgAlt: "",
     imgSrc: "/img/PayDashboard.png",
     reverse: true,
+    top: false,
   },
 ];
 
@@ -317,6 +320,7 @@ export const Smartarticles: Array<EarnWasteModel> = [
     imgAlt: "Pakam Smart Reinforcement",
     imgSrc: "/img/SmartRF.png",
     reverse: false,
+    top: false,
   },
 ];
 
@@ -482,8 +486,11 @@ export const faqs: Array<TechnologyModel> = [
   },
   {
     text: "How do I register on the app and setup a new schedule?",
+    // description:
+    //   "Download the App from Playstore or Apple store, create an account using your Name, Phone Number and Password, verify your phone number inputting the OTP sent to the phone number used when creating the account, once you are verified login into App click on Schedule pickup button to request for a pickup when you have recyclable waste.",
+
     description:
-      "Download the App from Playstore or Apple store, create an account using your Name, Phone Number and Password, verify your phone number inputting the OTP sent to the phone number used when creating the account, once you are verified login into App click on Schedule pickup button to request for a pickup when you have recyclable waste.",
+      "Download and install the Pakam Household Application from Google playstore and/or iOS App Store. Select your type of user and create an account.  Login to the application, click the schedule request feature and select any of the options (pickup or drop-off) to dispose your sorted waste.",
   },
   {
     text: "Can I bring my recyclable waste myself instead of waiting for pickup?",
@@ -1103,6 +1110,47 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
       },
     ],
   },
+
+  {
+    imgSrc: "/img/Mark.png",
+    headline: "Tacking Pollution Through Recycling Of aste Produtcs",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: "/img/Mark1.png",
+    headline:
+      "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
 ];
 
 export const PressRelase: Array<NewsMediaModel> = [
@@ -1197,7 +1245,7 @@ export const InterviewData: Array<NewsMediaModel> = [
 export const PublicationData: Array<NewsMediaModel> = [
   {
     imgSrc: "/img/Pub2.png",
-    headline: "Circularity in Nigeria",
+    headline: "Waste management in Lagos: The realities?",
     subtext: "",
     imgAlt: "Pakam",
     link: "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy83N2RhMzE2OC9wb2RjYXN0L3Jzcw/episode/NGRjMDQzM2QtN2M1MS00NDBhLWJlMjctOGFiZTRiNzA4YWE5?ep=14",
@@ -1210,13 +1258,13 @@ export const PublicationData: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/Discovery.png",
-        text: "July 20,2021",
+        text: "March 11,2022",
       },
     ],
   },
   {
     imgSrc: "/img/Pub3.png",
-    headline: "Plastic polution: Can recycling help save Lagos?",
+    headline: " Circularity in Nigeria",
     subtext: "",
     imgAlt: "Pakam",
     link: "https://www.youtube.com/watch?v=nj0maJU-0vA",
@@ -1229,13 +1277,13 @@ export const PublicationData: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/Discovery.png",
-        text: "July 20,2021",
+        text: "July 30,2021",
       },
     ],
   },
   {
     imgSrc: "/img/Pub1.png",
-    headline: "Waste management in Lagos: The realities?",
+    headline: " Plastic polution: Can recycling help save Lagos?",
     subtext: "",
     imgAlt: "Pakam",
     link: "https://www.thisdaylive.com/index.php/2021/11/12/dr-dolapo-fasawe-making-case-for-the-environment-at-cop26-through-lasepa/",
@@ -1248,7 +1296,7 @@ export const PublicationData: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/LightDiscovery.png",
-        text: "October,2021",
+        text: "July 20,2021",
       },
     ],
     // bg: true,
@@ -1335,7 +1383,7 @@ export const ExpertReviewData: Array<ReviewData> = [
     name: "Oskar Orling",
     role: "Entrepreneur,  Member of the WEF expert network",
     content:
-      "Once you schedule they will always find you to pickup. Very fast, efficient and reliable. I recommend for every household.",
+      "Well limited innovation with a big impact in area where it is well needed..",
   },
 
   {
@@ -1351,12 +1399,12 @@ export const ExpertReviewData: Array<ReviewData> = [
     content: "Pakam is the future, very interactive and seamless.",
   },
 
-  {
-    name: "Jadesola Samuel",
-    role: "Household User",
-    content:
-      "This is the best sustinable app I’ve ever seen. Quality services. Keep up the good work",
-  },
+  // {
+  //   name: "Jadesola Samuel",
+  //   role: "Household User",
+  //   content:
+  //     "This is the best sustinable app I’ve ever seen. Quality services. Keep up the good work",
+  // },
 ];
 
 export const citizens = {
