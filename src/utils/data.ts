@@ -216,7 +216,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
     header1: "Drop off Schedule Process",
     header2: "How It Works",
     sub_text: [
-      "Download and install the Pakam Household Application from goggle play store and/or IOS app store)",
+      "Download and install the Pakam Household Application from google play store and/or IOS app store.",
 
       "Select your type of user (individual or commercial) and create account.",
       "Sign In",
@@ -333,9 +333,8 @@ export const payContentarticles: Array<EarnWasteContentModel> = [
     header1: "",
     header2: "How It Works",
     sub_text: [
-      "Download and install the Pakam Waste Disposal  from google play store and/or IOS app store.",
+      "Download and install the Pakam Waste Disposal Application from google play store and/or IOS app store",
       "Select your type of user (household or commercial) and create an account.",
-      "Have a recycler/collector routed to your location for waste pickup.",
       "Schedule for a waste (non-recyclable) pickup by entering the required information.",
       "A nearby collector will  accept your schedule and get routed to your                                                         location to complete the pickup.",
       "Your monthly bill invoice would be sent for payment.",
@@ -352,12 +351,11 @@ export const smartContentarticles: Array<EarnWasteContentModel> = [
     header1: "",
     header2: "How It Works",
     sub_text: [
-      "Download and install the Pakam User from google play store and/or IOS app store.",
+      "Download and install the Pakam User Application from google play store and/or IOS app store.",
       "Create an account to gain access into the app",
-      "Have a recycler/collector routed to your location for waste pickup.",
-      " Click on the 'report request' to make a ive video of any environmental incident happening around you ",
-      "A nearby collector will  accept your schedule and get routed to your                                                        location to complete the pickup.",
-      "Your monthly bill invoice would be sent for payment.",
+      " Click on the 'report request' to make a live video of any environmental incident happening around you ",
+      "Proceed to the chat room to leave a message or description",
+      "Your report is received and attended to by the registered environmental agency",
     ],
     reverse: false,
   },
@@ -800,6 +798,46 @@ interface NewsMediaModel {
 
 export const NewsMediaArticles: Array<NewsMediaModel> = [
   {
+    imgSrc: "/img/Mark.png",
+    headline: "Tackling Pollution Through Recycling Of waste Products",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: "/img/Mark1.png",
+    headline:
+      "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
+  {
     imgSrc: "/img/image53.png",
     headline:
       "LAWMA to commence prosecution of resident without wastebin in october",
@@ -1026,7 +1064,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/Discovery.png",
-        text: "September 13, 2022",
+        text: "September 13, 2021",
       },
     ],
   },
@@ -1136,47 +1174,6 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
       {
         imgSrc: "/img/Discovery.png",
         text: "August 5, 2021",
-      },
-    ],
-  },
-
-  {
-    imgSrc: "/img/Mark.png",
-    headline: "Tacking Pollution Through Recycling Of aste Produtcs",
-    subtext: "",
-    imgAlt: "Pakam",
-    link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
-    info: [
-      {
-        imgSrc: "/img/user.png",
-        text: "Pakam",
-      },
-    ],
-    dates: [
-      {
-        imgSrc: "/img/Discovery.png",
-        text: "Nov 08, 2022",
-      },
-    ],
-  },
-
-  {
-    imgSrc: "/img/Mark1.png",
-    headline:
-      "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
-    subtext: "",
-    imgAlt: "Pakam",
-    link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
-    info: [
-      {
-        imgSrc: "/img/user.png",
-        text: "Pakam",
-      },
-    ],
-    dates: [
-      {
-        imgSrc: "/img/Discovery.png",
-        text: "Nov 08, 2022",
       },
     ],
   },
@@ -1377,7 +1374,7 @@ export const Review: Array<ReviewData> = [
     name: "Jadesola Samuel",
     role: "Household User",
     content:
-      "This is the best sustinable app I’ve ever seen. Quality services. Keep up the good work",
+      "This is the best sustainable app I’ve ever seen. Quality services. Keep up the good work",
   },
 
   {

@@ -90,7 +90,6 @@ const Contact = () => {
           <ContactContainer className="!flex !flex-col-reverse lg:!grid lg:!grid-cols-2  ">
             <ConatctText2Container>
               {contact2.map((el, i) => {
-                console.log("el", el);
                 return (
                   <ConatctTextWrapper key={i}>
                     <ConatctTextContainerh6>{el.title}</ConatctTextContainerh6>
