@@ -171,7 +171,7 @@ const Testimonial = () => {
                     <Image src="/svg/quote.svg" height={90} width={140} />
                   </SwiperHeaderContainer>
                   <SwiperHeaderP>
-                    This is the best sustinable app I’ve ever seen. Quality
+                    This is the best sustainable app I’ve ever seen. Quality
                     services. Keep up the good work
                   </SwiperHeaderP>
                 </SwiperContainer>

@@ -200,7 +200,7 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
     header1: "Pickup Schedule Process",
     header2: "How It Works",
     sub_text: [
-      "Download and install the app from Android play-store and/or IOS app-store",
+      "Download and install the Pakam Household Application from google play store and/or IOS app store.",
       "Select your type of user (individual or commercial) and create an account.",
       "Sign In.",
       "Click schedule request and select the “schedule pickup” option for your sorted recyclable waste from within the Pakam app",
@@ -216,7 +216,8 @@ export const earncontentarticles: Array<EarnWasteContentModel> = [
     header1: "Drop off Schedule Process",
     header2: "How It Works",
     sub_text: [
-      "Download and install the Pakam Household Application from goggle play store and/or IOS app store)",
+      "Download and install the Pakam Household Application from google play store and/or IOS app store.",
+
       "Select your type of user (individual or commercial) and create account.",
       "Sign In",
       "Click schedule request and select the “schedule drop-off” option. Select a nearby recycling company for waste for drop-off.",
@@ -316,7 +317,8 @@ export const Payarticles: Array<EarnWasteModel> = [
 
 export const Smartarticles: Array<EarnWasteModel> = [
   {
-    text: "The Pakam Smart Enforcement is an integrated environmental reporting platform that provides an enabling environment for the public to report environmental infractions to environmental agencies in a faste, better, and unified manner. It also allows the regulatory agencies to connect with the reporting public for easy access to all infractions reported.",
+    text: "The Pakam Smart Enforcement is an integrated environmental reporting platform that provides an enabling environment for the public to report environmental  infractions  to  environmental  agencies  in  a  faster,  better, and  unified  manner.  It  also  allows  the  regulatory  agencies  to  connect with the reporting public for easy access to all infractions reported.",
+
     imgAlt: "Pakam Smart Reinforcement",
     imgSrc: "/img/SmartRF.png",
     reverse: false,
@@ -331,9 +333,8 @@ export const payContentarticles: Array<EarnWasteContentModel> = [
     header1: "",
     header2: "How It Works",
     sub_text: [
-      "Download and install the Pakam Waste Disposal  from google play store and/or IOS app store.",
+      "Download and install the Pakam Waste Disposal Application from google play store and/or IOS app store",
       "Select your type of user (household or commercial) and create an account.",
-      "Have a recycler/collector routed to your location for waste pickup.",
       "Schedule for a waste (non-recyclable) pickup by entering the required information.",
       "A nearby collector will  accept your schedule and get routed to your                                                         location to complete the pickup.",
       "Your monthly bill invoice would be sent for payment.",
@@ -350,12 +351,11 @@ export const smartContentarticles: Array<EarnWasteContentModel> = [
     header1: "",
     header2: "How It Works",
     sub_text: [
-      "Download and install the Pakam User from google play store and/or IOS app store.",
+      "Download and install the Pakam User Application from google play store and/or IOS app store.",
       "Create an account to gain access into the app",
-      "Have a recycler/collector routed to your location for waste pickup.",
-      " Click on the 'report request' to make a ive video of any environmental incident happening around you ",
-      "A nearby collector will  accept your schedule and get routed to your                                                        location to complete the pickup.",
-      "Your monthly bill invoice would be sent for payment.",
+      " Click on the 'report request' to make a live video of any environmental incident happening around you ",
+      "Proceed to the chat room to leave a message or description",
+      "Your report is received and attended to by the registered environmental agency",
     ],
     reverse: false,
   },
@@ -439,6 +439,13 @@ export const faqs: Array<TechnologyModel> = [
     description:
       "Price is not fixed, it varies based on location and Recyclers.",
   },
+
+  {
+    text: "Can I schedule one pickup request for more than one waste category, like cans and PET Bottles?",
+    description:
+      "Yes, you can. The App now has a feature for you to multi-select different waste categories for one pickup or drop-off request",
+  },
+
   {
     text: "Do we operate outside Lagos?",
     description:
@@ -451,16 +458,36 @@ export const faqs: Array<TechnologyModel> = [
   },
   {
     text: "What’s the least number of bags one can have before  requesting a pickup?",
-    description: "One bag",
+    description:
+      "5 trash bag for individual users and 1 jumbo bag for commercial users. N.B The jumbo bag is also avaiable for sale to individuals ",
   },
   {
     text: "Minimum KG that can be picked?",
-    description: "I KG",
+    description: "5 KG",
   },
   {
     text: "How much do I need to have in my wallet to request a payout?",
-    description: "#5000",
+    description: "At least N5000",
   },
+
+  {
+    text: "What is the purpose of the community chat in the app?",
+    description:
+      "This is to help you reach customer support within the app and connect with other users of the app.",
+  },
+
+  {
+    text: "How do I reach support quickly, if I have complaints or enquiries?",
+    description:
+      "You can either make use of the community chat feature in your app, or click on Support center (on the home screen) of your app",
+  },
+
+  {
+    text: "Can I connect with the recycler who accepts my pickup?",
+    description:
+      "Yes. You can do this using the in-app chat and/or the in-app direct to call; click on schedule request, then schedule history. Click on a pending schedule that has been accepted by a recycler and click on the chat icon or the call icon (which redirects you to your phone’s call app to continue with the call)",
+  },
+
   {
     text: "Prices of all recyclables per KG?",
     description:
@@ -771,6 +798,46 @@ interface NewsMediaModel {
 
 export const NewsMediaArticles: Array<NewsMediaModel> = [
   {
+    imgSrc: "/img/Mark.png",
+    headline: "Tackling Pollution Through Recycling Of waste Products",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: "/img/Mark1.png",
+    headline:
+      "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
+    subtext: "",
+    imgAlt: "Pakam",
+    link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "Nov 08, 2022",
+      },
+    ],
+  },
+  {
     imgSrc: "/img/image53.png",
     headline:
       "LAWMA to commence prosecution of resident without wastebin in october",
@@ -794,7 +861,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
 
   {
     imgSrc: "/img/image53-1.png",
-    headline: "Lagos Without traffic pollution ",
+    headline: "Lagos Without plastic pollution ",
     subtext:
       " Two hundred thousand tons of waste produced in Nigeria ends up in the ocean every year, according to estimates by the World Economic Forum.",
     imgAlt: "Pakam",
@@ -962,7 +1029,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
 
   {
     imgSrc: "/img/image57.png",
-    headline: "Recycling enthusiast avocate change in waste disposal",
+    headline: "Recycling enthusiast advocate change in waste disposal",
     subtext: "",
     imgAlt: "Pakam",
     link: "https://www.youtube.com/watch?v=iUyFA-aplgk",
@@ -997,7 +1064,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/Discovery.png",
-        text: "September 13, 2022",
+        text: "September 13, 2021",
       },
     ],
   },
@@ -1070,7 +1137,7 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
 
   {
     imgSrc: "/img/image31-3.png",
-    headline: "Lawma continues to improve on waste mangement strategy. ",
+    headline: "Lawma continues to improve on waste management strategy. ",
     subtext:
       "It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
     imgAlt: "Pakam",
@@ -1110,55 +1177,14 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
       },
     ],
   },
-
-  {
-    imgSrc: "/img/Mark.png",
-    headline: "Tacking Pollution Through Recycling Of aste Produtcs",
-    subtext: "",
-    imgAlt: "Pakam",
-    link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
-    info: [
-      {
-        imgSrc: "/img/user.png",
-        text: "Pakam",
-      },
-    ],
-    dates: [
-      {
-        imgSrc: "/img/Discovery.png",
-        text: "Nov 08, 2022",
-      },
-    ],
-  },
-
-  {
-    imgSrc: "/img/Mark1.png",
-    headline:
-      "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
-    subtext: "",
-    imgAlt: "Pakam",
-    link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
-    info: [
-      {
-        imgSrc: "/img/user.png",
-        text: "Pakam",
-      },
-    ],
-    dates: [
-      {
-        imgSrc: "/img/Discovery.png",
-        text: "Nov 08, 2022",
-      },
-    ],
-  },
 ];
 
 export const PressRelase: Array<NewsMediaModel> = [
   {
     imgSrc: "/img/GRealease.png",
-    headline: "Lawma countinues to improve on waste mangement strategy.",
+    headline: "Pakam announces strategic partnership with Arup",
     subtext:
-      " “It is very important we move forward with the Lagos Recycle Initiative and continue to evolve our waste management...",
+      " Pakam technology has entered a strategic partnership with Arup. The collaboration originated from the need to build circularity around waste for a sustainable environment and will help both parties to support sustainable agenda...",
     imgAlt: "Pakam",
     link: "",
     info: [
@@ -1170,7 +1196,7 @@ export const PressRelase: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/LightDiscovery.png",
-        text: "October,2021",
+        text: "August 20,2021",
       },
     ],
     bg: true,
@@ -1197,7 +1223,7 @@ export const InterviewData: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/Discovery.png",
-        text: "October,2021",
+        text: "October,2022",
       },
     ],
   },
@@ -1348,7 +1374,7 @@ export const Review: Array<ReviewData> = [
     name: "Jadesola Samuel",
     role: "Household User",
     content:
-      "This is the best sustinable app I’ve ever seen. Quality services. Keep up the good work",
+      "This is the best sustainable app I’ve ever seen. Quality services. Keep up the good work",
   },
 
   {
@@ -1436,16 +1462,19 @@ export const contact = [
     title: "Send Us a message ",
     text: "We would love to talk about how we can work together ",
     link: "Contact Support",
+    linkto: "/contact",
   },
   {
     title: "Have Question? ",
     text: "Explore our help desk for quick answers to your question  ",
     link: "View help desk",
+    linkto: "/faqs",
   },
   {
     title: "Media and Press ",
     text: "Get the lastest news and updates about our company and products   ",
-    link: "View help desk",
+    link: "explore our news page",
+    linkto: "/news",
   },
 ];
 export const contact2 = [
