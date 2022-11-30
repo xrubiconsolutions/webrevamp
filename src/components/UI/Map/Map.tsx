@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, FC } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { MarkerF } from "@react-google-maps/api";
 import { Loader } from "../Loader/loader";
 
-export const Map = () => {
+export const Map: FC = () => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyBGv53NEoMm3uPyA9U45ibSl3pOlqkHWN8",
   });
@@ -22,6 +22,7 @@ export const Map = () => {
   }
 
   return (
+    // @ts-ignore
     <GoogleMap
       zoom={17}
       center={{ lat: 6.504094110565859, lng: 3.351642855526162 }}
