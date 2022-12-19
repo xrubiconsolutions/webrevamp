@@ -12,7 +12,7 @@ import Support from "../src/components/UI/support";
 import Testimonial from "../src/components/UI/testimonial";
 
 const Banner = styled.div`
-  ${tw`bg-primary py-3 lg:py-6`}
+  ${tw`bg-primary py-0 lg:py-0.5`};
 `;
 const BannerCaption = styled.div`
   ${tw`flex items-center justify-between flex-col md:flex-row lg:gap-y-0 gap-y-2`}
@@ -37,19 +37,19 @@ const Home: NextPage = () => {
       <Hero />
       <Banner>
         <Container>
-          <Image
+          {/* <Image
             src="/svg/WASTE-BANC-LOGO1 1.svg"
             alt="wastebanc"
             height={70}
             width={200}
             className="!mr-4"
-          />
+          /> */}
           <BannerCaption>
-            <BannerCaptionText>
+            {/* <BannerCaptionText>
               Earn Extra Cash today by becoming a <br />
               <span>wastebanc</span> agent, for more info
-            </BannerCaptionText>
-            <BtnContainer>
+            </BannerCaptionText> */}
+            {/* <BtnContainer>
               <a
                 href="https://forms.zohopublic.com/pakamtechnologylimited/form/WASTEBANCAGENTREGISTRATION/formperma/QOZQSCayHg6Fjw_5HUgtUJ1Hew4KbBag7-LNW7RsFPU"
                 target="_blank"
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
               >
                 <Button>Register</Button>
               </a>
-            </BtnContainer>
+            </BtnContainer> */}
           </BannerCaption>
         </Container>
       </Banner>

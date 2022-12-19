@@ -32,6 +32,7 @@ const Card = ({
   header2,
   sub_text,
   reverse,
+  soonchecker,
 }: EarnWasteContentModel) => {
   const [device, setDevice] = useState("");
 
@@ -67,7 +68,17 @@ const Card = ({
 
         <Br />
 
-        {device === "Windows" ? (
+        {soonchecker ? (
+          <Button
+            children="Coming Soon"
+            icons={false}
+            weight={false}
+            primary={true}
+            white={true}
+            width={true}
+            className=""
+          />
+        ) : device === "Windows" || device === "Andriod" ? (
           <a
             href="https://play.google.com/store/apps/details?id=com.pakamcustomer"
             target="_blank"
@@ -104,3 +115,5 @@ const Card = ({
 };
 
 export default Card;
+
+// {OSNAME}

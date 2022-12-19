@@ -170,6 +170,7 @@ export interface EarnWasteContentModel {
   header2: string;
   reverse: boolean;
   sub_text: Array<string>;
+  soonchecker?: boolean;
 }
 
 interface KPIData {
@@ -341,6 +342,7 @@ export const payContentarticles: Array<EarnWasteContentModel> = [
     ],
 
     reverse: false,
+    soonchecker: true,
   },
 ];
 
