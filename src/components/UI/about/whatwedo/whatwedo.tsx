@@ -47,7 +47,7 @@ const WhatWeDoSection = () => {
                 to stakeholders We provide a learning platform for waste
                 generators to know how to handle waste and ensure a cleaner
                 environment. Through Pakam, Waste management problem is a thing
-                of the past.!!!
+                of the past!!!
               </WhatWeDoBodyText>
             </WhatWeDoBody>
           </Column>

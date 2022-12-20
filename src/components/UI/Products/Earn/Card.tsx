@@ -5,6 +5,7 @@ import { Button } from "../../..";
 // import { ImageImage } from "../styles";
 import { EarnWasteContentModel } from "../../../../utils/data";
 import Image from "next/image";
+import { osName } from "react-device-detect";
 
 import {
   ImageContent,
@@ -78,7 +79,7 @@ const Card = ({
             width={true}
             className=""
           />
-        ) : device === "Windows" || device === "Andriod" ? (
+        ) : device === "Windows" ? (
           <a
             href="https://play.google.com/store/apps/details?id=com.pakamcustomer"
             target="_blank"
@@ -93,9 +94,39 @@ const Card = ({
               className=""
             />
           </a>
-        ) : (
+        ) : device === "macOS" ? (
           <a
             href="https://apps.apple.com/ng/app/pakam-household-recycling-app/id1539296957"
+            target="_blank"
+          >
+            <Button
+              children="Download Now!"
+              icons={false}
+              weight={false}
+              primary={true}
+              white={true}
+              width={true}
+              className=""
+            />
+          </a>
+        ) : osName === "iOS" ? (
+          <a
+            href="https://apps.apple.com/ng/app/pakam-household-recycling-app/id1539296957"
+            target="_blank"
+          >
+            <Button
+              children="Download Now!"
+              icons={false}
+              weight={false}
+              primary={true}
+              white={true}
+              width={true}
+              className=""
+            />
+          </a>
+        ) : (
+          <a
+            href="https://play.google.com/store/apps/details?id=com.pakamcustomer"
             target="_blank"
           >
             <Button

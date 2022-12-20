@@ -45,10 +45,10 @@ const Careers: NextPage = () => {
                 className="w-2/4 h-3/5 lg:w-1/4 lg:h-1/5"
               />
               <CareerBodyHeading className="font-extrabold text-4xl">
-                No jobs openings available now{" "}
+                No job openings at this time
               </CareerBodyHeading>
               <CareerBodyText className="font-thin text-xl">
-                Please do well to check back to our page for recent openings.
+                Please check back at another time.
               </CareerBodyText>
             </CareersWrapper>
           </Container>
