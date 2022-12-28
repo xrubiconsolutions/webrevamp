@@ -246,10 +246,11 @@ export const support: Array<string> = [
 
 export const members: Array<string> = [
   "/img/Circular network.png",
-  "/img/9.png",
   "/img/blob_a20d1134f2 1.png",
   "/img/8.png",
   "/img/Smart-cities-world-logo-2 1.png",
+  "/img/9.png",
+  "/img/greenTech.png",
 ];
 
 export const KPIarticles: Array<KPIData> = [
