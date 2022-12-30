@@ -12,6 +12,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Card = ({
+  id,
   imgAlt,
   imgSrc,
   headline,
@@ -24,6 +25,7 @@ const Card = ({
   decoration,
   inPage,
 }: {
+  id?: number;
   headline: string;
   subtext: string;
   link: string;
@@ -56,14 +58,16 @@ const Card = ({
         </Link> */}
 
         {inPage ? (
-          <H2
-            col={color ? true : false}
-            decoration={decoration ? true : false}
-            onClick={() => router.push("/news/press")}
-            className="cursor-pointer"
-          >
-            {headline}
-          </H2>
+          <Link href={`press/${id}`}>
+            <H2
+              col={color ? true : false}
+              decoration={decoration ? true : false}
+              // onClick={() => router.push(`/news/press/${id}`)}
+              className="cursor-pointer"
+            >
+              {headline}
+            </H2>
+          </Link>
         ) : (
           <Link href={link} target="_blank">
             <H2

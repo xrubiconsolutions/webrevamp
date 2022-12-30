@@ -43,13 +43,20 @@ const AboutHero = () => {
             <AboutHeroContainer>
               <AboutHeroH1>Who we are</AboutHeroH1>
               <AboutHeroP>
-                We are the first and foremost waste and recycling eco-system
+                {/* We are the first and foremost waste and recycling eco-system
                 enabler. Pakam provides a smart waste collection system that
                 promotes circularity through waste and recycling management. We
                 enhance the waste collection eco-system with technology and data
                 generated . Our company is focused on using tech driven schemes
                 to proffer lasting solutions that are eco- friendly and
-                sustainable.
+                sustainable. */}
+                Pakam Technology is a platform as a service (PaaS) company that
+                utilizes software applications and data to promote a circular
+                economy and achieve sustainability through recycling and waste
+                management. We focus on using technology to protect the
+                environment, empower people, and generate profit. Our solution
+                also aligns with achieving the 2030 Sustainable Development
+                Goals (SDGs).
               </AboutHeroP>
             </AboutHeroContainer>
           </Column>

@@ -2,6 +2,7 @@ import React, { useState, useEffect, FC } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { FlexContainer, Container } from "..";
+import { useRouter } from "next/router";
 
 const TabsContainer = styled(FlexContainer)<{
   center: boolean;
@@ -56,6 +57,24 @@ const PageTab: FC<Props> = ({
 }) => {
   const [active, setActive] = useState(tab);
   const tabs = pages?.map(({ tab }) => tab);
+
+  useEffect(() => {
+    window.localStorage.setItem("active", JSON.stringify(active));
+  }, [active]);
+
+  useEffect(() => {
+    const value = window.localStorage.getItem("active");
+    console.log("value", value);
+    if (value) return setActive(JSON.parse(value));
+  }, []);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push(`${router.pathname}?tab=${active}`, undefined, {
+      shallow: true,
+    });
+  }, [active]);
 
   return (
     <>

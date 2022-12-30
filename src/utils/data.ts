@@ -785,6 +785,7 @@ export const featured = [
 ];
 
 interface NewsMediaModel {
+  id?: number;
   imgSrc: any;
   imgAlt: string;
   headline: string;
@@ -799,46 +800,6 @@ interface NewsMediaModel {
 }
 
 export const NewsMediaArticles: Array<NewsMediaModel> = [
-  {
-    imgSrc: "/img/Mark.png",
-    headline: "Tackling Pollution Through Recycling Of waste Products",
-    subtext: "",
-    imgAlt: "Pakam",
-    link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
-    info: [
-      {
-        imgSrc: "/img/user.png",
-        text: "Pakam",
-      },
-    ],
-    dates: [
-      {
-        imgSrc: "/img/Discovery.png",
-        text: "Nov 08, 2022",
-      },
-    ],
-  },
-
-  {
-    imgSrc: "/img/Mark1.png",
-    headline:
-      "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
-    subtext: "",
-    imgAlt: "Pakam",
-    link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
-    info: [
-      {
-        imgSrc: "/img/user.png",
-        text: "Pakam",
-      },
-    ],
-    dates: [
-      {
-        imgSrc: "/img/Discovery.png",
-        text: "Nov 08, 2022",
-      },
-    ],
-  },
   {
     imgSrc: "/img/image53.png",
     headline:
@@ -860,7 +821,6 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
       },
     ],
   },
-
   {
     imgSrc: "/img/image53-1.png",
     headline: "Lagos Without plastic pollution ",
@@ -902,6 +862,25 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
       },
     ],
   },
+  // {
+  //   imgSrc: "/img/Mark.png",
+  //   headline: "Tackling Pollution Through Recycling Of waste Products",
+  //   subtext: "",
+  //   imgAlt: "Pakam",
+  //   link: "https://www.newtelegraphng.com/tackling-pollution-through-recycling-of-waste-products/",
+  //   info: [
+  //     {
+  //       imgSrc: "/img/user.png",
+  //       text: "Pakam",
+  //     },
+  //   ],
+  //   dates: [
+  //     {
+  //       imgSrc: "/img/Discovery.png",
+  //       text: "Nov 08, 2022",
+  //     },
+  //   ],
+  // },
 
   {
     imgSrc: "/img/image57.png",
@@ -1179,10 +1158,179 @@ export const NewsMediaArticles: Array<NewsMediaModel> = [
       },
     ],
   },
+  {
+    imgSrc: "/img/image311.png",
+    headline: "Expert Advocates Behavioral Change Toward Recycling ",
+    subtext:
+      "A environmentalist, Ms Wunmi Ogunde, has called for a positive attitude toward recycling to curb plastic pollution in the country. Ogunde, the Founder of Pakam...",
+    imgAlt: "Pakam",
+    link: "https://naturenews.africa/expert-advocates-behavioural-change-toward-recycling/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "September 26, 2022",
+      },
+    ],
+  },
+
+  {
+    imgSrc: "/img/image31-1.png",
+    headline:
+      "ASWOL launches Website to verify waste pickers, cart pushers in Lagos.",
+    subtext:
+      "As part of efforts to achieve a more sustainable eco-friendly city, the Association of Scrap and waste Pickers of Lagos (ASWOL) has launched a website to verify and integrate waste pickers,..",
+    imgAlt: "Pakam",
+    link: "https://tribuneonlineng.com/aswol-launches-website-to-verify-waste-pickers-cart-pushers-in-lagos/",
+    info: [
+      {
+        imgSrc: "/img/user.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/Discovery.png",
+        text: "December 1, 2022",
+      },
+    ],
+  },
+
+  // {
+  //   imgSrc: "/img/Mark1.png",
+  //   headline:
+  //     "Mr. Macaroni, PwC Nigeria, Others receive Awards at the Nigeria Innovation Summit 2022",
+  //   subtext: "",
+  //   imgAlt: "Pakam",
+  //   link: "https://techbuild.africa/mr-macaroni-awards-nigeria-innovation-summit/",
+  //   info: [
+  //     {
+  //       imgSrc: "/img/user.png",
+  //       text: "Pakam",
+  //     },
+  //   ],
+  //   dates: [
+  //     {
+  //       imgSrc: "/img/Discovery.png",
+  //       text: "Nov 08, 2022",
+  //     },
+  //   ],
+  // },
 ];
 
 export const PressRelase: Array<NewsMediaModel> = [
   {
+    id: 1,
+    imgSrc: "/img/60.png",
+    headline: "Pakam announces outreach partnership with Trucka",
+    subtext:
+      " PAKAM Technology Limited is excited to announce our outreach partner, Trucka...",
+    imgAlt: "Pakam",
+    link: "",
+    info: [
+      {
+        imgSrc: "/img/LightUser.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/LightDiscovery.png",
+        text: "December 22,2022",
+      },
+    ],
+    bg: true,
+    color: true,
+    decoration: true,
+    inPage: true,
+  },
+
+  {
+    id: 2,
+    imgSrc: "/img/20.png",
+    headline: "Pakam accepted as a member of Greentech Alliance",
+    subtext:
+      "We are glad to have been accepted as a member of greentech alliance....",
+    imgAlt: "Pakam",
+    link: "",
+    info: [
+      {
+        imgSrc: "/img/LightUser.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/LightDiscovery.png",
+        text: "December 12 ,2022",
+      },
+    ],
+    bg: true,
+    color: true,
+    decoration: true,
+    inPage: true,
+  },
+
+  {
+    id: 3,
+    imgSrc: "/img/30.png",
+    headline: "Pakam announces outreach partnership with DeliveaNG",
+    subtext:
+      "“At Pakam, our mission is to create waste scarcity, & make sense of waste by connecting waste...”",
+    imgAlt: "Pakam",
+    link: "",
+    info: [
+      {
+        imgSrc: "/img/LightUser.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/LightDiscovery.png",
+        text: "December 11 ,2022",
+      },
+    ],
+    bg: true,
+    color: true,
+    decoration: true,
+    inPage: true,
+  },
+
+  {
+    id: 4,
+    imgSrc: "/img/40.png",
+    headline:
+      "Pakam announces strategic partnership with I-cell Multimedia Ltd and Vector Telecom Services Ltd",
+    subtext:
+      "The development and deployment of the USSD platform have become very necessary...”",
+    imgAlt: "Pakam",
+    link: "",
+    info: [
+      {
+        imgSrc: "/img/LightUser.png",
+        text: "Pakam",
+      },
+    ],
+    dates: [
+      {
+        imgSrc: "/img/LightDiscovery.png",
+        text: "December 11 ,2022",
+      },
+    ],
+    bg: true,
+    color: true,
+    decoration: true,
+    inPage: true,
+  },
+
+  {
+    id: 5,
     imgSrc: "/img/GRealease.png",
     headline: "Pakam announces strategic partnership with Arup",
     subtext:
@@ -1198,7 +1346,7 @@ export const PressRelase: Array<NewsMediaModel> = [
     dates: [
       {
         imgSrc: "/img/LightDiscovery.png",
-        text: "August 20,2021",
+        text: "February 9th ,2022",
       },
     ],
     bg: true,
@@ -1524,5 +1672,101 @@ export const contact2 = [
     //   "/img/twitterGreen.png",
     //   "/img/whatsappGreen.png",
     // ],
+  },
+];
+
+export const pressItems = [
+  {
+    id: 1,
+    date: "December 22nd, 2022",
+    heading: "Pakam announces outreach partnership with Trucka",
+    paragraph1:
+      "PAKAM Technology Limited is excited to announce our outreach partner, Trucka is a mini-truck hailing e-logistics company that provides on-demand share logistic to businesses and individuals.",
+    Paragraph2:
+      " At Pakam, our mission is to create waste scarcity, & make sense of waste by connecting waste generators to collectors and to aggregators while promoting smart transaction and building data for insight. ",
+    paragraph3:
+      "One of the biggest challenge facing waste management today, is the lack of collection infrastructure, specifically logistic. Partnership with Trucka will fill in the gap and make up for the disconnect between generators, collectors & aggregators.",
+    paragraph4:
+      "Trucka will make it easy for household to sell off the recyclable waste on time, while guaranteeing aggregators constant feedstock on pakam marketplace platform.",
+    paragraph5:
+      "With this partnership, Pakam will continue to consolidate on its pioneering of an enduring ecosystem, with focus on value-chain operation wherein different parts of a larger ecosystem come together to create a sustainable solution for the people, planet and Profits.",
+    paragraph6:
+      "Next steps We will expand this partnership to reach more generators and reduce their waiting time to transact their waste on Pakam. while also ensuring that aggregators feedstock increases, to guarantee their supply of materials to recyclers.",
+    paragraph7:
+      "Version 2.0 We launched Pakam in 2021 with Pakam recycling (Earn as you waste), Since then we have developed and increase our business portfolio to include, Pakam waste collection (Pay as you waste) & Pakam smart enforcement. In the last quarter of 2022, we improved & unveiled Pakam 2.0 Recycling to include integrations with Fin-tech, Edu-tech, Insur-tech, Telcom & media, live reporting & informal sector (waste pickers) interface.",
+    paragraph8:
+      "If you’d like to talk to us about business partnerships. Kindly contact us here. Install PAKAM on Google Play Store & Apple store or look us up on our website.",
+    image: "/img/40.png",
+  },
+
+  {
+    id: 2,
+    date: "December 12th, 2021",
+    heading: "Pakam has been accepted as a member of Green-tech alliance",
+    paragraph1:
+      "We are glad to have been accepted as a member of greentech allaince. The green-tech alliance is a community of 1000+ Greentech companies, advisors, top tier VCs, media and experts",
+    image: "/img/20.png",
+  },
+
+  {
+    id: 3,
+    date: "December 11th, 2021",
+    heading: "Pakam announces outreach partnership with DeliveaNG",
+    paragraph1:
+      "PAKAM Technology Limited is excited to announce our outreach partner, DeliveaNG Logistics DeliveaNG Logistics is a tech-enabled organisation that focuses on the fast and effective movement of people, products and services.",
+    Paragraph2:
+      "  At Pakam, our mission is to create waste scarcity, & make sense of waste by connecting waste generators to collectors and to aggregators while promoting smart transaction and building data for insight.",
+    paragraph3:
+      "   One of the biggest challenge facing waste management today, is the lack of collection infrastructure, specifically logistic. Partnership with DeliveaNG will fill in the gap and make up for the disconnect between generators, collectors & aggregators.",
+    paragraph4:
+      "DeliveaNG will make it easy for household to sell off the recyclable waste on time, while guaranteeing aggregators constant feedstock on pakam marketplace platform.",
+    paragraph5:
+      "With this partnership, Pakam will be pioneering an enduring ecosystem, with focus on value-chain operation wherein different parts of a larger ecosystem come together to create a sustainable solution for the people, planet and Profits.",
+    paragraph6:
+      "Next steps We will expand this partnership to reach more generators and reduce their waiting time to transact their waste on Pakam. while also ensuring that aggregators feedstock increases, to guarantee their supply of materials to recyclers.",
+    paragraph7:
+      "Version 2.0 We launched Pakam in 2021 with Pakam recycling (Earn as you waste), Since then we have developed and increase our business portfolio to include, Pakam waste collection (Pay as you waste) & Pakam smart enforcement. In the last quarter of 2022, we improved & unveiled Pakam 2.0 Recycling to include integrations with Fin-tech, Edu-tech, Insur-tech, Telcom & media, live reporting & informal sector (waste pickers) interface.",
+    paragraph8:
+      "If you’d like to talk to us about business partnerships. Kindly contact us here. Install PAKAM on Google Play Store & Apple store or look us up on our website. New-frontier team.",
+    image: "/img/30.png",
+  },
+
+  {
+    id: 4,
+    date: "December 11th, 2021",
+    heading:
+      "Pakam announces strategic partnership with I-cell Multimedia Ltd and Vector Telecom Services Ltd",
+    paragraph1:
+      "PAKAM Technology Limited is excited to announce a strategic partnership with I-Cell Multimedia Ltd & Vector Telecom Services Ltd to develop, deploy, and manage the Pakam USSD platform. I-cell Multimedia Ltd is a foremost NCC aggregator company in Nigeria while Vector Telecom Services Ltd is a foremost VAS provider company with NCC and together, they are teaming up with us at Pakam.",
+    Paragraph2:
+      " The development and deployment of the USSD platform have become very necessary for us to ensure greater inclusion in the management of waste, especially amongst technological underserve communities across Nigeria..",
+    paragraph3:
+      "  Our focus is to ensure the “Pakam USSD users” experience is not different from the “Pakam Mobile App users” experience. For example, the new fin-tech integration on the Mobile App would also be one of the many features included in the USSD platform.",
+    paragraph4:
+      "Pakam Technology Limited was officially launched in 2021 with its signature product “Pakam recycling” (Earn as you waste). With our recent product improvement, Pakam recycling will be integrating Fin-tech, Edu-tech, Insur-tech, Telcom & media, live reporting & informal sector (waste pickers) interface into its operations. On the other end we continue to deploy and improve on other business portfolio such as Pakam waste collection (Pay as you waste) & Pakam smart enforcement.",
+    paragraph5:
+      "If you’d like to talk to us about business partnerships. Kindly contact us here.",
+    paragraph6:
+      "Install PAKAM on Google Play Store & Apple store or look us up on our website.New-frontier team..",
+    image: "/img/40.png",
+  },
+
+  {
+    id: 5,
+    date: "February 9th, 2021",
+    heading: "Pakam announces strategic partnership with Arup",
+    paragraph1:
+      "Pakam technology has entered a strategic partnership with Arup. The collaboration originated from the need to build circularity aroundwaste for a sustainable environment and will help both parties to support sustainable agenda through strengthening of capacity for recycling, composting, up-cycling, and reuse of waste materials.",
+    Paragraph2:
+      "  Pakam is a next-generation unified waste management collection software & reporting platform start-up, enabling circularity & responsible disposal of waste on an Earn-as-You Waste basis to achieve a zero-waste circular economy. Pakam connects waste from the generating public and/or businesses to waste companies through waste collector in real-time, activates transactions in real-time, and generates actionable insight reports in real-time. Pakam leverages end-to-end real-time data intelligence across the waste collection ecosystem that guarantees automation, transparency, incentivisation, and material traceability",
+    paragraph3:
+      " Arup is a British multinational professional services firm headquartered in London which provides design, engineering, architecture, planning, and advisory services across every aspect of the built environment. With presence across 35 countries around the world. Arup has participated in projects in over 160 countries with sustainability at the core of its business.",
+    paragraph4:
+      "This partnership is key to building an impactful and sustainable solution for communities recycling, composting, and reusing with the aim to create circular economy, communities inclusion, and climate resilience.",
+    paragraph5:
+      "This collaboration is starting immediately, as it will increase the credibility of Arup and Pakam in the global push to solving waste management challenges, and climate change.",
+    paragraph6:
+      "Initially, the partnership will revolve around support for recycling collection. With time, the companies will also collaborate on building collection infrastructure to support the ecosystem.",
+    image: "/img/PressRelease.png",
   },
 ];
