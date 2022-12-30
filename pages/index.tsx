@@ -64,21 +64,22 @@ const Home: NextPage = () => {
         /> */}
       {/* </div> */}
 
-      {/* <Banner>
-        <Container>
-          {/* <Image
+      {
+        <Banner>
+          <Container>
+            {/* <Image
             src="/svg/WASTE-BANC-LOGO1 1.svg"
             alt="wastebanc"
             height={70}
             width={200}
             className="!mr-4"
           /> */}
-          <BannerCaption>
-            {/* <BannerCaptionText>
+            <BannerCaption>
+              {/* <BannerCaptionText>
               Earn Extra Cash today by becoming a <br />
               <span>wastebanc</span> agent, for more info
             </BannerCaptionText> */}
-            {/* <BtnContainer>
+              {/* <BtnContainer>
               <a
                 href="https://forms.zohopublic.com/pakamtechnologylimited/form/WASTEBANCAGENTREGISTRATION/formperma/QOZQSCayHg6Fjw_5HUgtUJ1Hew4KbBag7-LNW7RsFPU"
                 target="_blank"
@@ -87,9 +88,10 @@ const Home: NextPage = () => {
                 <Button>Register</Button>
               </a>
             </BtnContainer> */}
-          </BannerCaption>
-        </Container>
-      </Banner> */}
+            </BannerCaption>
+          </Container>
+        </Banner>
+      }
       <GlanceCards />
       <Support />
       <Serve />

@@ -69,7 +69,6 @@ const PageTab: FC<Props> = ({
   }, []);
 
   const router = useRouter();
-
   useEffect(() => {
     router.push(`${router.pathname}?tab=${active}`, undefined, {
       shallow: true,
