@@ -7,8 +7,8 @@ const Members = () => {
       title="WE ARE MEMBERS OF."
       imgUrl={members}
       classname="object-contain"
-      width={240}
-      height={50}
+      width={180}
+      height={55}
     />
   );
 };

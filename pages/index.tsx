@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
 import tw from "twin.macro";
+import Lottie from "lottie-react";
 import { Button, Container } from "../src/components";
 import Hero from "../src/components/UI/hero/hero";
 import Members from "../src/components/UI/members";
@@ -10,6 +11,7 @@ import GlanceCards from "../src/components/UI/PakamAtGlance/glanceCards";
 import Serve from "../src/components/UI/serve/serve";
 import Support from "../src/components/UI/support";
 import Testimonial from "../src/components/UI/testimonial";
+import wave from "../src/utils/108668-teal-squiggle.json";
 
 const Banner = styled.div`
   ${tw`bg-primary py-0 lg:py-0.5`};
@@ -25,6 +27,25 @@ const BannerCaptionText = styled.div`
 `;
 const BtnContainer = styled.div``;
 
+const Divider = styled.div`
+  --mask: radial-gradient(
+        27.41px at 50% calc(100% + 14px),
+        #0000 calc(99% - 6px),
+        #000 calc(101% - 6px) 99%,
+        #0000 101%
+      )
+      calc(50% - 40px) calc(50% - 13px + 0.5px) / 80px 26px repeat-x,
+    radial-gradient(
+        27.41px at 50% -14px,
+        #0000 calc(99% - 6px),
+        #000 calc(101% - 6px) 99%,
+        #0000 101%
+      )
+      50% calc(50% + 13px) / 80px 26px repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+`;
+
 const Home: NextPage = () => {
   // const {} = useRouter();
 
@@ -35,7 +56,15 @@ const Home: NextPage = () => {
         <meta name="description" content="Pakam landing" />
       </Head>
       <Hero />
-      <Banner>
+      {/* <div>
+        <Lottie
+          animationData={wave}
+          loop={false}
+          className="h-1/5 bg-secondary"
+        /> */}
+      {/* </div> */}
+
+      {/* <Banner>
         <Container>
           {/* <Image
             src="/svg/WASTE-BANC-LOGO1 1.svg"
@@ -60,7 +89,7 @@ const Home: NextPage = () => {
             </BtnContainer> */}
           </BannerCaption>
         </Container>
-      </Banner>
+      </Banner> */}
       <GlanceCards />
       <Support />
       <Serve />

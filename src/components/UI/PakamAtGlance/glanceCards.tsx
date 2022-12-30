@@ -6,7 +6,7 @@ import Lottie from "lottie-react";
 import { Container } from "../..";
 
 const GlanceCardsSection = styled.section`
-  ${tw`bg-secondary`}
+  ${tw`bg-primary`}
 
   padding-bottom: calc(2.5rem + (10 - 7.5) * ((100vw - 20rem) / (100 - 50)));
   padding-top: calc(2.5rem + (10 - 7.5) * ((100vw - 20rem) / (100 - 50)));
@@ -58,7 +58,7 @@ const GlanceCardsContainer = styled.div`
 `;
 
 const GlanceCardHeading = styled.div`
-  ${tw`text-[30px]   md:text-[50px]  text-primary font-extrabold`}
+  ${tw`text-[30px]   md:text-[50px]  text-white font-extrabold`}
 
   @media screen and (min-width: 920px) {
     /* grid-area: 1 / 1 / 3 / 7; */
